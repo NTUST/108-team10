@@ -1,707 +1,465 @@
-BeverageId,ShopId,CategoryId,name,info,ImagePath,hasCool,hasHot,remark
-A01,A,CG,­[²úºñ¯ù,­[²úºñ¯ù¦n³Ü±À±À,50´P/­[²úºñ¯ù.png,TRUE,FALSE,
-A02,A,CB,ªüÂÄ©i¬õ¯ù,ªüÂÄ©i¬õ¯ù¦n³Ü±À±À,50´P/ªüÂÄ©i¬õ¯ù.png,TRUE,FALSE,
-A03,A,CX,¥|©u¬K¯ù,¥|©u¬K¯ù¦n³Ü±À±À,50´P/¥|©u¬K¯ù.png,TRUE,FALSE,
-A04,A,CO,¶Àª÷¯QÀs,¶Àª÷¯QÀs¦n³Ü±À±À,50´P/¶Àª÷¯QÀs.png,TRUE,FALSE,
-A05,A,CG,ÂfÂcºñ¯ù,ÂfÂcºñ¯ù¦n³Ü±À±À,50´P/ÂfÂcºñ¯ù.png,TRUE,FALSE,
-A06,A,CG,±öªGºñ,±öªGºñ¦n³Ü±À±À,50´P/±öªGºñ.png,TRUE,FALSE,
-A07,A,CG,¸Á»eºñ,¸Á»eºñ¦n³Ü±À±À,50´P/¸Á»eºñ.png,TRUE,FALSE,
-A08,A,CG,®Ü¤lºñ,®Ü¤lºñ¦n³Ü±À±À,50´P/®Ü¤lºñ.png,TRUE,FALSE,
-A09,A,CG,8¦Bºñ,8¦Bºñ¦n³Ü±À±À,50´P/8¦Bºñ.png,TRUE,FALSE,
-A10,A,CG,¾i¼Ö¦hºñ,¾i¼Ö¦hºñ¦n³Ü±À±À,50´P/¾i¼Ö¦hºñ.png,TRUE,FALSE,
-A11,A,CB,¦B²N²O¬õ¯ù,¦B²N²O¬õ¯ù¦n³Ü±À±À,50´P/¦B²N²O¬õ¯ù.png,TRUE,FALSE,
-A12,A,CG,ÂA¬cºñ,ÂA¬cºñ¦n³Ü±À±À,50´P/ÂA¬cºñ.png,TRUE,FALSE,
-A13,A,CF,ÂfÂc¥Ä,ÂfÂc¥Ä¦n³Ü±À±À,50´P/ÂfÂc¥Ä.png,TRUE,FALSE,
-A14,A,CF,ª÷®ÜÂfÂc,ª÷®ÜÂfÂc¦n³Ü±À±À,50´P/ª÷®ÜÂfÂc.png,TRUE,FALSE,
-A15,A,CF,ÂfÂc±ö¤l,ÂfÂc±ö¤l¦n³Ü±À±À,50´P/ÂfÂc±ö¤l.png,TRUE,FALSE,
-A16,A,CF,ÂfÂc¾i¼Ö¦h,ÂfÂc¾i¼Ö¦h¦n³Ü±À±À,50´P/ÂfÂc¾i¼Ö¦h.png,TRUE,FALSE,
-A17,A,CX,8¦B¯ù,8¦B¯ù¦n³Ü±À±À,50´P/8¦B¯ù.png,TRUE,FALSE,
-A18,A,CF,ÂA¬c¥Ä,ÂA¬c¥Ä¦n³Ü±À±À,50´P/ÂA¬c¥Ä.png,TRUE,FALSE,
-A19,A,CF,¸²µå¬c¦h¦h,¸²µå¬c¦h¦h¦n³Ü±À±À,50´P/¸²µå¬c¦h¦h.png,TRUE,FALSE,
-A20,A,CM,¥¤¯ù,¥¤¯ù¦n³Ü±À±À,50´P/¥¤¯ù.png,TRUE,FALSE,
-A21,A,CG,¥¤ºñ,¥¤ºñ¦n³Ü±À±À,50´P/¥¤ºñ.png,TRUE,FALSE,
-A22,A,CB,¬õ¯ùº¿©_¦·,¬õ¯ùº¿©_¦·¦n³Ü±À±À,50´P/¬õ¯ùº¿©_¦·.png,TRUE,FALSE,
-A23,A,CM,¶Àª÷¯QÀs¥¤¯ù,¶Àª÷¯QÀs¥¤¯ù¦n³Ü±À±À,50´P/¶Àª÷¯QÀs¥¤¯ù.png,TRUE,FALSE,
-A24,A,CM,¥|©u¥¤«C,¥|©u¥¤«C¦n³Ü±À±À,50´P/¥|©u¥¤«C.png,TRUE,FALSE,
-A25,A,CX,ªüµØ¥Ð,ªüµØ¥Ð¦n³Ü±À±À,50´P/ªüµØ¥Ð.png,TRUE,FALSE,
-A26,A,CX,¥i¥iªÝÁ¢,¥i¥iªÝÁ¢¦n³Ü±À±À,50´P/¥i¥iªÝÁ¢.png,TRUE,FALSE,
-A27,A,CG,ªiÅQ ¬õ/ºñ/«C/¯Q,ªiÅQ ¬õ/ºñ/«C/¯Q¦n³Ü±À±À,50´P/ªiÅQ ¬õ/ºñ/«C/¯Q.png,TRUE,FALSE,
-A28,A,CM,ªiÅQ¥¤¯ù(¤jÁû),ªiÅQ¥¤¯ù(¤jÁû)¦n³Ü±À±À,50´P/ªiÅQ¥¤¯ù(¤jÁû).png,TRUE,FALSE,
-A29,A,CG,ªiÅQ¥¤ºñ(¤jÁû),ªiÅQ¥¤ºñ(¤jÁû)¦n³Ü±À±À,50´P/ªiÅQ¥¤ºñ(¤jÁû).png,TRUE,FALSE,
-A30,A,CG,¬Ã¯] ¬õ/ºñ/«C/¯Q,¬Ã¯] ¬õ/ºñ/«C/¯Q¦n³Ü±À±À,50´P/¬Ã¯] ¬õ/ºñ/«C/¯Q.png,TRUE,FALSE,
-A31,A,CM,¬Ã¯]¥¤¯ù(¤pÁû),¬Ã¯]¥¤¯ù(¤pÁû)¦n³Ü±À±À,50´P/¬Ã¯]¥¤¯ù(¤pÁû).png,TRUE,FALSE,
-A32,A,CG,¬Ã¯]¥¤ºñ(¤pÁû),¬Ã¯]¥¤ºñ(¤pÁû)¦n³Ü±À±À,50´P/¬Ã¯]¥¤ºñ(¤pÁû).png,TRUE,FALSE,
-A33,A,CM,·¦ªG¥¤¯ù,·¦ªG¥¤¯ù¦n³Ü±À±À,50´P/·¦ªG¥¤¯ù.png,TRUE,FALSE,
-A34,A,CM,¥P¯ó¥¤­á,¥P¯ó¥¤­á¦n³Ü±À±À,50´P/¥P¯ó¥¤­á.png,TRUE,FALSE,
-A35,A,CF,ÂA¬c¥Ä(©u¸`­­©w),ÂA¬c¥Ä(©u¸`­­©w)¦n³Ü±À±À,50´P/ÂA¬c¥Ä(©u¸`­­©w).png,TRUE,FALSE,
-A36,A,CM,¬õ¯ù®³ÅK,¬õ¯ù®³ÅK¦n³Ü±À±À,50´P/¬õ¯ù®³ÅK.png,TRUE,FALSE,
-A37,A,CM,ºñ¯ù®³ÅK,ºñ¯ù®³ÅK¦n³Ü±À±À,50´P/ºñ¯ù®³ÅK.png,TRUE,FALSE,
-A38,A,CM,¶Àª÷¯QÀs®³ÅK,¶Àª÷¯QÀs®³ÅK¦n³Ü±À±À,50´P/¶Àª÷¯QÀs®³ÅK.png,TRUE,FALSE,
-A39,A,CM,ªüµØ¥Ð®³ÅK,ªüµØ¥Ð®³ÅK¦n³Ü±À±À,50´P/ªüµØ¥Ð®³ÅK.png,TRUE,FALSE,
-A40,A,CM,¥i¥iªÝÁ¢®³ÅK,¥i¥iªÝÁ¢®³ÅK¦n³Ü±À±À,50´P/¥i¥iªÝÁ¢®³ÅK.png,TRUE,FALSE,
-B01,B,CM,ªüÂÄ©i¥¤¯ù,ªüÂÄ©i¥¤¯ù¦n³Ü±À±À,CoCo/ªüÂÄ©i¥¤¯ù.png,TRUE,FALSE,
-B02,B,CM,¬Ã¯]¥¤¯ù,¬Ã¯]¥¤¯ù¦n³Ü±À±À,CoCo/¬Ã¯]¥¤¯ù.png,TRUE,FALSE,
-B03,B,CM,¥¤¯ùÂù­««µ,¥¤¯ùÂù­««µ¦n³Ü±À±À,CoCo/¥¤¯ùÂù­««µ.png,TRUE,FALSE,
-B04,B,CM,¥¬¤B¥¤¯ù,¥¬¤B¥¤¯ù¦n³Ü±À±À,CoCo/¥¬¤B¥¤¯ù.png,TRUE,FALSE,
-B05,B,CM,¨¡ÀY¥¤¯ù,¨¡ÀY¥¤¯ù¦n³Ü±À±À,CoCo/¨¡ÀY¥¤¯ù.png,TRUE,FALSE,
-B06,B,CM,­[­»¥¤¯ù,­[­»¥¤¯ù¦n³Ü±À±À,CoCo/­[­»¥¤¯ù.png,TRUE,FALSE,
-B07,B,CF,ÂAº^Ä«ªG¦Ê­»,ÂAº^Ä«ªG¦Ê­»¦n³Ü±À±À,CoCo/ÂAº^Ä«ªG¦Ê­».png,TRUE,FALSE,
-B08,B,CF,ÂAº^Ä«ªG¾i¼Ö¦h,ÂAº^Ä«ªG¾i¼Ö¦h¦n³Ü±À±À,CoCo/ÂAº^Ä«ªG¾i¼Ö¦h.png,TRUE,FALSE,
-B09,B,CF,ÂA¸²µå¬c¦B¯ù,ÂA¸²µå¬c¦B¯ù¦n³Ü±À±À,CoCo/ÂA¸²µå¬c¦B¯ù.png,TRUE,FALSE,
-B10,B,CF,ÂA­»¾í¦B¯ù,ÂA­»¾í¦B¯ù¦n³Ü±À±À,CoCo/ÂA­»¾í¦B¯ù.png,TRUE,FALSE,
-B11,B,CF,ÂA¾í¬c¦B¯ù,ÂA¾í¬c¦B¯ù¦n³Ü±À±À,CoCo/ÂA¾í¬c¦B¯ù.png,TRUE,FALSE,
-B12,B,CF,ÂAº^¬h¾í¾i¼Ö¦h,ÂAº^¬h¾í¾i¼Ö¦h¦n³Ü±À±À,CoCo/ÂAº^¬h¾í¾i¼Ö¦h.png,TRUE,FALSE,
-B13,B,CG,ªk¦¡¥¤Á÷¬õ/ºñ¯ù,ªk¦¡¥¤Á÷¬õ/ºñ¯ù¦n³Ü±À±À,CoCo/ªk¦¡¥¤Á÷¬õ/ºñ¯ù.png,TRUE,FALSE,
-B14,B,CM,¬õ¯ù®³ÅK,¬õ¯ù®³ÅK¦n³Ü±À±À,CoCo/¬õ¯ù®³ÅK.png,TRUE,FALSE,
-B15,B,CM,¬Ã¯]¬õ¯ù®³ÅK,¬Ã¯]¬õ¯ù®³ÅK¦n³Ü±À±À,CoCo/¬Ã¯]¬õ¯ù®³ÅK.png,TRUE,FALSE,
-B16,B,CM,«n«D°êÄ_®³ÅK,«n«D°êÄ_®³ÅK¦n³Ü±À±À,CoCo/«n«D°êÄ_®³ÅK.png,TRUE,FALSE,
-B17,B,CM,¨¡ÀY¤û¥¤,¨¡ÀY¤û¥¤¦n³Ü±À±À,CoCo/¨¡ÀY¤û¥¤.png,TRUE,FALSE,
-B18,B,CM,¤û¥¤Âù­««µ,¤û¥¤Âù­««µ¦n³Ü±À±À,CoCo/¤û¥¤Âù­««µ.png,TRUE,FALSE,
-B19,B,CX,©ÛµP©@°Ø,©ÛµP©@°Ø¦n³Ü±À±À,CoCo/©ÛµP©@°Ø.png,TRUE,FALSE,
-B20,B,CM,¥©§J¤O¥¤¯ù,¥©§J¤O¥¤¯ù¦n³Ü±À±À,CoCo/¥©§J¤O¥¤¯ù.png,TRUE,FALSE,
-B21,B,CM,¥©§J¤O¬Ã¯]¥¤¯ù,¥©§J¤O¬Ã¯]¥¤¯ù¦n³Ü±À±À,CoCo/¥©§J¤O¬Ã¯]¥¤¯ù.png,TRUE,FALSE,
-B22,B,CG,¾J«~ºñ¯ù,¾J«~ºñ¯ù¦n³Ü±À±À,CoCo/¾J«~ºñ¯ù.png,TRUE,FALSE,
-B23,B,CB,²ø¶é¬õ¯ù,²ø¶é¬õ¯ù¦n³Ü±À±À,CoCo/²ø¶é¬õ¯ù.png,TRUE,FALSE,
-B24,B,CX,¥xÆW¥]ºØ¯ù,¥xÆW¥]ºØ¯ù¦n³Ü±À±À,CoCo/¥xÆW¥]ºØ¯ù.png,TRUE,FALSE,
-B25,B,CX,ëL³Á¥]ºØ¯ù,ëL³Á¥]ºØ¯ù¦n³Ü±À±À,CoCo/ëL³Á¥]ºØ¯ù.png,TRUE,FALSE,
-B26,B,CX,ÂfÂc¥]ºØ¯ù,ÂfÂc¥]ºØ¯ù¦n³Ü±À±À,CoCo/ÂfÂc¥]ºØ¯ù.png,TRUE,FALSE,
-B27,B,CX,«n«D°êÄ_¯ù,«n«D°êÄ_¯ù¦n³Ü±À±À,CoCo/«n«D°êÄ_¯ù.png,TRUE,FALSE,
-B28,B,CG,ºñ¯ù¾i¼Ö¦h,ºñ¯ù¾i¼Ö¦h¦n³Ü±À±À,CoCo/ºñ¯ù¾i¼Ö¦h.png,TRUE,FALSE,
-B29,B,CF,ÂfÂc¾i¼Ö¦h,ÂfÂc¾i¼Ö¦h¦n³Ü±À±À,CoCo/ÂfÂc¾i¼Ö¦h.png,TRUE,FALSE,
-B30,B,CG,¦Ê­»ºñ¯ù,¦Ê­»ºñ¯ù¦n³Ü±À±À,CoCo/¦Ê­»ºñ¯ù.png,TRUE,FALSE,
-B31,B,CG,ÂAÂfÂc¬õ/ºñ¯ù,ÂAÂfÂc¬õ/ºñ¯ù¦n³Ü±À±À,CoCo/ÂAÂfÂc¬õ/ºñ¯ù.png,TRUE,FALSE,
-B32,B,CF,«n«D°êÄ_ÂfÂc¯ù,«n«D°êÄ_ÂfÂc¯ù¦n³Ü±À±À,CoCo/«n«D°êÄ_ÂfÂc¯ù.png,TRUE,FALSE,
-B33,B,CF,ª÷®ÜÂfÂc,ª÷®ÜÂfÂc¦n³Ü±À±À,CoCo/ª÷®ÜÂfÂc.png,TRUE,FALSE,
-B34,B,CF,¦Ê­»ªGÂùÅT¬¶,¦Ê­»ªGÂùÅT¬¶¦n³Ü±À±À,CoCo/¦Ê­»ªGÂùÅT¬¶.png,TRUE,FALSE,
-B35,B,CF,²ø¶éªG¯ù,²ø¶éªG¯ù¦n³Ü±À±À,CoCo/²ø¶éªG¯ù.png,TRUE,FALSE,
-C01,C,CO,­[²ú¯QÀs,­[²ú¯QÀs¦n³Ü±À±À,comebuy/­[²ú¯QÀs.png,TRUE,TRUE,
-C02,C,CX,ºÑÁ³¬K,ºÑÁ³¬K¦n³Ü±À±À,comebuy/ºÑÁ³¬K.png,TRUE,TRUE,
-C03,C,CX,¥|©u¬K,¥|©u¬K¦n³Ü±À±À,comebuy/¥|©u¬K.png,TRUE,TRUE,
-C04,C,CG,¯QÀsºñ¯ù,¯QÀsºñ¯ù¦n³Ü±À±À,comebuy/¯QÀsºñ¯ù.png,TRUE,TRUE,
-C05,C,CB,´µ¶qÄõ¥d¯Q¥Ë¬õ¯ù,´µ¶qÄõ¥d¯Q¥Ë¬õ¯ù¦n³Ü±À±À,comebuy/´µ¶qÄõ¥d¯Q¥Ë¬õ¯ù.png,TRUE,TRUE,
-C06,C,CX,®ü¯«,®ü¯«¦n³Ü±À±À,comebuy/®ü¯«.png,TRUE,TRUE,
-C07,C,CX,ª÷¸©¯ù,ª÷¸©¯ù¦n³Ü±À±À,comebuy/ª÷¸©¯ù.png,TRUE,TRUE,
-C08,C,CX,¼ô·ÉÆ[­µ,¼ô·ÉÆ[­µ¦n³Ü±À±À,comebuy/¼ô·ÉÆ[­µ.png,TRUE,TRUE,
-C09,C,CX,¤å¤s¥]ºØ,¤å¤s¥]ºØ¦n³Ü±À±À,comebuy/¤å¤s¥]ºØ.png,TRUE,TRUE,
-C10,C,CX,ªF¤è¬ü¤H,ªF¤è¬ü¤H¦n³Ü±À±À,comebuy/ªF¤è¬ü¤H.png,TRUE,TRUE,
-C11,C,CO,¥Õ®ç±K¯QÀs,¥Õ®ç±K¯QÀs¦n³Ü±À±À,comebuy/¥Õ®ç±K¯QÀs.png,TRUE,TRUE,
-C12,C,CB,¸¨¯«»e­»¬õ¯ù,¸¨¯«»e­»¬õ¯ù¦n³Ü±À±À,comebuy/¸¨¯«»e­»¬õ¯ù.png,TRUE,TRUE,
-C13,C,CX,®Ûªá¥|©u¬K¯ù,®Ûªá¥|©u¬K¯ù¦n³Ü±À±À,comebuy/®Ûªá¥|©u¬K¯ù.png,TRUE,TRUE,
-C14,C,CF,¬a¾ï¤j¦NÀ­,¬a¾ï¤j¦NÀ­¦n³Ü±À±À,comebuy/¬a¾ï¤j¦NÀ­.png,TRUE,FALSE,
-C15,C,CF,¬a¾ïª÷¸©,¬a¾ïª÷¸©¦n³Ü±À±À,comebuy/¬a¾ïª÷¸©.png,TRUE,FALSE,
-C16,C,CM,¬õ¯ù®³ÅK,¬õ¯ù®³ÅK¦n³Ü±À±À,comebuy/¬õ¯ù®³ÅK.png,TRUE,TRUE,
-C17,C,CM,¯QÀs®³ÅK,¯QÀs®³ÅK¦n³Ü±À±À,comebuy/¯QÀs®³ÅK.png,TRUE,TRUE,
-C18,C,CM,¥|©u¬K®³ÅK,¥|©u¬K®³ÅK¦n³Ü±À±À,comebuy/¥|©u¬K®³ÅK.png,TRUE,TRUE,
-C19,C,CM,ª÷¸©®³ÅK,ª÷¸©®³ÅK¦n³Ü±À±À,comebuy/ª÷¸©®³ÅK.png,TRUE,TRUE,
-C20,C,CM,Æ[­µ®³ÅK,Æ[­µ®³ÅK¦n³Ü±À±À,comebuy/Æ[­µ®³ÅK.png,TRUE,TRUE,
-C21,C,CM,©ÛµP¥¤¯ù,©ÛµP¥¤¯ù¦n³Ü±À±À,comebuy/©ÛµP¥¤¯ù.png,TRUE,TRUE,
-C22,C,CM,¶Àª÷¥¤¯ù,¶Àª÷¥¤¯ù¦n³Ü±À±À,comebuy/¶Àª÷¥¤¯ù.png,TRUE,TRUE,
-C23,C,CM,¬Ã¯]¥¤¯ù,¬Ã¯]¥¤¯ù¦n³Ü±À±À,comebuy/¬Ã¯]¥¤¯ù.png,TRUE,TRUE,
-C24,C,CM,®ü¯«¥¤¯ù,®ü¯«¥¤¯ù¦n³Ü±À±À,comebuy/®ü¯«¥¤¯ù.png,TRUE,TRUE,
-C25,C,CM,µ´¥NÂùQ¥¤¯ù,µ´¥NÂùQ¥¤¯ù¦n³Ü±À±À,comebuy/µ´¥NÂùQ¥¤¯ù.png,TRUE,TRUE,
-C26,C,CM,¥P¯ó­á¥¤¯ù,¥P¯ó­á¥¤¯ù¦n³Ü±À±À,comebuy/¥P¯ó­á¥¤¯ù.png,TRUE,TRUE,
-C27,C,CM,´ä¦¡«p¥¤,´ä¦¡«p¥¤¦n³Ü±À±À,comebuy/´ä¦¡«p¥¤.png,TRUE,TRUE,
-C28,C,CX,¸g¨å¥i¥i,¸g¨å¥i¥i¦n³Ü±À±À,comebuy/¸g¨å¥i¥i.png,TRUE,TRUE,
-C29,C,CX,®Û¶ê¬õ´Ç,®Û¶ê¬õ´Ç¦n³Ü±À±À,comebuy/®Û¶ê¬õ´Ç.png,FALSE,TRUE,
-C30,C,CX,·xÁ¤¯ù,·xÁ¤¯ù¦n³Ü±À±À,comebuy/·xÁ¤¯ù.png,FALSE,TRUE,
-C31,C,CM,·xÁ¤¥¤¯ù,·xÁ¤¥¤¯ù¦n³Ü±À±À,comebuy/·xÁ¤¥¤¯ù.png,FALSE,TRUE,
-C32,C,CX,¼öÂf¯ù,¼öÂf¯ù¦n³Ü±À±À,comebuy/¼öÂf¯ù.png,TRUE,TRUE,
-C33,C,CX,¼ö®Ü¯ù,¼ö®Ü¯ù¦n³Ü±À±À,comebuy/¼ö®Ü¯ù.png,TRUE,TRUE,
-C34,C,CX,¶Â¿}Á¤¥Ä¥i¥i,¶Â¿}Á¤¥Ä¥i¥i¦n³Ü±À±À,comebuy/¶Â¿}Á¤¥Ä¥i¥i.png,FALSE,TRUE,
-C35,C,CX,µµ¦Ì¥i¥i,µµ¦Ì¥i¥i¦n³Ü±À±À,comebuy/µµ¦Ì¥i¥i.png,TRUE,TRUE,
-C36,C,CM,µµ¦Ì¥¤¯ù,µµ¦Ì¥¤¯ù¦n³Ü±À±À,comebuy/µµ¦Ì¥¤¯ù.png,TRUE,TRUE,
-C37,C,CG,¦tªv©Ù¯ù,¦tªv©Ù¯ù¦n³Ü±À±À,comebuy/¦tªv©Ù¯ù.png,TRUE,TRUE,
-C38,C,CM,©Ù¯ù®³ÅK,©Ù¯ù®³ÅK¦n³Ü±À±À,comebuy/©Ù¯ù®³ÅK.png,TRUE,TRUE,
-C39,C,CX,¯S½Õ©@°Ø,¯S½Õ©@°Ø¦n³Ü±À±À,comebuy/¯S½Õ©@°Ø.png,TRUE,TRUE,
-C40,C,CB,¿üÄõ¬õ¯ù,¿üÄõ¬õ¯ù¦n³Ü±À±À,comebuy/¿üÄõ¬õ¯ù.png,TRUE,TRUE,
-C41,C,CG,­[²úºñ¯ù,­[²úºñ¯ù¦n³Ü±À±À,comebuy/­[²úºñ¯ù.png,TRUE,TRUE,
-C42,C,CG,¸Á»e¬õ/ºñ¯ù,¸Á»e¬õ/ºñ¯ù¦n³Ü±À±À,comebuy/¸Á»e¬õ/ºñ¯ù.png,TRUE,FALSE,
-C43,C,CG,¥É²ü¦Bºñ,¥É²ü¦Bºñ¦n³Ü±À±À,comebuy/¥É²ü¦Bºñ.png,TRUE,FALSE,
-C44,C,CF,ÂfÂc¦B¯ù,ÂfÂc¦B¯ù¦n³Ü±À±À,comebuy/ÂfÂc¦B¯ù.png,TRUE,TRUE,
-C45,C,CF,±öªG¯ù,±öªG¯ù¦n³Ü±À±À,comebuy/±öªG¯ù.png,TRUE,TRUE,
-C46,C,CG,¾i¼Ö¦hºñ¯ù,¾i¼Ö¦hºñ¯ù¦n³Ü±À±À,comebuy/¾i¼Ö¦hºñ¯ù.png,TRUE,FALSE,
-C47,C,CF,¦Ê­»º½ªG¼Ö,¦Ê­»º½ªG¼Ö¦n³Ü±À±À,comebuy/¦Ê­»º½ªG¼Ö.png,TRUE,FALSE,
-C48,C,CF,Ä«ªG¦B¯ù,Ä«ªG¦B¯ù¦n³Ü±À±À,comebuy/Ä«ªG¦B¯ù.png,TRUE,FALSE,
-C49,C,CG,¸²µå¬cºñ¯ù,¸²µå¬cºñ¯ù¦n³Ü±À±À,comebuy/¸²µå¬cºñ¯ù.png,TRUE,FALSE,
-C50,C,CF,»ñ±ù¦B¯ù,»ñ±ù¦B¯ù¦n³Ü±À±À,comebuy/»ñ±ù¦B¯ù.png,TRUE,FALSE,
-C51,C,CG,ªÝCÂfÂcºñ,ªÝCÂfÂcºñ¦n³Ü±À±À,comebuy/ªÝCÂfÂcºñ.png,TRUE,FALSE,
-C52,C,CF,¶W®ÜÅQ®ð¶¼,¶W®ÜÅQ®ð¶¼¦n³Ü±À±À,comebuy/¶W®ÜÅQ®ð¶¼.png,TRUE,TRUE,
-C53,C,CX,¸Á»eÄªîP,¸Á»eÄªîP¦n³Ü±À±À,comebuy/¸Á»eÄªîP.png,TRUE,FALSE,
-C54,C,CF,ª÷®ÜÂfÂc,ª÷®ÜÂfÂc¦n³Ü±À±À,comebuy/ª÷®ÜÂfÂc.png,TRUE,TRUE,
-C55,C,CX,¯ïªK¥ÉÅS,¯ïªK¥ÉÅS¦n³Ü±À±À,comebuy/¯ïªK¥ÉÅS.png,TRUE,FALSE,
-C56,C,CX,ÅÖ¬ü¤pµµÄ¬,ÅÖ¬ü¤pµµÄ¬¦n³Ü±À±À,comebuy/ÅÖ¬ü¤pµµÄ¬.png,TRUE,FALSE,
-C57,C,CF,ªÝCÂfÂc¦h¦h,ªÝCÂfÂc¦h¦h¦n³Ü±À±À,comebuy/ªÝCÂfÂc¦h¦h.png,TRUE,FALSE,
-C58,C,CF,ÂfÂc·R¥É,ÂfÂc·R¥É¦n³Ü±À±À,comebuy/ÂfÂc·R¥É.png,TRUE,FALSE,
-C59,C,CF,¦Ê­»ªG¦B¨F,¦Ê­»ªG¦B¨F¦n³Ü±À±À,comebuy/¦Ê­»ªG¦B¨F.png,TRUE,FALSE,
-C60,C,CX,¤C¥©¼ÚÁ¢,¤C¥©¼ÚÁ¢¦n³Ü±À±À,comebuy/¤C¥©¼ÚÁ¢.png,TRUE,FALSE,
-C61,C,CF,ª÷¨~ªGÀu¹T,ª÷¨~ªGÀu¹T¦n³Ü±À±À,comebuy/ª÷¨~ªGÀu¹T.png,TRUE,FALSE,
-C62,C,CF,«CÂf­»¬cQQ,«CÂf­»¬cQQ¦n³Ü±À±À,comebuy/«CÂf­»¬cQQ.png,TRUE,FALSE,
-D01,D,CM,§BÀï¬õ¯ù®³ÅK,§BÀï¬õ¯ù®³ÅK¦n³Ü±À±À,°g«È®L/§BÀï¬õ¯ù®³ÅK.png,TRUE,TRUE,
-D02,D,CM,¬Ã¯]¬õ¯ù®³ÅK,¬Ã¯]¬õ¯ù®³ÅK¦n³Ü±À±À,°g«È®L/¬Ã¯]¬õ¯ù®³ÅK.png,TRUE,TRUE,
-D03,D,CM,¥¬¤B¬õ¯ù®³ÅK,¥¬¤B¬õ¯ù®³ÅK¦n³Ü±À±À,°g«È®L/¥¬¤B¬õ¯ù®³ÅK.png,TRUE,TRUE,
-D04,D,CM,¥P¯ó­á¬õ¯ù®³ÅK,¥P¯ó­á¬õ¯ù®³ÅK¦n³Ü±À±À,°g«È®L/¥P¯ó­á¬õ¯ù®³ÅK.png,TRUE,TRUE,
-D05,D,CM,¬õ¨§¬õ¯ù®³ÅK,¬õ¨§¬õ¯ù®³ÅK¦n³Ü±À±À,°g«È®L/¬õ¨§¬õ¯ù®³ÅK.png,TRUE,TRUE,
-D06,D,CG,­[­»ºñ¯ù,­[­»ºñ¯ù¦n³Ü±À±À,°g«È®L/­[­»ºñ¯ù.png,TRUE,TRUE,
-D07,D,CB,¤j¥¿¬õ¯ù,¤j¥¿¬õ¯ù¦n³Ü±À±À,°g«È®L/¤j¥¿¬õ¯ù.png,TRUE,TRUE,
-D08,D,CB,­^­Û§BÀï¬õ¯ù,­^­Û§BÀï¬õ¯ù¦n³Ü±À±À,°g«È®L/­^­Û§BÀï¬õ¯ù.png,TRUE,TRUE,
-D09,D,CR,ªìÅS«C¯ù,ªìÅS«C¯ù¦n³Ü±À±À,°g«È®L/ªìÅS«C¯ù.png,TRUE,TRUE,
-D10,D,CG,°ª®p¯QÀsºñ,°ª®p¯QÀsºñ¦n³Ü±À±À,°g«È®L/°ª®p¯QÀsºñ.png,TRUE,TRUE,
-D11,D,CX,¨M©ú¤j³Á,¨M©ú¤j³Á¦n³Ü±À±À,°g«È®L/¨M©ú¤j³Á.png,TRUE,TRUE,
-D12,D,CG,«C±Ä»A¥É,«C±Ä»A¥É¦n³Ü±À±À,°g«È®L/«C±Ä»A¥É.png,TRUE,FALSE,
-D13,D,CO,³À¨¦¶Àª÷¯QÀs,³À¨¦¶Àª÷¯QÀs¦n³Ü±À±À,°g«È®L/³À¨¦¶Àª÷¯QÀs.png,TRUE,FALSE,
-D14,D,CX,¤p¤sªïÅS,¤p¤sªïÅS¦n³Ü±À±À,°g«È®L/¤p¤sªïÅS.png,TRUE,FALSE,
-D15,D,CM,¬Ã¯]ÂA¥¤,¬Ã¯]ÂA¥¤¦n³Ü±À±À,°g«È®L/¬Ã¯]ÂA¥¤.png,TRUE,TRUE,
-D16,D,CM,¤â§Û¶Â¿}ÂA¥¤,¤â§Û¶Â¿}ÂA¥¤¦n³Ü±À±À,°g«È®L/¤â§Û¶Â¿}ÂA¥¤.png,TRUE,TRUE,
-D17,D,CM,¤j¥Ò¨¡ÀYÂA¥¤,¤j¥Ò¨¡ÀYÂA¥¤¦n³Ü±À±À,°g«È®L/¤j¥Ò¨¡ÀYÂA¥¤.png,TRUE,TRUE,
-D18,D,CM,¯ó²ùÂA¥¤,¯ó²ùÂA¥¤¦n³Ü±À±À,°g«È®L/¯ó²ùÂA¥¤.png,TRUE,FALSE,
-D19,D,CM,ªkªÜ®R¯Â¥i¥iÂA¥¤,ªkªÜ®R¯Â¥i¥iÂA¥¤¦n³Ü±À±À,°g«È®L/ªkªÜ®R¯Â¥i¥iÂA¥¤.png,TRUE,TRUE,
-D20,D,CM,¥V¥ÊÂA¥¤,¥V¥ÊÂA¥¤¦n³Ü±À±À,°g«È®L/¥V¥ÊÂA¥¤.png,TRUE,TRUE,
-D21,D,CM,¥X¶³©Ù¯ùÂA¥¤,¥X¶³©Ù¯ùÂA¥¤¦n³Ü±À±À,°g«È®L/¥X¶³©Ù¯ùÂA¥¤.png,TRUE,TRUE,
-D22,D,CM,¥¬¤BÂA¥¤,¥¬¤BÂA¥¤¦n³Ü±À±À,°g«È®L/¥¬¤BÂA¥¤.png,TRUE,TRUE,
-D23,D,CM,¥P¯ó­áÂA¥¤,¥P¯ó­áÂA¥¤¦n³Ü±À±À,°g«È®L/¥P¯ó­áÂA¥¤.png,TRUE,TRUE,
-D24,D,CM,¬õ¨§ÂA¥¤,¬õ¨§ÂA¥¤¦n³Ü±À±À,°g«È®L/¬õ¨§ÂA¥¤.png,TRUE,TRUE,
-D25,D,CM,ªÛ³ÂÂA¥¤,ªÛ³ÂÂA¥¤¦n³Ü±À±À,°g«È®L/ªÛ³ÂÂA¥¤.png,TRUE,TRUE,
-D26,D,CM,¬õ¨§ªÛ³ÂÂA¥¤,¬õ¨§ªÛ³ÂÂA¥¤¦n³Ü±À±À,°g«È®L/¬õ¨§ªÛ³ÂÂA¥¤.png,TRUE,TRUE,
-D27,D,CM,®Û¶êÂA¥¤,®Û¶êÂA¥¤¦n³Ü±À±À,°g«È®L/®Û¶êÂA¥¤.png,TRUE,TRUE,
-D28,D,CB,§BÀï¬õ¯ùÂA¨§¥¤¡]ºñ/¯Q/«C/³Á/¤j¥¿¡^,§BÀï¬õ¯ùÂA¨§¥¤¡]ºñ/¯Q/«C/³Á/¤j¥¿¡^¦n³Ü±À±À,°g«È®L/§BÀï¬õ¯ùÂA¨§¥¤¡]ºñ/¯Q/«C/³Á/¤j¥¿¡^.png,TRUE,TRUE,
-D29,D,CM,¬Ã¯]¥¤¯ùÂA¨§¥¤¡]¥¬¤B/¥P¯ó­á/¬õ¨§¡^,¬Ã¯]¥¤¯ùÂA¨§¥¤¡]¥¬¤B/¥P¯ó­á/¬õ¨§¡^¦n³Ü±À±À,°g«È®L/¬Ã¯]¥¤¯ùÂA¨§¥¤¡]¥¬¤B/¥P¯ó­á/¬õ¨§¡^.png,TRUE,TRUE,
-D30,D,CM,¥X¶³©Ù¯ùÂA¨§¥¤,¥X¶³©Ù¯ùÂA¨§¥¤¦n³Ü±À±À,°g«È®L/¥X¶³©Ù¯ùÂA¨§¥¤.png,TRUE,TRUE,
-D31,D,CM,¥V¥ÊÂA¨§¥¤,¥V¥ÊÂA¨§¥¤¦n³Ü±À±À,°g«È®L/¥V¥ÊÂA¨§¥¤.png,TRUE,TRUE,
-D32,D,CM,¥¬¤BÂA¨§¥¤,¥¬¤BÂA¨§¥¤¦n³Ü±À±À,°g«È®L/¥¬¤BÂA¨§¥¤.png,TRUE,TRUE,
-D33,D,CE,­ì¶m¥V¥Ê¯ù,­ì¶m¥V¥Ê¯ù¦n³Ü±À±À,°g«È®L/­ì¶m¥V¥Ê¯ù.png,TRUE,TRUE,
-D34,D,CE,¥V¥Ê«C¯ù,¥V¥Ê«C¯ù¦n³Ü±À±À,°g«È®L/¥V¥Ê«C¯ù.png,TRUE,TRUE,
-D35,D,CX,¸Á¹Aªá»e¯ù,¸Á¹Aªá»e¯ù¦n³Ü±À±À,°g«È®L/¸Á¹Aªá»e¯ù.png,TRUE,TRUE,
-D36,D,CX,¦B¿}¬¥¯«±ö,¦B¿}¬¥¯«±ö¦n³Ü±À±À,°g«È®L/¦B¿}¬¥¯«±ö.png,TRUE,TRUE,
-D37,D,CG,¾i¼Ö¦hºñ,¾i¼Ö¦hºñ¦n³Ü±À±À,°g«È®L/¾i¼Ö¦hºñ.png,TRUE,FALSE,
-D38,D,CX,¥Ì½©«C¯ù,¥Ì½©«C¯ù¦n³Ü±À±À,°g«È®L/¥Ì½©«C¯ù.png,TRUE,TRUE,
-D39,D,CG,­»¬cºñ¯ù,­»¬cºñ¯ù¦n³Ü±À±À,°g«È®L/­»¬cºñ¯ù.png,TRUE,FALSE,
-D40,D,CX,«CÂf­»¯ù,«CÂf­»¯ù¦n³Ü±À±À,°g«È®L/«CÂf­»¯ù.png,TRUE,FALSE,
-D41,D,CE,¥V¥ÊÂfÂc,¥V¥ÊÂfÂc¦n³Ü±À±À,°g«È®L/¥V¥ÊÂfÂc.png,TRUE,TRUE,
-D42,D,CF,ª÷®ÜÂfÂc,ª÷®ÜÂfÂc¦n³Ü±À±À,°g«È®L/ª÷®ÜÂfÂc.png,TRUE,TRUE,
-D43,D,CF,¦BµÑÂfÂc,¦BµÑÂfÂc¦n³Ü±À±À,°g«È®L/¦BµÑÂfÂc.png,TRUE,FALSE,
-D44,D,CF,¦BµÑ¬h¤B,¦BµÑ¬h¤B¦n³Ü±À±À,°g«È®L/¦BµÑ¬h¤B.png,TRUE,FALSE,
-D45,D,CG,¬h¤Bºñ¯ù¡]«C¡^,¬h¤Bºñ¯ù¡]«C¡^¦n³Ü±À±À,°g«È®L/¬h¤Bºñ¯ù¡]«C¡^.png,TRUE,FALSE,
-D46,D,CX,®Û¶ê¬õ´Ç¯ù,®Û¶ê¬õ´Ç¯ù¦n³Ü±À±À,°g«È®L/®Û¶ê¬õ´Ç¯ù.png,TRUE,TRUE,
-D47,D,CG,ªü¤åÂA±öºñ,ªü¤åÂA±öºñ¦n³Ü±À±À,°g«È®L/ªü¤åÂA±öºñ.png,TRUE,TRUE,
-E01,E,CM,Æ[­µ®³ÅK,Æ[­µ®³ÅK¦n³Ü±À±À,¯ù´ö·|/Æ[­µ®³ÅK.png,TRUE,FALSE,
-E02,E,CM,¬Ã¯]¬õ¨§®³ÅK,¬Ã¯]¬õ¨§®³ÅK¦n³Ü±À±À,¯ù´ö·|/¬Ã¯]¬õ¨§®³ÅK.png,TRUE,FALSE,
-E03,E,CF,»B»AÂfÂc,»B»AÂfÂc¦n³Ü±À±À,¯ù´ö·|/»B»AÂfÂc.png,TRUE,FALSE,
-E04,E,CM,¬Ã¯]¥¤¯ù,¬Ã¯]¥¤¯ù¦n³Ü±À±À,¯ù´ö·|/¬Ã¯]¥¤¯ù.png,TRUE,FALSE,
-E05,E,CF,·sÂA¤ôªG¯ù,·sÂA¤ôªG¯ù¦n³Ü±À±À,¯ù´ö·|/·sÂA¤ôªG¯ù.png,TRUE,FALSE,
-E06,E,CM,¨¡­»»B»A®³ÅK,¨¡­»»B»A®³ÅK¦n³Ü±À±À,¯ù´ö·|/¨¡­»»B»A®³ÅK.png,TRUE,FALSE,
-E07,E,CB,½©­»¬õ¯ù,½©­»¬õ¯ù¦n³Ü±À±À,¯ù´ö·|/½©­»¬õ¯ù.png,TRUE,FALSE,
-E08,E,CG,­[­»ºñ¯ù,­[­»ºñ¯ù¦n³Ü±À±À,¯ù´ö·|/­[­»ºñ¯ù.png,TRUE,FALSE,
-E09,E,CG,¯S¯Å»B»Aºñ,¯S¯Å»B»Aºñ¦n³Ü±À±À,¯ù´ö·|/¯S¯Å»B»Aºñ.png,TRUE,FALSE,
-E10,E,CX,¬´¿NÅKÆ[­µ,¬´¿NÅKÆ[­µ¦n³Ü±À±À,¯ù´ö·|/¬´¿NÅKÆ[­µ.png,TRUE,FALSE,
-E11,E,CB,¬Ã¯]¬õ¯ù,¬Ã¯]¬õ¯ù¦n³Ü±À±À,¯ù´ö·|/¬Ã¯]¬õ¯ù.png,TRUE,FALSE,
-E12,E,CR,¥]ºØ²M¯ù,¥]ºØ²M¯ù¦n³Ü±À±À,¯ù´ö·|/¥]ºØ²M¯ù.png,TRUE,FALSE,
-E13,E,CG,¬Ã¯]ºñ¯ù,¬Ã¯]ºñ¯ù¦n³Ü±À±À,¯ù´ö·|/¬Ã¯]ºñ¯ù.png,TRUE,FALSE,
-E14,E,CB,¨§¼ß¬õ¯ù,¨§¼ß¬õ¯ù¦n³Ü±À±À,¯ù´ö·|/¨§¼ß¬õ¯ù.png,TRUE,FALSE,
-E15,E,CX,«C±ö­á¶¼,«C±ö­á¶¼¦n³Ü±À±À,¯ù´ö·|/«C±ö­á¶¼.png,TRUE,FALSE,
-E16,E,CE,¥V¥ÊÅKÆ[­µ,¥V¥ÊÅKÆ[­µ¦n³Ü±À±À,¯ù´ö·|/¥V¥ÊÅKÆ[­µ.png,TRUE,FALSE,
-E17,E,CR,»e­»²M¯ù,»e­»²M¯ù¦n³Ü±À±À,¯ù´ö·|/»e­»²M¯ù.png,TRUE,FALSE,
-E18,E,CE,¬Ã¯]¥V¥ÊÆ[­µ,¬Ã¯]¥V¥ÊÆ[­µ¦n³Ü±À±À,¯ù´ö·|/¬Ã¯]¥V¥ÊÆ[­µ.png,TRUE,FALSE,
-E19,E,CG,¸Á»eºñ¯ù,¸Á»eºñ¯ù¦n³Ü±À±À,¯ù´ö·|/¸Á»eºñ¯ù.png,TRUE,FALSE,
-E20,E,CG,¦Ê­»ºñ¯ù,¦Ê­»ºñ¯ù¦n³Ü±À±À,¯ù´ö·|/¦Ê­»ºñ¯ù.png,TRUE,FALSE,
-E21,E,CM,¨§¼ß¥¤¯ù,¨§¼ß¥¤¯ù¦n³Ü±À±À,¯ù´ö·|/¨§¼ß¥¤¯ù.png,TRUE,FALSE,
-E22,E,CM,½©­»¥¤¯ù,½©­»¥¤¯ù¦n³Ü±À±À,¯ù´ö·|/½©­»¥¤¯ù.png,TRUE,FALSE,
-E23,E,CM,­[­»¥¤¯ù,­[­»¥¤¯ù¦n³Ü±À±À,¯ù´ö·|/­[­»¥¤¯ù.png,TRUE,FALSE,
-E24,E,CM,ÅKÆ[­µ¥¤¯ù,ÅKÆ[­µ¥¤¯ù¦n³Ü±À±À,¯ù´ö·|/ÅKÆ[­µ¥¤¯ù.png,TRUE,FALSE,
-E25,E,CG,¬Ã¯]¥¤ºñ,¬Ã¯]¥¤ºñ¦n³Ü±À±À,¯ù´ö·|/¬Ã¯]¥¤ºñ.png,TRUE,FALSE,
-E26,E,CM,ªiÅQ¥¤¯ù,ªiÅQ¥¤¯ù¦n³Ü±À±À,¯ù´ö·|/ªiÅQ¥¤¯ù.png,TRUE,FALSE,
-E27,E,CM,Æ[­µªiÅQ¥¤¯ù,Æ[­µªiÅQ¥¤¯ù¦n³Ü±À±À,¯ù´ö·|/Æ[­µªiÅQ¥¤¯ù.png,TRUE,FALSE,
-E28,E,CM,¨§¼ßªiÅQ¥¤¯ù,¨§¼ßªiÅQ¥¤¯ù¦n³Ü±À±À,¯ù´ö·|/¨§¼ßªiÅQ¥¤¯ù.png,TRUE,FALSE,
-E29,E,CM,°íªGªiÅQ¥¤¯ù,°íªGªiÅQ¥¤¯ù¦n³Ü±À±À,¯ù´ö·|/°íªGªiÅQ¥¤¯ù.png,FALSE,TRUE,
-E30,E,CB,ÂfÂc¬õ¯ù,ÂfÂc¬õ¯ù¦n³Ü±À±À,¯ù´ö·|/ÂfÂc¬õ¯ù.png,TRUE,FALSE,
-E31,E,CE,¥V¥ÊÂfÂc,¥V¥ÊÂfÂc¦n³Ü±À±À,¯ù´ö·|/¥V¥ÊÂfÂc.png,TRUE,FALSE,
-E32,E,CF,ÂfÂc»e¯ù,ÂfÂc»e¯ù¦n³Ü±À±À,¯ù´ö·|/ÂfÂc»e¯ù.png,TRUE,FALSE,
-E33,E,CF,ÂA®ÜÂfÂc,ÂA®ÜÂfÂc¦n³Ü±À±À,¯ù´ö·|/ÂA®ÜÂfÂc.png,TRUE,FALSE,
-E34,E,CM,¥V¥Ê®³ÅK,¥V¥Ê®³ÅK¦n³Ü±À±À,¯ù´ö·|/¥V¥Ê®³ÅK.png,TRUE,FALSE,
-E35,E,CM,©Ù¯ù®³ÅK,©Ù¯ù®³ÅK¦n³Ü±À±À,¯ù´ö·|/©Ù¯ù®³ÅK.png,TRUE,FALSE,
-E36,E,CM,©Ù¯ù¬õ¨§®³ÅK,©Ù¯ù¬õ¨§®³ÅK¦n³Ü±À±À,¯ù´ö·|/©Ù¯ù¬õ¨§®³ÅK.png,TRUE,FALSE,
-E37,E,CM,¬õ¯ù®³ÅK,¬õ¯ù®³ÅK¦n³Ü±À±À,¯ù´ö·|/¬õ¯ù®³ÅK.png,TRUE,FALSE,
-E38,E,CM,»B»A®³ÅK,»B»A®³ÅK¦n³Ü±À±À,¯ù´ö·|/»B»A®³ÅK.png,TRUE,FALSE,
-E39,E,CM,¬õ¨§®³ÅK,¬õ¨§®³ÅK¦n³Ü±À±À,¯ù´ö·|/¬õ¨§®³ÅK.png,TRUE,FALSE,
-E40,E,CM,¨¡­»¬õ¯ù®³ÅK,¨¡­»¬õ¯ù®³ÅK¦n³Ü±À±À,¯ù´ö·|/¨¡­»¬õ¯ù®³ÅK.png,TRUE,FALSE,
-E41,E,CM,¬õ¨§¬Ã¯]®³ÅK,¬õ¨§¬Ã¯]®³ÅK¦n³Ü±À±À,¯ù´ö·|/¬õ¨§¬Ã¯]®³ÅK.png,TRUE,FALSE,
-E42,E,CM,»B»A¬Ã¯]®³ÅK,»B»A¬Ã¯]®³ÅK¦n³Ü±À±À,¯ù´ö·|/»B»A¬Ã¯]®³ÅK.png,TRUE,FALSE,
-E43,E,CM,Æ[­µ¬Ã¯]®³ÅK,Æ[­µ¬Ã¯]®³ÅK¦n³Ü±À±À,¯ù´ö·|/Æ[­µ¬Ã¯]®³ÅK.png,TRUE,FALSE,
-E44,E,CG,·R¤å¨~ªGºñ,·R¤å¨~ªGºñ¦n³Ü±À±À,¯ù´ö·|/·R¤å¨~ªGºñ.png,TRUE,FALSE,
-E45,E,CX,®áß¸­á¶¼¯ù,®áß¸­á¶¼¯ù¦n³Ü±À±À,¯ù´ö·|/®áß¸­á¶¼¯ù.png,TRUE,FALSE,
-E46,E,CF,·R¤å¨~ªG¦BÆp,·R¤å¨~ªG¦BÆp¦n³Ü±À±À,¯ù´ö·|/·R¤å¨~ªG¦BÆp.png,TRUE,FALSE,
-E47,E,CM,·R¤å¨~ªG®³ÅK,·R¤å¨~ªG®³ÅK¦n³Ü±À±À,¯ù´ö·|/·R¤å¨~ªG®³ÅK.png,TRUE,FALSE,
-E48,E,CX,­ì¨ýÁ¤¯ù,­ì¨ýÁ¤¯ù¦n³Ü±À±À,¯ù´ö·|/­ì¨ýÁ¤¯ù.png,FALSE,TRUE,
-E49,E,CM,Á¤¥Ä¥¤¯ù,Á¤¥Ä¥¤¯ù¦n³Ü±À±À,¯ù´ö·|/Á¤¥Ä¥¤¯ù.png,FALSE,TRUE,
-E50,E,CM,°íªG¥¤¯ù,°íªG¥¤¯ù¦n³Ü±À±À,¯ù´ö·|/°íªG¥¤¯ù.png,FALSE,TRUE,
-E51,E,CX,Á¤¥Ä®Û¶ê,Á¤¥Ä®Û¶ê¦n³Ü±À±À,¯ù´ö·|/Á¤¥Ä®Û¶ê.png,FALSE,TRUE,
-E52,E,CX,®Û¶ê¬õ´Ç¯ù,®Û¶ê¬õ´Ç¯ù¦n³Ü±À±À,¯ù´ö·|/®Û¶ê¬õ´Ç¯ù.png,FALSE,TRUE,
-E53,E,CM,°íªG®³ÅK,°íªG®³ÅK¦n³Ü±À±À,¯ù´ö·|/°íªG®³ÅK.png,FALSE,TRUE,
-E54,E,CM,ªiÅQ°íªG®³ÅK,ªiÅQ°íªG®³ÅK¦n³Ü±À±À,¯ù´ö·|/ªiÅQ°íªG®³ÅK.png,FALSE,TRUE,
-E55,E,CM,µµ¦Ì¬õ¨§®³ÅK,µµ¦Ì¬õ¨§®³ÅK¦n³Ü±À±À,¯ù´ö·|/µµ¦Ì¬õ¨§®³ÅK.png,FALSE,TRUE,
-F01,F,CR,©ÛµP°ª¤s«C,©ÛµP°ª¤s«C¦n³Ü±À±À,TeaTop/©ÛµP°ª¤s«C.png,TRUE,TRUE,
-F02,F,CM,¤ë«G¼õ¥¤¡]¶Â¿}ÂA¥¤¬Ã¯]¡^,¤ë«G¼õ¥¤¡]¶Â¿}ÂA¥¤¬Ã¯]¡^¦n³Ü±À±À,TeaTop/¤ë«G¼õ¥¤¡]¶Â¿}ÂA¥¤¬Ã¯]¡^.png,TRUE,TRUE,
-F03,F,CR,¥Ì½©«C¤F,¥Ì½©«C¤F¦n³Ü±À±À,TeaTop/¥Ì½©«C¤F.png,TRUE,TRUE,
-F04,F,CX,·í¥NÂùQ,·í¥NÂùQ¦n³Ü±À±À,TeaTop/·í¥NÂùQ.png,TRUE,TRUE,
-F05,F,CG,§Nªwºñ¯ù,§Nªwºñ¯ù¦n³Ü±À±À,TeaTop/§Nªwºñ¯ù.png,TRUE,FALSE,
-F06,F,CX,µµ¨¡¦è¦ÌÅS,µµ¨¡¦è¦ÌÅS¦n³Ü±À±À,TeaTop/µµ¨¡¦è¦ÌÅS.png,TRUE,TRUE,
-F07,F,CX,¬´µHÅKÆ[­µ,¬´µHÅKÆ[­µ¦n³Ü±À±À,TeaTop/¬´µHÅKÆ[­µ.png,TRUE,TRUE,
-F08,F,CB,¤é¤ë¼æ¬õ¯ù,¤é¤ë¼æ¬õ¯ù¦n³Ü±À±À,TeaTop/¤é¤ë¼æ¬õ¯ù.png,TRUE,TRUE,
-F09,F,CG,­[­»ºñ¯ù,­[­»ºñ¯ù¦n³Ü±À±À,TeaTop/­[­»ºñ¯ù.png,TRUE,TRUE,
-F10,F,CB,¤j¦NÀ­¬õ¯ù,¤j¦NÀ­¬õ¯ù¦n³Ü±À±À,TeaTop/¤j¦NÀ­¬õ¯ù.png,TRUE,TRUE,
-F11,F,CX,ª÷¸©¯ù,ª÷¸©¯ù¦n³Ü±À±À,TeaTop/ª÷¸©¯ù.png,TRUE,TRUE,
-F12,F,CE,¥j¦­¨ý¥V¥Ê¯ù,¥j¦­¨ý¥V¥Ê¯ù¦n³Ü±À±À,TeaTop/¥j¦­¨ý¥V¥Ê¯ù.png,TRUE,FALSE,
-F13,F,CX,»e¯ù,»e¯ù¦n³Ü±À±À,TeaTop/»e¯ù.png,TRUE,FALSE,
-F14,F,CE,¥V¥Ê«C¯ù,¥V¥Ê«C¯ù¦n³Ü±À±À,TeaTop/¥V¥Ê«C¯ù.png,TRUE,FALSE,
-F15,F,CG,¸Á»eºñ¯ù,¸Á»eºñ¯ù¦n³Ü±À±À,TeaTop/¸Á»eºñ¯ù.png,TRUE,FALSE,
-F16,F,CG,¦Ê­»ºñ¯ù,¦Ê­»ºñ¯ù¦n³Ü±À±À,TeaTop/¦Ê­»ºñ¯ù.png,TRUE,FALSE,
-F17,F,CG,±öªGºñ¯ù,±öªGºñ¯ù¦n³Ü±À±À,TeaTop/±öªGºñ¯ù.png,TRUE,FALSE,
-F18,F,CG,¾i¼Ö¦hºñ¯ù,¾i¼Ö¦hºñ¯ù¦n³Ü±À±À,TeaTop/¾i¼Ö¦hºñ¯ù.png,TRUE,FALSE,
-F19,F,CG,¯Ü±ö8¦Bºñ,¯Ü±ö8¦Bºñ¦n³Ü±À±À,TeaTop/¯Ü±ö8¦Bºñ.png,TRUE,FALSE,
-F20,F,CB,¬Ã¯]¬õ¯ù,¬Ã¯]¬õ¯ù¦n³Ü±À±À,TeaTop/¬Ã¯]¬õ¯ù.png,TRUE,TRUE,
-F21,F,CG,¬Ã¯]ºñ¯ù,¬Ã¯]ºñ¯ù¦n³Ü±À±À,TeaTop/¬Ã¯]ºñ¯ù.png,TRUE,TRUE,
-F22,F,CM,¬Ã¯]¥¤¯ù,¬Ã¯]¥¤¯ù¦n³Ü±À±À,TeaTop/¬Ã¯]¥¤¯ù.png,TRUE,TRUE,
-F23,F,CX,¬Ã¯]è°¯ù,¬Ã¯]è°¯ù¦n³Ü±À±À,TeaTop/¬Ã¯]è°¯ù.png,TRUE,TRUE,
-F24,F,CX,ª÷¸©QQ,ª÷¸©QQ¦n³Ü±À±À,TeaTop/ª÷¸©QQ.png,TRUE,TRUE,
-F25,F,CE,¥V¥Ê¥P¯ó,¥V¥Ê¥P¯ó¦n³Ü±À±À,TeaTop/¥V¥Ê¥P¯ó.png,TRUE,FALSE,
-F26,F,CM,è°¥¤­á,è°¥¤­á¦n³Ü±À±À,TeaTop/è°¥¤­á.png,TRUE,TRUE,
-F27,F,CM,¥¬¤B¥¤¯ù,¥¬¤B¥¤¯ù¦n³Ü±À±À,TeaTop/¥¬¤B¥¤¯ù.png,TRUE,TRUE,
-F28,F,CM,¤é¦¡¬Û«äQ¥¤,¤é¦¡¬Û«äQ¥¤¦n³Ü±À±À,TeaTop/¤é¦¡¬Û«äQ¥¤.png,TRUE,TRUE,
-F29,F,CM,¥P¯ó¥¤­á,¥P¯ó¥¤­á¦n³Ü±À±À,TeaTop/¥P¯ó¥¤­á.png,TRUE,TRUE,
-F30,F,CM,¬õ¯ù®³ÅK,¬õ¯ù®³ÅK¦n³Ü±À±À,TeaTop/¬õ¯ù®³ÅK.png,TRUE,TRUE,
-F31,F,CM,¬Ã¯]®³ÅK,¬Ã¯]®³ÅK¦n³Ü±À±À,TeaTop/¬Ã¯]®³ÅK.png,TRUE,TRUE,
-F32,F,CM,¶Â¿}®³ÅK,¶Â¿}®³ÅK¦n³Ü±À±À,TeaTop/¶Â¿}®³ÅK.png,TRUE,TRUE,
-F33,F,CM,¥¤»\ÅKÆ[­µ,¥¤»\ÅKÆ[­µ¦n³Ü±À±À,TeaTop/¥¤»\ÅKÆ[­µ.png,TRUE,TRUE,
-F34,F,CM,¥¤»\«C¯ù,¥¤»\«C¯ù¦n³Ü±À±À,TeaTop/¥¤»\«C¯ù.png,TRUE,TRUE,
-F35,F,CM,©Ù¯ù®³ÅK,©Ù¯ù®³ÅK¦n³Ü±À±À,TeaTop/©Ù¯ù®³ÅK.png,TRUE,TRUE,
-F36,F,CM,¬Ã¯]©Ù¯ù®³ÅK,¬Ã¯]©Ù¯ù®³ÅK¦n³Ü±À±À,TeaTop/¬Ã¯]©Ù¯ù®³ÅK.png,TRUE,TRUE,
-F37,F,CM,¬õ¨§©Ù¯ù®³ÅK,¬õ¨§©Ù¯ù®³ÅK¦n³Ü±À±À,TeaTop/¬õ¨§©Ù¯ù®³ÅK.png,TRUE,TRUE,
-F38,F,CM,¨¡ÀYÂA¥¤,¨¡ÀYÂA¥¤¦n³Ü±À±À,TeaTop/¨¡ÀYÂA¥¤.png,TRUE,TRUE,
-F39,F,CM,¬õ¨§ÂA¥¤,¬õ¨§ÂA¥¤¦n³Ü±À±À,TeaTop/¬õ¨§ÂA¥¤.png,TRUE,TRUE,
-F40,F,CM,¥i¥i¨ÈÂA¥¤,¥i¥i¨ÈÂA¥¤¦n³Ü±À±À,TeaTop/¥i¥i¨ÈÂA¥¤.png,TRUE,TRUE,
-F41,F,CM,è°¥¤¯ù,è°¥¤¯ù¦n³Ü±À±À,TeaTop/è°¥¤¯ù.png,TRUE,TRUE,
-F42,F,CM,¤j¦NÀ­¥¤¯ù,¤j¦NÀ­¥¤¯ù¦n³Ü±À±À,TeaTop/¤j¦NÀ­¥¤¯ù.png,TRUE,TRUE,
-F43,F,CM,ÅKÆ[­µ¥¤¯ù,ÅKÆ[­µ¥¤¯ù¦n³Ü±À±À,TeaTop/ÅKÆ[­µ¥¤¯ù.png,TRUE,TRUE,
-F44,F,CG,©Ù¯ù¥¤ºñ,©Ù¯ù¥¤ºñ¦n³Ü±À±À,TeaTop/©Ù¯ù¥¤ºñ.png,TRUE,TRUE,
-F45,F,CG,ºñ¨§¬P¨F,ºñ¨§¬P¨F¦n³Ü±À±À,TeaTop/ºñ¨§¬P¨F.png,TRUE,FALSE,
-F46,F,CG,ºñ¨§¬P¨F¤û¥¤,ºñ¨§¬P¨F¤û¥¤¦n³Ü±À±À,TeaTop/ºñ¨§¬P¨F¤û¥¤.png,TRUE,FALSE,
-F47,F,CG,©Ù¯ù¦B¨F,©Ù¯ù¦B¨F¦n³Ü±À±À,TeaTop/©Ù¯ù¦B¨F.png,TRUE,FALSE,
-F48,F,CX,»ñ±ù¦B¨F,»ñ±ù¦B¨F¦n³Ü±À±À,TeaTop/»ñ±ù¦B¨F.png,TRUE,FALSE,
-F49,F,CX,¦Ê­»¦B¨F,¦Ê­»¦B¨F¦n³Ü±À±À,TeaTop/¦Ê­»¦B¨F.png,TRUE,FALSE,
-F50,F,CX,§Nªw®Ûªá¯ù,§Nªw®Ûªá¯ù¦n³Ü±À±À,TeaTop/§Nªw®Ûªá¯ù.png,TRUE,FALSE,
-F51,F,CX,§Nªw±ù¤s¯ù,§Nªw±ù¤s¯ù¦n³Ü±À±À,TeaTop/§Nªw±ù¤s¯ù.png,TRUE,FALSE,
-F52,F,CX,¶Â¿}Á¤¯ù,¶Â¿}Á¤¯ù¦n³Ü±À±À,TeaTop/¶Â¿}Á¤¯ù.png,FALSE,TRUE,
-F53,F,CX,¶Â¿}®Û¶êÁ¤¯ù,¶Â¿}®Û¶êÁ¤¯ù¦n³Ü±À±À,TeaTop/¶Â¿}®Û¶êÁ¤¯ù.png,FALSE,TRUE,
-F54,F,CM,®Û¶ê¥¤¯ù,®Û¶ê¥¤¯ù¦n³Ü±À±À,TeaTop/®Û¶ê¥¤¯ù.png,FALSE,TRUE,
-F55,F,CM,Á¤¥Ä¥¤¯ù,Á¤¥Ä¥¤¯ù¦n³Ü±À±À,TeaTop/Á¤¥Ä¥¤¯ù.png,FALSE,TRUE,
-F56,F,CB,ÂfÂc¬õ¯ù,ÂfÂc¬õ¯ù¦n³Ü±À±À,TeaTop/ÂfÂc¬õ¯ù.png,TRUE,FALSE,
-F57,F,CF,ÂAº^ÂfÂc¥Ä,ÂAº^ÂfÂc¥Ä¦n³Ü±À±À,TeaTop/ÂAº^ÂfÂc¥Ä.png,TRUE,FALSE,
-F58,F,CE,¥V¥ÊÂfÂc,¥V¥ÊÂfÂc¦n³Ü±À±À,TeaTop/¥V¥ÊÂfÂc.png,TRUE,FALSE,
-F59,F,CF,¦Ê­»ÂùQ,¦Ê­»ÂùQ¦n³Ü±À±À,TeaTop/¦Ê­»ÂùQ.png,TRUE,FALSE,
-F60,F,CF,ª÷®ÜÂfÂc,ª÷®ÜÂfÂc¦n³Ü±À±À,TeaTop/ª÷®ÜÂfÂc.png,TRUE,FALSE,
-F61,F,CF,Ä«ªG¦B¾L,Ä«ªG¦B¾L¦n³Ü±À±À,TeaTop/Ä«ªG¦B¾L.png,TRUE,FALSE,
-F62,F,CF,´H¤ÑÄ«ªG¾L,´H¤ÑÄ«ªG¾L¦n³Ü±À±À,TeaTop/´H¤ÑÄ«ªG¾L.png,TRUE,FALSE,
-F63,F,CF,»B»AÂfÂc,»B»AÂfÂc¦n³Ü±À±À,TeaTop/»B»AÂfÂc.png,TRUE,FALSE,
-F64,F,CG,­»¦N¤hºñ¯ù,­»¦N¤hºñ¯ù¦n³Ü±À±À,TeaTop/­»¦N¤hºñ¯ù.png,TRUE,FALSE,
-F65,F,CG,¥P¬cºñ,¥P¬cºñ¦n³Ü±À±À,TeaTop/¥P¬cºñ.png,TRUE,FALSE,
-F66,F,CX,¿»­X»e,¿»­X»e¦n³Ü±À±À,TeaTop/¿»­X»e.png,TRUE,FALSE,
-F67,F,CF,·sÂA¤ôªG¯ù,·sÂA¤ôªG¯ù¦n³Ü±À±À,TeaTop/·sÂA¤ôªG¯ù.png,TRUE,TRUE,
-F68,F,CG,»ñ±ùºñ¯ù,»ñ±ùºñ¯ù¦n³Ü±À±À,TeaTop/»ñ±ùºñ¯ù.png,TRUE,FALSE,
-F69,F,CF,»ñ±ùª÷¸©,»ñ±ùª÷¸©¦n³Ü±À±À,TeaTop/»ñ±ùª÷¸©.png,TRUE,FALSE,
-F70,F,CX,®Ü­»¤pµµÄ¬,®Ü­»¤pµµÄ¬¦n³Ü±À±À,TeaTop/®Ü­»¤pµµÄ¬.png,TRUE,FALSE,
-F71,F,CF,ªÝ¼Ö­»¦N¤h,ªÝ¼Ö­»¦N¤h¦n³Ü±À±À,TeaTop/ªÝ¼Ö­»¦N¤h.png,TRUE,FALSE,
-F72,F,CF,ªÝ¼Ö¦Ê­»ªG,ªÝ¼Ö¦Ê­»ªG¦n³Ü±À±À,TeaTop/ªÝ¼Ö¦Ê­»ªG.png,TRUE,FALSE,
-F73,F,CF,ªÝ¼Ö¤õÀs»r,ªÝ¼Ö¤õÀs»r¦n³Ü±À±À,TeaTop/ªÝ¼Ö¤õÀs»r.png,TRUE,FALSE,
-F74,F,CB,¼ô¦¨¬õ¯ù,¼ô¦¨¬õ¯ù¦n³Ü±À±À,TeaTop/¼ô¦¨¬õ¯ù.png,TRUE,FALSE,
-F75,F,CB,¼ô¦¨ªG­»¬õ¯ù,¼ô¦¨ªG­»¬õ¯ù¦n³Ü±À±À,TeaTop/¼ô¦¨ªG­»¬õ¯ù.png,TRUE,FALSE,
-F76,F,CM,¼ô¦¨ÂA¥¤¯ù,¼ô¦¨ÂA¥¤¯ù¦n³Ü±À±À,TeaTop/¼ô¦¨ÂA¥¤¯ù.png,TRUE,TRUE,
-F77,F,CM,®õ®õÂA¥¤¯ù,®õ®õÂA¥¤¯ù¦n³Ü±À±À,TeaTop/®õ®õÂA¥¤¯ù.png,TRUE,TRUE,
-F78,F,CM,¬Ã¯]®õ®õÂA¥¤¯ù,¬Ã¯]®õ®õÂA¥¤¯ù¦n³Ü±À±À,TeaTop/¬Ã¯]®õ®õÂA¥¤¯ù.png,TRUE,TRUE,
-F79,F,CM,¦è¦ÌÅS®õ®õÂA¥¤¯ù,¦è¦ÌÅS®õ®õÂA¥¤¯ù¦n³Ü±À±À,TeaTop/¦è¦ÌÅS®õ®õÂA¥¤¯ù.png,TRUE,TRUE,
-F80,F,CM,¥P¯ó®õ®õÂA¥¤¯ù,¥P¯ó®õ®õÂA¥¤¯ù¦n³Ü±À±À,TeaTop/¥P¯ó®õ®õÂA¥¤¯ù.png,TRUE,TRUE,
-G01,G,CB,¤é¤ë¼æ¬õ¯ù,¤é¤ë¼æ¬õ¯ù¦n³Ü±À±À,¤@ªÚ/¤é¤ë¼æ¬õ¯ù.png,TRUE,TRUE,
-G02,G,CG,¥]ºØºñ¯ù,¥]ºØºñ¯ù¦n³Ü±À±À,¤@ªÚ/¥]ºØºñ¯ù.png,TRUE,TRUE,
-G03,G,CR,ªQ¬fÀ­«C¯ù,ªQ¬fÀ­«C¯ù¦n³Ü±À±À,¤@ªÚ/ªQ¬fÀ­«C¯ù.png,TRUE,TRUE,
-G04,G,CO,³À¨¦¯QÀs,³À¨¦¯QÀs¦n³Ü±À±À,¤@ªÚ/³À¨¦¯QÀs.png,TRUE,TRUE,
-G05,G,CF,¤@ªÚ¤ôªG¯ù,¤@ªÚ¤ôªG¯ù¦n³Ü±À±À,¤@ªÚ/¤@ªÚ¤ôªG¯ù.png,TRUE,TRUE,
-G06,G,CG,®H¨½¦Ê­»ºñ,®H¨½¦Ê­»ºñ¦n³Ü±À±À,¤@ªÚ/®H¨½¦Ê­»ºñ.png,TRUE,FALSE,
-G07,G,CG,ª÷Æp»ñ±ùºñ,ª÷Æp»ñ±ùºñ¦n³Ü±À±À,¤@ªÚ/ª÷Æp»ñ±ùºñ.png,TRUE,TRUE,
-G08,G,CE,¥V¥ÊÂfÂcÅS,¥V¥ÊÂfÂcÅS¦n³Ü±À±À,¤@ªÚ/¥V¥ÊÂfÂcÅS.png,TRUE,TRUE,
-G09,G,CG,¤E¦pÂfÂcºñ,¤E¦pÂfÂcºñ¦n³Ü±À±À,¤@ªÚ/¤E¦pÂfÂcºñ.png,TRUE,TRUE,
-G10,G,CR,¤E¦pÂfÂc«C,¤E¦pÂfÂc«C¦n³Ü±À±À,¤@ªÚ/¤E¦pÂfÂc«C.png,TRUE,TRUE,
-G11,G,CG,©yÄõª÷®Üºñ,©yÄõª÷®Üºñ¦n³Ü±À±À,¤@ªÚ/©yÄõª÷®Üºñ.png,TRUE,TRUE,
-G12,G,CG,¤¤µØ·R¥ÉÂfÂc,¤¤µØ·R¥ÉÂfÂc¦n³Ü±À±À,¤@ªÚ/¤¤µØ·R¥ÉÂfÂc.png,TRUE,FALSE,
-G13,G,CG,«H¸q¯Ü±öºñ,«H¸q¯Ü±öºñ¦n³Ü±À±À,¤@ªÚ/«H¸q¯Ü±öºñ.png,TRUE,TRUE,
-G14,G,CF,¯ÂÆC·¨®ç¥Ä,¯ÂÆC·¨®ç¥Ä¦n³Ü±À±À,¤@ªÚ/¯ÂÆC·¨®ç¥Ä.png,TRUE,TRUE,
-G15,G,CX,ª÷®p¬¥¯«ÂfÂc,ª÷®p¬¥¯«ÂfÂc¦n³Ü±À±À,¤@ªÚ/ª÷®p¬¥¯«ÂfÂc.png,TRUE,TRUE,
-G16,G,CR,¾i¼Ö¦h¦B¯ù,¾i¼Ö¦h¦B¯ù¦n³Ü±À±À,¤@ªÚ/¾i¼Ö¦h¦B¯ù.png,TRUE,FALSE,
-G17,G,CF,¾i¼Ö¦h¦Ê­»,¾i¼Ö¦h¦Ê­»¦n³Ü±À±À,¤@ªÚ/¾i¼Ö¦h¦Ê­».png,TRUE,FALSE,
-G18,G,CF,¾i¼Ö¦h»ñ±ù,¾i¼Ö¦h»ñ±ù¦n³Ü±À±À,¤@ªÚ/¾i¼Ö¦h»ñ±ù.png,TRUE,FALSE,
-G19,G,CB,¯»¶ê¬õ¯ù,¯»¶ê¬õ¯ù¦n³Ü±À±À,¤@ªÚ/¯»¶ê¬õ¯ù.png,TRUE,TRUE,
-G20,G,CG,¯»¶êºñ¯ù,¯»¶êºñ¯ù¦n³Ü±À±À,¤@ªÚ/¯»¶êºñ¯ù.png,TRUE,TRUE,
-G21,G,CB,¬õ¯ùÂA¥¤,¬õ¯ùÂA¥¤¦n³Ü±À±À,¤@ªÚ/¬õ¯ùÂA¥¤.png,TRUE,TRUE,
-G22,G,CM,»B»AÂA¥¤,»B»AÂA¥¤¦n³Ü±À±À,¤@ªÚ/»B»AÂA¥¤.png,TRUE,TRUE,
-G23,G,CO,¯QÀsÂA¥¤,¯QÀsÂA¥¤¦n³Ü±À±À,¤@ªÚ/¯QÀsÂA¥¤.png,TRUE,TRUE,
-G24,G,CM,¯»¶êÂA¥¤¯ù,¯»¶êÂA¥¤¯ù¦n³Ü±À±À,¤@ªÚ/¯»¶êÂA¥¤¯ù.png,TRUE,TRUE,
-G25,G,CM,¶Â¿}¯»¶êÂA¥¤,¶Â¿}¯»¶êÂA¥¤¦n³Ü±À±À,¤@ªÚ/¶Â¿}¯»¶êÂA¥¤.png,TRUE,TRUE,
-G26,G,CM,¶Â¿}¯»¶êÂA¥¤¯ù,¶Â¿}¯»¶êÂA¥¤¯ù¦n³Ü±À±À,¤@ªÚ/¶Â¿}¯»¶êÂA¥¤¯ù.png,TRUE,TRUE,
-G27,G,CX,¥j·Ù¥P¯ó¯ù,¥j·Ù¥P¯ó¯ù¦n³Ü±À±À,¤@ªÚ/¥j·Ù¥P¯ó¯ù.png,TRUE,TRUE,
-G28,G,CE,¥jÆC¥V¥Ê¯ù,¥jÆC¥V¥Ê¯ù¦n³Ü±À±À,¤@ªÚ/¥jÆC¥V¥Ê¯ù.png,TRUE,TRUE,
-G29,G,CX,³À´äÄÑ¯ù,³À´äÄÑ¯ù¦n³Ü±À±À,¤@ªÚ/³À´äÄÑ¯ù.png,TRUE,TRUE,
-G30,G,CX,³À³¥Á¤¯ù,³À³¥Á¤¯ù¦n³Ü±À±À,¤@ªÚ/³À³¥Á¤¯ù.png,TRUE,TRUE,
-G31,G,CX,Á¤¥ÄÂfÂc,Á¤¥ÄÂfÂc¦n³Ü±À±À,¤@ªÚ/Á¤¥ÄÂfÂc.png,TRUE,TRUE,
-G32,G,CX,Á¤¥Ä®Û¶ê,Á¤¥Ä®Û¶ê¦n³Ü±À±À,¤@ªÚ/Á¤¥Ä®Û¶ê.png,TRUE,TRUE,
-G33,G,CX,®Û¶ê¬õ´Ç¯ù,®Û¶ê¬õ´Ç¯ù¦n³Ü±À±À,¤@ªÚ/®Û¶ê¬õ´Ç¯ù.png,TRUE,TRUE,
-G34,G,CM,¤j¥Ò¨¡ÀYÂA¥¤,¤j¥Ò¨¡ÀYÂA¥¤¦n³Ü±À±À,¤@ªÚ/¤j¥Ò¨¡ÀYÂA¥¤.png,TRUE,TRUE,
-G35,G,CG,¤j¥Ò¨¡ÀYÂA¥¤ºñ,¤j¥Ò¨¡ÀYÂA¥¤ºñ¦n³Ü±À±À,¤@ªÚ/¤j¥Ò¨¡ÀYÂA¥¤ºñ.png,TRUE,TRUE,
-G36,G,CM,¥xÆW¥Ì½©¤û¥¤,¥xÆW¥Ì½©¤û¥¤¦n³Ü±À±À,¤@ªÚ/¥xÆW¥Ì½©¤û¥¤.png,TRUE,TRUE,
-G37,G,CR,¥xÆW¥Ì½©«C¯ù,¥xÆW¥Ì½©«C¯ù¦n³Ü±À±À,¤@ªÚ/¥xÆW¥Ì½©«C¯ù.png,TRUE,TRUE,
-H01,H,CX,­ì¶m¥|©u,­ì¶m¥|©u¦n³Ü±À±À,²M¤ßºÖ¥þ/­ì¶m¥|©u.png,TRUE,TRUE,
-H02,H,CG,¯S¯Åºñ¯ù,¯S¯Åºñ¯ù¦n³Ü±À±À,²M¤ßºÖ¥þ/¯S¯Åºñ¯ù.png,TRUE,TRUE,
-H03,H,CG,¯QÀsºñ¯ù,¯QÀsºñ¯ù¦n³Ü±À±À,²M¤ßºÖ¥þ/¯QÀsºñ¯ù.png,TRUE,TRUE,
-H04,H,CO,»B»A¯QÀs,»B»A¯QÀs¦n³Ü±À±À,²M¤ßºÖ¥þ/»B»A¯QÀs.png,TRUE,TRUE,
-H05,H,CR,·¥«~²M¯ù,·¥«~²M¯ù¦n³Ü±À±À,²M¤ßºÖ¥þ/·¥«~²M¯ù.png,TRUE,TRUE,
-H06,H,CB,¿üÄõ¬õ¯ù,¿üÄõ¬õ¯ù¦n³Ü±À±À,²M¤ßºÖ¥þ/¿üÄõ¬õ¯ù.png,TRUE,TRUE,
-H07,H,CX,ÄY¿ï°ª¤s¯ù,ÄY¿ï°ª¤s¯ù¦n³Ü±À±À,²M¤ßºÖ¥þ/ÄY¿ï°ª¤s¯ù.png,TRUE,TRUE,
-H08,H,CX,¯S¿ï´¶¬|,¯S¿ï´¶¬|¦n³Ü±À±À,²M¤ßºÖ¥þ/¯S¿ï´¶¬|.png,TRUE,TRUE,
-H09,H,CG,Àu¦hºñ¯ù,Àu¦hºñ¯ù¦n³Ü±À±À,²M¤ßºÖ¥þ/Àu¦hºñ¯ù.png,TRUE,TRUE,
-H10,H,CF,Àu¦hÂfÂc,Àu¦hÂfÂc¦n³Ü±À±À,²M¤ßºÖ¥þ/Àu¦hÂfÂc.png,TRUE,TRUE,
-H11,H,CF,Àu¦h¸²µå¬c,Àu¦h¸²µå¬c¦n³Ü±À±À,²M¤ßºÖ¥þ/Àu¦h¸²µå¬c.png,TRUE,TRUE,
-H12,H,CM,¿üÄõ¥¤¬õ,¿üÄõ¥¤¬õ¦n³Ü±À±À,²M¤ßºÖ¥þ/¿üÄõ¥¤¬õ.png,TRUE,TRUE,
-H13,H,CG,¯S¯Å¥¤ºñ,¯S¯Å¥¤ºñ¦n³Ü±À±À,²M¤ßºÖ¥þ/¯S¯Å¥¤ºñ.png,TRUE,TRUE,
-H14,H,CM,¯QÀs¥¤¯ù,¯QÀs¥¤¯ù¦n³Ü±À±À,²M¤ßºÖ¥þ/¯QÀs¥¤¯ù.png,TRUE,TRUE,
-H15,H,CM,¬Ã¯]¥¤¯ù,¬Ã¯]¥¤¯ù¦n³Ü±À±À,²M¤ßºÖ¥þ/¬Ã¯]¥¤¯ù.png,TRUE,TRUE,
-H16,H,CM,¯»¶ê¥¤¯ù,¯»¶ê¥¤¯ù¦n³Ü±À±À,²M¤ßºÖ¥þ/¯»¶ê¥¤¯ù.png,TRUE,TRUE,
-H17,H,CM,¥P¯ó­á¥¤¯ù,¥P¯ó­á¥¤¯ù¦n³Ü±À±À,²M¤ßºÖ¥þ/¥P¯ó­á¥¤¯ù.png,TRUE,TRUE,
-H18,H,CM,¥¬¤B¥¤¯ù,¥¬¤B¥¤¯ù¦n³Ü±À±À,²M¤ßºÖ¥þ/¥¬¤B¥¤¯ù.png,TRUE,TRUE,
-H19,H,CM,·¦ªG¥¤¯ù,·¦ªG¥¤¯ù¦n³Ü±À±À,²M¤ßºÖ¥þ/·¦ªG¥¤¯ù.png,TRUE,TRUE,
-H20,H,CM,¸Á»e¥¤¯ù,¸Á»e¥¤¯ù¦n³Ü±À±À,²M¤ßºÖ¥þ/¸Á»e¥¤¯ù.png,TRUE,TRUE,
-H21,H,CE,¥V¥Ê¯ù,¥V¥Ê¯ù¦n³Ü±À±À,²M¤ßºÖ¥þ/¥V¥Ê¯ù.png,TRUE,TRUE,
-H22,H,CE,¥V¥Ê«C¯ù,¥V¥Ê«C¯ù¦n³Ü±À±À,²M¤ßºÖ¥þ/¥V¥Ê«C¯ù.png,TRUE,TRUE,
-H23,H,CE,¥V¥ÊÂfÂc,¥V¥ÊÂfÂc¦n³Ü±À±À,²M¤ßºÖ¥þ/¥V¥ÊÂfÂc.png,TRUE,TRUE,
-H24,H,CG,±ö¤lºñ¯ù,±ö¤lºñ¯ù¦n³Ü±À±À,²M¤ßºÖ¥þ/±ö¤lºñ¯ù.png,TRUE,TRUE,
-H25,H,CB,¬õ¯ù¨§¼ß,¬õ¯ù¨§¼ß¦n³Ü±À±À,²M¤ßºÖ¥þ/¬õ¯ù¨§¼ß.png,TRUE,TRUE,
-H26,H,CX,±¡¤H¯ù,±¡¤H¯ù¦n³Ü±À±À,²M¤ßºÖ¥þ/±¡¤H¯ù.png,TRUE,TRUE,
-H27,H,CX,»e¯ù,»e¯ù¦n³Ü±À±À,²M¤ßºÖ¥þ/»e¯ù.png,TRUE,TRUE,
-H28,H,CG,¸Á»e¯QÀs/ºñ¯ù,¸Á»e¯QÀs/ºñ¯ù¦n³Ü±À±À,²M¤ßºÖ¥þ/¸Á»e¯QÀs/ºñ¯ù.png,TRUE,TRUE,
-H29,H,CX,²M¤ß¥©§J¤O,²M¤ß¥©§J¤O¦n³Ü±À±À,²M¤ßºÖ¥þ/²M¤ß¥©§J¤O.png,TRUE,TRUE,
-H30,H,CX,¿@±¡¥©§J¤O,¿@±¡¥©§J¤O¦n³Ü±À±À,²M¤ßºÖ¥þ/¿@±¡¥©§J¤O.png,TRUE,TRUE,
-H31,H,CM,©@°Ø¥¤¯ù,©@°Ø¥¤¯ù¦n³Ü±À±À,²M¤ßºÖ¥þ/©@°Ø¥¤¯ù.png,TRUE,TRUE,
-H32,H,CM,ºñ¨§¨F¥¤¯ù,ºñ¨§¨F¥¤¯ù¦n³Ü±À±À,²M¤ßºÖ¥þ/ºñ¨§¨F¥¤¯ù.png,TRUE,TRUE,
-H33,H,CM,¨¡­»¥¤¯ù,¨¡­»¥¤¯ù¦n³Ü±À±À,²M¤ßºÖ¥þ/¨¡­»¥¤¯ù.png,TRUE,TRUE,
-H34,H,CF,ÂfÂc¥Ä,ÂfÂc¥Ä¦n³Ü±À±À,²M¤ßºÖ¥þ/ÂfÂc¥Ä.png,TRUE,TRUE,
-H35,H,CX,»´Âf¥|©u,»´Âf¥|©u¦n³Ü±À±À,²M¤ßºÖ¥þ/»´Âf¥|©u.png,TRUE,TRUE,
-H36,H,CB,ÂfÂcºñ¯ù/¬õ¯ù,ÂfÂcºñ¯ù/¬õ¯ù¦n³Ü±À±À,²M¤ßºÖ¥þ/ÂfÂcºñ¯ù/¬õ¯ù.png,TRUE,TRUE,
-H37,H,CF,¸Á»eÂfÂc,¸Á»eÂfÂc¦n³Ü±À±À,²M¤ßºÖ¥þ/¸Á»eÂfÂc.png,TRUE,TRUE,
-H38,H,CF,ª÷®ÜÂfÂc,ª÷®ÜÂfÂc¦n³Ü±À±À,²M¤ßºÖ¥þ/ª÷®ÜÂfÂc.png,TRUE,TRUE,
-H39,H,CX,®Ü¯ù,®Ü¯ù¦n³Ü±À±À,²M¤ßºÖ¥þ/®Ü¯ù.png,TRUE,TRUE,
-H40,H,CF,¸²µå¬c¥Ä,¸²µå¬c¥Ä¦n³Ü±À±À,²M¤ßºÖ¥þ/¸²µå¬c¥Ä.png,TRUE,TRUE,
-H41,H,CG,¸²µå¬cºñ¯ù,¸²µå¬cºñ¯ù¦n³Ü±À±À,²M¤ßºÖ¥þ/¸²µå¬cºñ¯ù.png,TRUE,TRUE,
-H42,H,CG,©M­·©Ù¯ù,©M­·©Ù¯ù¦n³Ü±À±À,²M¤ßºÖ¥þ/©M­·©Ù¯ù.png,TRUE,TRUE,
-H43,H,CG,»B»A©Ù¯ù,»B»A©Ù¯ù¦n³Ü±À±À,²M¤ßºÖ¥þ/»B»A©Ù¯ù.png,TRUE,TRUE,
-H44,H,CM,©Ù¯ù®³ÅK,©Ù¯ù®³ÅK¦n³Ü±À±À,²M¤ßºÖ¥þ/©Ù¯ù®³ÅK.png,TRUE,TRUE,
-H45,H,CM,ÂA¥¤¯ù,ÂA¥¤¯ù¦n³Ü±À±À,²M¤ßºÖ¥þ/ÂA¥¤¯ù.png,TRUE,TRUE,
-H46,H,CM,ÂA¥¤¥V¥Ê,ÂA¥¤¥V¥Ê¦n³Ü±À±À,²M¤ßºÖ¥þ/ÂA¥¤¥V¥Ê.png,TRUE,TRUE,
-H47,H,CM,ÂA¥¤¨§¼ß,ÂA¥¤¨§¼ß¦n³Ü±À±À,²M¤ßºÖ¥þ/ÂA¥¤¨§¼ß.png,TRUE,TRUE,
-H48,H,CM,©@°Ø®³ÅK,©@°Ø®³ÅK¦n³Ü±À±À,²M¤ßºÖ¥þ/©@°Ø®³ÅK.png,TRUE,TRUE,
-H49,H,CM,²M¤ß¥©§J¤O®³ÅK,²M¤ß¥©§J¤O®³ÅK¦n³Ü±À±À,²M¤ßºÖ¥þ/²M¤ß¥©§J¤O®³ÅK.png,TRUE,TRUE,
-H50,H,CM,¿@±¡¥©§J¤O®³ÅK,¿@±¡¥©§J¤O®³ÅK¦n³Ü±À±À,²M¤ßºÖ¥þ/¿@±¡¥©§J¤O®³ÅK.png,TRUE,TRUE,
-H51,H,CB,¦B²N²O¬õ¯ù,¦B²N²O¬õ¯ù¦n³Ü±À±À,²M¤ßºÖ¥þ/¦B²N²O¬õ¯ù.png,TRUE,TRUE,
-H52,H,CG,¦B²N²O©Ù¯ù,¦B²N²O©Ù¯ù¦n³Ü±À±À,²M¤ßºÖ¥þ/¦B²N²O©Ù¯ù.png,TRUE,TRUE,
-H53,H,CM,¦B²N²O¥¤¯ù,¦B²N²O¥¤¯ù¦n³Ü±À±À,²M¤ßºÖ¥þ/¦B²N²O¥¤¯ù.png,TRUE,TRUE,
-H54,H,CX,®Û¶ê¯ù,®Û¶ê¯ù¦n³Ü±À±À,²M¤ßºÖ¥þ/®Û¶ê¯ù.png,FALSE,TRUE,
-H55,H,CM,®Û¶ê¥¤¯ù,®Û¶ê¥¤¯ù¦n³Ü±À±À,²M¤ßºÖ¥þ/®Û¶ê¥¤¯ù.png,FALSE,TRUE,
-H56,H,CX,Á¤¥À¯ù,Á¤¥À¯ù¦n³Ü±À±À,²M¤ßºÖ¥þ/Á¤¥À¯ù.png,FALSE,TRUE,
-H57,H,CM,Á¤¥À¥¤¯ù,Á¤¥À¥¤¯ù¦n³Ü±À±À,²M¤ßºÖ¥þ/Á¤¥À¥¤¯ù.png,FALSE,TRUE,
-I01,I,CF,·R¤å¨~ªG¦B¨F,·R¤å¨~ªG¦B¨F¦n³Ü±À±À,¤j­b¤l/·R¤å¨~ªG¦B¨F.png,TRUE,TRUE,
-I02,I,CF,¶Àª÷»e¬c¯ù,¶Àª÷»e¬c¯ù¦n³Ü±À±À,¤j­b¤l/¶Àª÷»e¬c¯ù.png,TRUE,TRUE,
-I03,I,CG,·R¤å»B»A,·R¤å»B»A¦n³Ü±À±À,¤j­b¤l/·R¤å»B»A.png,TRUE,TRUE,
-I04,I,CF,ªÝ¼ÖÂfÂc,ªÝ¼ÖÂfÂc¦n³Ü±À±À,¤j­b¤l/ªÝ¼ÖÂfÂc.png,TRUE,TRUE,
-I05,I,CF,ªÝ¼Ö±ö,ªÝ¼Ö±ö¦n³Ü±À±À,¤j­b¤l/ªÝ¼Ö±ö.png,TRUE,TRUE,
-I06,I,CF,µf­X±ö,µf­X±ö¦n³Ü±À±À,¤j­b¤l/µf­X±ö.png,TRUE,TRUE,
-I07,I,CF,¸Á»eÂfÂc,¸Á»eÂfÂc¦n³Ü±À±À,¤j­b¤l/¸Á»eÂfÂc.png,FALSE,FALSE,
-I08,I,CF,·sÂA¤ôªG¯ù,·sÂA¤ôªG¯ù¦n³Ü±À±À,¤j­b¤l/·sÂA¤ôªG¯ù.png,FALSE,FALSE,
-I09,I,CF,Ä«ªG¾L¦B¯ù,Ä«ªG¾L¦B¯ù¦n³Ü±À±À,¤j­b¤l/Ä«ªG¾L¦B¯ù.png,FALSE,FALSE,
-I10,I,CF,ÅÊÅÊÂfÂc,ÅÊÅÊÂfÂc¦n³Ü±À±À,¤j­b¤l/ÅÊÅÊÂfÂc.png,FALSE,FALSE,
-I11,I,CF,¬c¬ü²É,¬c¬ü²É¦n³Ü±À±À,¤j­b¤l/¬c¬ü²É.png,FALSE,FALSE,
-I12,I,CF,ª÷®Ü²É¯ÜÅÖªG,ª÷®Ü²É¯ÜÅÖªG¦n³Ü±À±À,¤j­b¤l/ª÷®Ü²É¯ÜÅÖªG.png,FALSE,FALSE,
-I13,I,CF,Ä«ªG¦h»´¶¼,Ä«ªG¦h»´¶¼¦n³Ü±À±À,¤j­b¤l/Ä«ªG¦h»´¶¼.png,FALSE,FALSE,
-I14,I,CF,¦Ê­»¦h»´¶¼,¦Ê­»¦h»´¶¼¦n³Ü±À±À,¤j­b¤l/¦Ê­»¦h»´¶¼.png,FALSE,FALSE,
-I15,I,CF,ÂfÂc¦h»´¶¼,ÂfÂc¦h»´¶¼¦n³Ü±À±À,¤j­b¤l/ÂfÂc¦h»´¶¼.png,FALSE,FALSE,
-I16,I,CF,¬c­»¦h»´¶¼,¬c­»¦h»´¶¼¦n³Ü±À±À,¤j­b¤l/¬c­»¦h»´¶¼.png,FALSE,FALSE,
-I17,I,CF,¦Ê­»»´ªG¶¼,¦Ê­»»´ªG¶¼¦n³Ü±À±À,¤j­b¤l/¦Ê­»»´ªG¶¼.png,FALSE,FALSE,
-I18,I,CF,¸²µå¬c»´ªG¶¼,¸²µå¬c»´ªG¶¼¦n³Ü±À±À,¤j­b¤l/¸²µå¬c»´ªG¶¼.png,FALSE,FALSE,
-I19,I,CG,¦Ê­»ºñ¨K,¦Ê­»ºñ¨K¦n³Ü±À±À,¤j­b¤l/¦Ê­»ºñ¨K.png,FALSE,FALSE,
-I20,I,CG,ÂfÂcºñ¨K,ÂfÂcºñ¨K¦n³Ü±À±À,¤j­b¤l/ÂfÂcºñ¨K.png,FALSE,FALSE,
-I21,I,CG,½¯¶V²ùºñ¨K,½¯¶V²ùºñ¨K¦n³Ü±À±À,¤j­b¤l/½¯¶V²ùºñ¨K.png,FALSE,FALSE,
-I22,I,CF,Ä}¯É¤ôªG¯ù,Ä}¯É¤ôªG¯ù¦n³Ü±À±À,¤j­b¤l/Ä}¯É¤ôªG¯ù.png,FALSE,FALSE,
-I23,I,CG,»B»AÂfÂc,»B»AÂfÂc¦n³Ü±À±À,¤j­b¤l/»B»AÂfÂc.png,FALSE,FALSE,
-I24,I,CF,ÂA®Ü±öÄR,ÂA®Ü±öÄR¦n³Ü±À±À,¤j­b¤l/ÂA®Ü±öÄR.png,FALSE,FALSE,
-I25,I,CF,ÂA¦Ê­»ªGºñ,ÂA¦Ê­»ªGºñ¦n³Ü±À±À,¤j­b¤l/ÂA¦Ê­»ªGºñ.png,FALSE,FALSE,
-I26,I,CF,ÂAº^ÂfÂc«C,ÂAº^ÂfÂc«C¦n³Ü±À±À,¤j­b¤l/ÂAº^ÂfÂc«C.png,FALSE,FALSE,
-I27,I,CF,ª÷®ÜÂfÂc,ª÷®ÜÂfÂc¦n³Ü±À±À,¤j­b¤l/ª÷®ÜÂfÂc.png,FALSE,FALSE,
-I28,I,CF,ÂAº^¸²µå¬cºñ,ÂAº^¸²µå¬cºñ¦n³Ü±À±À,¤j­b¤l/ÂAº^¸²µå¬cºñ.png,FALSE,FALSE,
-I29,I,CF,¦Ê­»·R¥É,¦Ê­»·R¥É¦n³Ü±À±À,¤j­b¤l/¦Ê­»·R¥É.png,FALSE,FALSE,
-I30,I,CF,ÂfÂc·R¥É,ÂfÂc·R¥É¦n³Ü±À±À,¤j­b¤l/ÂfÂc·R¥É.png,FALSE,FALSE,
-I31,I,CF,«C¬K±öÄR,«C¬K±öÄR¦n³Ü±À±À,¤j­b¤l/«C¬K±öÄR.png,FALSE,FALSE,
-I32,I,CF,½¯¬ü²É,½¯¬ü²É¦n³Ü±À±À,¤j­b¤l/½¯¬ü²É.png,FALSE,FALSE,
-I33,I,CF,»e¥P¯ó,»e¥P¯ó¦n³Ü±À±À,¤j­b¤l/»e¥P¯ó.png,FALSE,FALSE,
-I34,I,CF,²¢Âf¯ÜÅÖªG,²¢Âf¯ÜÅÖªG¦n³Ü±À±À,¤j­b¤l/²¢Âf¯ÜÅÖªG.png,FALSE,FALSE,
-I35,I,CE,¥V¥ÊÆ[­µ,¥V¥ÊÆ[­µ¦n³Ü±À±À,¤j­b¤l/¥V¥ÊÆ[­µ.png,FALSE,FALSE,
-I36,I,CE,¦h¥ÊÂfÂc,¦h¥ÊÂfÂc¦n³Ü±À±À,¤j­b¤l/¦h¥ÊÂfÂc.png,FALSE,FALSE,
-I37,I,CE,¥j¦­¨ý¥V¥Ê¯ù,¥j¦­¨ý¥V¥Ê¯ù¦n³Ü±À±À,¤j­b¤l/¥j¦­¨ý¥V¥Ê¯ù.png,FALSE,FALSE,
-I38,I,CG,¾i¼Ö¦hºñ¯ù,¾i¼Ö¦hºñ¯ù¦n³Ü±À±À,¤j­b¤l/¾i¼Ö¦hºñ¯ù.png,FALSE,FALSE,
-I39,I,CX,¥P¯ó¤z¯ù,¥P¯ó¤z¯ù¦n³Ü±À±À,¤j­b¤l/¥P¯ó¤z¯ù.png,FALSE,FALSE,
-I40,I,CF,½¯¶V²ù¦B¾L,½¯¶V²ù¦B¾L¦n³Ü±À±À,¤j­b¤l/½¯¶V²ù¦B¾L.png,FALSE,FALSE,
-I41,I,CM,Æ[­µ®³ÅK,Æ[­µ®³ÅK¦n³Ü±À±À,¤j­b¤l/Æ[­µ®³ÅK.png,FALSE,FALSE,
-I42,I,CM,ÂA¥¤¯ù,ÂA¥¤¯ù¦n³Ü±À±À,¤j­b¤l/ÂA¥¤¯ù.png,FALSE,FALSE,
-I43,I,CM,ÂA¥¤ºñ,ÂA¥¤ºñ¦n³Ü±À±À,¤j­b¤l/ÂA¥¤ºñ.png,FALSE,FALSE,
-I44,I,CE,ÂA¥¤¦h¥Ê,ÂA¥¤¦h¥Ê¦n³Ü±À±À,¤j­b¤l/ÂA¥¤¦h¥Ê.png,FALSE,FALSE,
-I45,I,CM,¥¤¯ù,¥¤¯ù¦n³Ü±À±À,¤j­b¤l/¥¤¯ù.png,FALSE,FALSE,
-I46,I,CM,ÅÖ¬¡¥¤ºñ,ÅÖ¬¡¥¤ºñ¦n³Ü±À±À,¤j­b¤l/ÅÖ¬¡¥¤ºñ.png,FALSE,FALSE,
-I47,I,CM,¬Ã¯]¥¤¯ù,¬Ã¯]¥¤¯ù¦n³Ü±À±À,¤j­b¤l/¬Ã¯]¥¤¯ù.png,FALSE,FALSE,
-I48,I,CM,¥P¯ó­á¥¤¯ù,¥P¯ó­á¥¤¯ù¦n³Ü±À±À,¤j­b¤l/¥P¯ó­á¥¤¯ù.png,FALSE,FALSE,
-I49,I,CB,¥j«°¿üÄõ¬õ¯ù,¥j«°¿üÄõ¬õ¯ù¦n³Ü±À±À,¤j­b¤l/¥j«°¿üÄõ¬õ¯ù.png,FALSE,FALSE,
-I50,I,CR,¤å¤s«C¯ù,¤å¤s«C¯ù¦n³Ü±À±À,¤j­b¤l/¤å¤s«C¯ù.png,FALSE,FALSE,
-I51,I,CG,ÅÖ¬¡ºñ¯ù,ÅÖ¬¡ºñ¯ù¦n³Ü±À±À,¤j­b¤l/ÅÖ¬¡ºñ¯ù.png,FALSE,FALSE,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
+ï»¿BeverageId	name	info	imagePath	hasCool	hasHot	remark	Category_id	Shop_id
+A01	èŒ‰èŽ‰ç¶ èŒ¶	èŒ‰èŽ‰ç¶ èŒ¶å¥½å–æŽ¨æŽ¨	50åµ/èŒ‰èŽ‰ç¶ èŒ¶.png	TRUE	FALSE		CG	A
+A02	é˜¿è–©å§†ç´…èŒ¶	é˜¿è–©å§†ç´…èŒ¶äººé–“æ¥µå“	50åµ/é˜¿è–©å§†ç´…èŒ¶.png	TRUE	FALSE		CB	A
+A03	å››å­£æ˜¥èŒ¶	å››å­£æ˜¥èŒ¶å¥½å–æŽ¨æŽ¨	50åµ/å››å­£æ˜¥èŒ¶.png	TRUE	FALSE		CX	A
+A04	é»ƒé‡‘çƒé¾	é»ƒé‡‘çƒé¾äººé–“æ¥µå“	50åµ/é»ƒé‡‘çƒé¾.png	TRUE	FALSE		CO	A
+A05	æª¸æª¬ç¶ èŒ¶	æª¸æª¬ç¶ èŒ¶å¥½å–æŽ¨æŽ¨	50åµ/æª¸æª¬ç¶ èŒ¶.png	TRUE	FALSE		CG	A
+A06	æ¢…æžœç¶ 	æ¢…æžœç¶ äººé–“æ¥µå“	50åµ/æ¢…æžœç¶ .png	TRUE	FALSE		CG	A
+A07	èœ‚èœœç¶ 	èœ‚èœœç¶ å¥½å–æŽ¨æŽ¨	50åµ/èœ‚èœœç¶ .png	TRUE	FALSE		CG	A
+A08	æ¡”å­ç¶ 	æ¡”å­ç¶ äººé–“æ¥µå“	50åµ/æ¡”å­ç¶ .png	TRUE	FALSE		CG	A
+A09	8å†°ç¶ 	8å†°ç¶ å¥½å–æŽ¨æŽ¨	50åµ/8å†°ç¶ .png	TRUE	FALSE		CG	A
+A10	é¤Šæ¨‚å¤šç¶ 	é¤Šæ¨‚å¤šç¶ äººé–“æ¥µå“	50åµ/é¤Šæ¨‚å¤šç¶ .png	TRUE	FALSE		CG	A
+A11	å†°æ·‡æ·‹ç´…èŒ¶	å†°æ·‡æ·‹ç´…èŒ¶å¥½å–æŽ¨æŽ¨	50åµ/å†°æ·‡æ·‹ç´…èŒ¶.png	TRUE	FALSE		CB	A
+A12	é®®æŸšç¶ 	é®®æŸšç¶ äººé–“æ¥µå“	50åµ/é®®æŸšç¶ .png	TRUE	FALSE		CG	A
+A13	æª¸æª¬æ±	æª¸æª¬æ±å¥½å–æŽ¨æŽ¨	50åµ/æª¸æª¬æ±.png	TRUE	FALSE		CF	A
+A14	é‡‘æ¡”æª¸æª¬	é‡‘æ¡”æª¸æª¬äººé–“æ¥µå“	50åµ/é‡‘æ¡”æª¸æª¬.png	TRUE	FALSE		CF	A
+A15	æª¸æª¬æ¢…å­	æª¸æª¬æ¢…å­å¥½å–æŽ¨æŽ¨	50åµ/æª¸æª¬æ¢…å­.png	TRUE	FALSE		CF	A
+A16	æª¸æª¬é¤Šæ¨‚å¤š	æª¸æª¬é¤Šæ¨‚å¤šäººé–“æ¥µå“	50åµ/æª¸æª¬é¤Šæ¨‚å¤š.png	TRUE	FALSE		CF	A
+A17	8å†°èŒ¶	8å†°èŒ¶å¥½å–æŽ¨æŽ¨	50åµ/8å†°èŒ¶.png	TRUE	FALSE		CX	A
+A18	é®®æŸšæ±	é®®æŸšæ±äººé–“æ¥µå“	50åµ/é®®æŸšæ±.png	TRUE	FALSE		CF	A
+A19	è‘¡è„æŸšå¤šå¤š	è‘¡è„æŸšå¤šå¤šå¥½å–æŽ¨æŽ¨	50åµ/è‘¡è„æŸšå¤šå¤š.png	TRUE	FALSE		CF	A
+A20	å¥¶èŒ¶	å¥¶èŒ¶äººé–“æ¥µå“	50åµ/å¥¶èŒ¶.png	TRUE	FALSE		CM	A
+A21	å¥¶ç¶ 	å¥¶ç¶ å¥½å–æŽ¨æŽ¨	50åµ/å¥¶ç¶ .png	TRUE	FALSE		CG	A
+A22	ç´…èŒ¶ç‘ªå¥‡æœµ	ç´…èŒ¶ç‘ªå¥‡æœµäººé–“æ¥µå“	50åµ/ç´…èŒ¶ç‘ªå¥‡æœµ.png	TRUE	FALSE		CB	A
+A23	é»ƒé‡‘çƒé¾å¥¶èŒ¶	é»ƒé‡‘çƒé¾å¥¶èŒ¶å¥½å–æŽ¨æŽ¨	50åµ/é»ƒé‡‘çƒé¾å¥¶èŒ¶.png	TRUE	FALSE		CM	A
+A24	å››å­£å¥¶é’	å››å­£å¥¶é’äººé–“æ¥µå“	50åµ/å››å­£å¥¶é’.png	TRUE	FALSE		CM	A
+A25	é˜¿è¯ç”°	é˜¿è¯ç”°å¥½å–æŽ¨æŽ¨	50åµ/é˜¿è¯ç”°.png	TRUE	FALSE		CX	A
+A26	å¯å¯èŠ­è•¾	å¯å¯èŠ­è•¾äººé–“æ¥µå“	50åµ/å¯å¯èŠ­è•¾.png	TRUE	FALSE		CX	A
+A27	æ³¢éœ¸ ç´…/ç¶ /é’/çƒ	æ³¢éœ¸ ç´…/ç¶ /é’/çƒå¥½å–æŽ¨æŽ¨	50åµ/æ³¢éœ¸ ç´…/ç¶ /é’/çƒ.png	TRUE	FALSE		CG	A
+A28	æ³¢éœ¸å¥¶èŒ¶(å¤§é¡†)	æ³¢éœ¸å¥¶èŒ¶(å¤§é¡†)äººé–“æ¥µå“	50åµ/æ³¢éœ¸å¥¶èŒ¶(å¤§é¡†).png	TRUE	FALSE		CM	A
+A29	æ³¢éœ¸å¥¶ç¶ (å¤§é¡†)	æ³¢éœ¸å¥¶ç¶ (å¤§é¡†)å¥½å–æŽ¨æŽ¨	50åµ/æ³¢éœ¸å¥¶ç¶ (å¤§é¡†).png	TRUE	FALSE		CG	A
+A30	çç  ç´…/ç¶ /é’/çƒ	çç  ç´…/ç¶ /é’/çƒäººé–“æ¥µå“	50åµ/çç  ç´…/ç¶ /é’/çƒ.png	TRUE	FALSE		CG	A
+A31	çç å¥¶èŒ¶(å°é¡†)	çç å¥¶èŒ¶(å°é¡†)å¥½å–æŽ¨æŽ¨	50åµ/çç å¥¶èŒ¶(å°é¡†).png	TRUE	FALSE		CM	A
+A32	çç å¥¶ç¶ (å°é¡†)	çç å¥¶ç¶ (å°é¡†)äººé–“æ¥µå“	50åµ/çç å¥¶ç¶ (å°é¡†).png	TRUE	FALSE		CG	A
+A33	æ¤°æžœå¥¶èŒ¶	æ¤°æžœå¥¶èŒ¶å¥½å–æŽ¨æŽ¨	50åµ/æ¤°æžœå¥¶èŒ¶.png	TRUE	FALSE		CM	A
+A34	ä»™è‰å¥¶å‡	ä»™è‰å¥¶å‡äººé–“æ¥µå“	50åµ/ä»™è‰å¥¶å‡.png	TRUE	FALSE		CM	A
+A35	é®®æŸšæ±(å­£ç¯€é™å®š)	é®®æŸšæ±(å­£ç¯€é™å®š)å¥½å–æŽ¨æŽ¨	50åµ/é®®æŸšæ±(å­£ç¯€é™å®š).png	TRUE	FALSE		CF	A
+A36	ç´…èŒ¶æ‹¿éµ	ç´…èŒ¶æ‹¿éµäººé–“æ¥µå“	50åµ/ç´…èŒ¶æ‹¿éµ.png	TRUE	FALSE		CM	A
+A37	ç¶ èŒ¶æ‹¿éµ	ç¶ èŒ¶æ‹¿éµå¥½å–æŽ¨æŽ¨	50åµ/ç¶ èŒ¶æ‹¿éµ.png	TRUE	FALSE		CM	A
+A38	é»ƒé‡‘çƒé¾æ‹¿éµ	é»ƒé‡‘çƒé¾æ‹¿éµäººé–“æ¥µå“	50åµ/é»ƒé‡‘çƒé¾æ‹¿éµ.png	TRUE	FALSE		CM	A
+A39	é˜¿è¯ç”°æ‹¿éµ	é˜¿è¯ç”°æ‹¿éµå¥½å–æŽ¨æŽ¨	50åµ/é˜¿è¯ç”°æ‹¿éµ.png	TRUE	FALSE		CM	A
+A40	å¯å¯èŠ­è•¾æ‹¿éµ	å¯å¯èŠ­è•¾æ‹¿éµäººé–“æ¥µå“	50åµ/å¯å¯èŠ­è•¾æ‹¿éµ.png	TRUE	FALSE		CM	A
+B01	é˜¿è–©å§†å¥¶èŒ¶	é˜¿è–©å§†å¥¶èŒ¶å¥½å–æŽ¨æŽ¨	CoCo/é˜¿è–©å§†å¥¶èŒ¶.png	TRUE	FALSE		CM	B
+B02	çç å¥¶èŒ¶	çç å¥¶èŒ¶äººé–“æ¥µå“	CoCo/çç å¥¶èŒ¶.png	TRUE	FALSE		CM	B
+B03	å¥¶èŒ¶é›™é‡å¥	å¥¶èŒ¶é›™é‡å¥å¥½å–æŽ¨æŽ¨	CoCo/å¥¶èŒ¶é›™é‡å¥.png	TRUE	FALSE		CM	B
+B04	å¸ƒä¸å¥¶èŒ¶	å¸ƒä¸å¥¶èŒ¶äººé–“æ¥µå“	CoCo/å¸ƒä¸å¥¶èŒ¶.png	TRUE	FALSE		CM	B
+B05	èŠ‹é ­å¥¶èŒ¶	èŠ‹é ­å¥¶èŒ¶å¥½å–æŽ¨æŽ¨	CoCo/èŠ‹é ­å¥¶èŒ¶.png	TRUE	FALSE		CM	B
+B06	èŒ‰é¦™å¥¶èŒ¶	èŒ‰é¦™å¥¶èŒ¶äººé–“æ¥µå“	CoCo/èŒ‰é¦™å¥¶èŒ¶.png	TRUE	FALSE		CM	B
+B07	é®®æ¦¨è˜‹æžœç™¾é¦™	é®®æ¦¨è˜‹æžœç™¾é¦™å¥½å–æŽ¨æŽ¨	CoCo/é®®æ¦¨è˜‹æžœç™¾é¦™.png	TRUE	FALSE		CF	B
+B08	é®®æ¦¨è˜‹æžœé¤Šæ¨‚å¤š	é®®æ¦¨è˜‹æžœé¤Šæ¨‚å¤šäººé–“æ¥µå“	CoCo/é®®æ¦¨è˜‹æžœé¤Šæ¨‚å¤š.png	TRUE	FALSE		CF	B
+B09	é®®è‘¡è„æŸšå†°èŒ¶	é®®è‘¡è„æŸšå†°èŒ¶å¥½å–æŽ¨æŽ¨	CoCo/é®®è‘¡è„æŸšå†°èŒ¶.png	TRUE	FALSE		CF	B
+B10	é®®é¦™æ©™å†°èŒ¶	é®®é¦™æ©™å†°èŒ¶äººé–“æ¥µå“	CoCo/é®®é¦™æ©™å†°èŒ¶.png	TRUE	FALSE		CF	B
+B11	é®®æ©™æŸšå†°èŒ¶	é®®æ©™æŸšå†°èŒ¶å¥½å–æŽ¨æŽ¨	CoCo/é®®æ©™æŸšå†°èŒ¶.png	TRUE	FALSE		CF	B
+B12	é®®æ¦¨æŸ³æ©™é¤Šæ¨‚å¤š	é®®æ¦¨æŸ³æ©™é¤Šæ¨‚å¤šäººé–“æ¥µå“	CoCo/é®®æ¦¨æŸ³æ©™é¤Šæ¨‚å¤š.png	TRUE	FALSE		CF	B
+B13	æ³•å¼å¥¶éœœç´…/ç¶ èŒ¶	æ³•å¼å¥¶éœœç´…/ç¶ èŒ¶å¥½å–æŽ¨æŽ¨	CoCo/æ³•å¼å¥¶éœœç´…/ç¶ èŒ¶.png	TRUE	FALSE		CG	B
+B14	ç´…èŒ¶æ‹¿éµ	ç´…èŒ¶æ‹¿éµäººé–“æ¥µå“	CoCo/ç´…èŒ¶æ‹¿éµ.png	TRUE	FALSE		CM	B
+B15	çç ç´…èŒ¶æ‹¿éµ	çç ç´…èŒ¶æ‹¿éµå¥½å–æŽ¨æŽ¨	CoCo/çç ç´…èŒ¶æ‹¿éµ.png	TRUE	FALSE		CM	B
+B16	å—éžåœ‹å¯¶æ‹¿éµ	å—éžåœ‹å¯¶æ‹¿éµäººé–“æ¥µå“	CoCo/å—éžåœ‹å¯¶æ‹¿éµ.png	TRUE	FALSE		CM	B
+B17	èŠ‹é ­ç‰›å¥¶	èŠ‹é ­ç‰›å¥¶å¥½å–æŽ¨æŽ¨	CoCo/èŠ‹é ­ç‰›å¥¶.png	TRUE	FALSE		CM	B
+B18	ç‰›å¥¶é›™é‡å¥	ç‰›å¥¶é›™é‡å¥äººé–“æ¥µå“	CoCo/ç‰›å¥¶é›™é‡å¥.png	TRUE	FALSE		CM	B
+B19	æ‹›ç‰Œå’–å•¡	æ‹›ç‰Œå’–å•¡å¥½å–æŽ¨æŽ¨	CoCo/æ‹›ç‰Œå’–å•¡.png	TRUE	FALSE		CX	B
+B20	å·§å…‹åŠ›å¥¶èŒ¶	å·§å…‹åŠ›å¥¶èŒ¶äººé–“æ¥µå“	CoCo/å·§å…‹åŠ›å¥¶èŒ¶.png	TRUE	FALSE		CM	B
+B21	å·§å…‹åŠ›çç å¥¶èŒ¶	å·§å…‹åŠ›çç å¥¶èŒ¶å¥½å–æŽ¨æŽ¨	CoCo/å·§å…‹åŠ›çç å¥¶èŒ¶.png	TRUE	FALSE		CM	B
+B22	é†‡å“ç¶ èŒ¶	é†‡å“ç¶ èŒ¶äººé–“æ¥µå“	CoCo/é†‡å“ç¶ èŒ¶.png	TRUE	FALSE		CG	B
+B23	èŽŠåœ’ç´…èŒ¶	èŽŠåœ’ç´…èŒ¶å¥½å–æŽ¨æŽ¨	CoCo/èŽŠåœ’ç´…èŒ¶.png	TRUE	FALSE		CB	B
+B24	å°ç£åŒ…ç¨®èŒ¶	å°ç£åŒ…ç¨®èŒ¶äººé–“æ¥µå“	CoCo/å°ç£åŒ…ç¨®èŒ¶.png	TRUE	FALSE		CX	B
+B25	è•Žéº¥åŒ…ç¨®èŒ¶	è•Žéº¥åŒ…ç¨®èŒ¶å¥½å–æŽ¨æŽ¨	CoCo/è•Žéº¥åŒ…ç¨®èŒ¶.png	TRUE	FALSE		CX	B
+B26	æª¸æª¬åŒ…ç¨®èŒ¶	æª¸æª¬åŒ…ç¨®èŒ¶äººé–“æ¥µå“	CoCo/æª¸æª¬åŒ…ç¨®èŒ¶.png	TRUE	FALSE		CX	B
+B27	å—éžåœ‹å¯¶èŒ¶	å—éžåœ‹å¯¶èŒ¶å¥½å–æŽ¨æŽ¨	CoCo/å—éžåœ‹å¯¶èŒ¶.png	TRUE	FALSE		CX	B
+B28	ç¶ èŒ¶é¤Šæ¨‚å¤š	ç¶ èŒ¶é¤Šæ¨‚å¤šäººé–“æ¥µå“	CoCo/ç¶ èŒ¶é¤Šæ¨‚å¤š.png	TRUE	FALSE		CG	B
+B29	æª¸æª¬é¤Šæ¨‚å¤š	æª¸æª¬é¤Šæ¨‚å¤šå¥½å–æŽ¨æŽ¨	CoCo/æª¸æª¬é¤Šæ¨‚å¤š.png	TRUE	FALSE		CF	B
+B30	ç™¾é¦™ç¶ èŒ¶	ç™¾é¦™ç¶ èŒ¶äººé–“æ¥µå“	CoCo/ç™¾é¦™ç¶ èŒ¶.png	TRUE	FALSE		CG	B
+B31	é®®æª¸æª¬ç´…/ç¶ èŒ¶	é®®æª¸æª¬ç´…/ç¶ èŒ¶å¥½å–æŽ¨æŽ¨	CoCo/é®®æª¸æª¬ç´…/ç¶ èŒ¶.png	TRUE	FALSE		CG	B
+B32	å—éžåœ‹å¯¶æª¸æª¬èŒ¶	å—éžåœ‹å¯¶æª¸æª¬èŒ¶äººé–“æ¥µå“	CoCo/å—éžåœ‹å¯¶æª¸æª¬èŒ¶.png	TRUE	FALSE		CF	B
+B33	é‡‘æ¡”æª¸æª¬	é‡‘æ¡”æª¸æª¬å¥½å–æŽ¨æŽ¨	CoCo/é‡‘æ¡”æª¸æª¬.png	TRUE	FALSE		CF	B
+B34	ç™¾é¦™æžœé›™éŸ¿ç‚®	ç™¾é¦™æžœé›™éŸ¿ç‚®äººé–“æ¥µå“	CoCo/ç™¾é¦™æžœé›™éŸ¿ç‚®.png	TRUE	FALSE		CF	B
+B35	èŽŠåœ’æžœèŒ¶	èŽŠåœ’æžœèŒ¶å¥½å–æŽ¨æŽ¨	CoCo/èŽŠåœ’æžœèŒ¶.png	TRUE	FALSE		CF	B
+C01	èŒ‰èŽ‰çƒé¾	èŒ‰èŽ‰çƒé¾äººé–“æ¥µå“	comebuy/èŒ‰èŽ‰çƒé¾.png	TRUE	TRUE		CO	C
+C02	ç¢§èžºæ˜¥	ç¢§èžºæ˜¥å¥½å–æŽ¨æŽ¨	comebuy/ç¢§èžºæ˜¥.png	TRUE	TRUE		CX	C
+C03	å››å­£æ˜¥	å››å­£æ˜¥äººé–“æ¥µå“	comebuy/å››å­£æ˜¥.png	TRUE	TRUE		CX	C
+C04	çƒé¾ç¶ èŒ¶	çƒé¾ç¶ èŒ¶å¥½å–æŽ¨æŽ¨	comebuy/çƒé¾ç¶ èŒ¶.png	TRUE	TRUE		CG	C
+C05	æ–¯é‡è˜­å¡çƒç“¦ç´…èŒ¶	æ–¯é‡è˜­å¡çƒç“¦ç´…èŒ¶äººé–“æ¥µå“	comebuy/æ–¯é‡è˜­å¡çƒç“¦ç´…èŒ¶.png	TRUE	TRUE		CB	C
+C06	æµ·ç¥ž	æµ·ç¥žå¥½å–æŽ¨æŽ¨	comebuy/æµ·ç¥ž.png	TRUE	TRUE		CX	C
+C07	é‡‘è±èŒ¶	é‡‘è±èŒ¶äººé–“æ¥µå“	comebuy/é‡‘è±èŒ¶.png	TRUE	TRUE		CX	C
+C08	ç†Ÿæ»„è§€éŸ³	ç†Ÿæ»„è§€éŸ³å¥½å–æŽ¨æŽ¨	comebuy/ç†Ÿæ»„è§€éŸ³.png	TRUE	TRUE		CX	C
+C09	æ–‡å±±åŒ…ç¨®	æ–‡å±±åŒ…ç¨®äººé–“æ¥µå“	comebuy/æ–‡å±±åŒ…ç¨®.png	TRUE	TRUE		CX	C
+C10	æ±æ–¹ç¾Žäºº	æ±æ–¹ç¾Žäººå¥½å–æŽ¨æŽ¨	comebuy/æ±æ–¹ç¾Žäºº.png	TRUE	TRUE		CX	C
+C11	ç™½æ¡ƒå¯†çƒé¾	ç™½æ¡ƒå¯†çƒé¾äººé–“æ¥µå“	comebuy/ç™½æ¡ƒå¯†çƒé¾.png	TRUE	TRUE		CO	C
+C12	è½ç¥žèœœé¦™ç´…èŒ¶	è½ç¥žèœœé¦™ç´…èŒ¶å¥½å–æŽ¨æŽ¨	comebuy/è½ç¥žèœœé¦™ç´…èŒ¶.png	TRUE	TRUE		CB	C
+C13	æ¡‚èŠ±å››å­£æ˜¥èŒ¶	æ¡‚èŠ±å››å­£æ˜¥èŒ¶äººé–“æ¥µå“	comebuy/æ¡‚èŠ±å››å­£æ˜¥èŒ¶.png	TRUE	TRUE		CX	C
+C14	æŸ‘æ©˜å¤§å‰å¶º	æŸ‘æ©˜å¤§å‰å¶ºå¥½å–æŽ¨æŽ¨	comebuy/æŸ‘æ©˜å¤§å‰å¶º.png	TRUE	FALSE		CF	C
+C15	æŸ‘æ©˜é‡‘è±	æŸ‘æ©˜é‡‘è±äººé–“æ¥µå“	comebuy/æŸ‘æ©˜é‡‘è±.png	TRUE	FALSE		CF	C
+C16	ç´…èŒ¶æ‹¿éµ	ç´…èŒ¶æ‹¿éµå¥½å–æŽ¨æŽ¨	comebuy/ç´…èŒ¶æ‹¿éµ.png	TRUE	TRUE		CM	C
+C17	çƒé¾æ‹¿éµ	çƒé¾æ‹¿éµäººé–“æ¥µå“	comebuy/çƒé¾æ‹¿éµ.png	TRUE	TRUE		CM	C
+C18	å››å­£æ˜¥æ‹¿éµ	å››å­£æ˜¥æ‹¿éµå¥½å–æŽ¨æŽ¨	comebuy/å››å­£æ˜¥æ‹¿éµ.png	TRUE	TRUE		CM	C
+C19	é‡‘è±æ‹¿éµ	é‡‘è±æ‹¿éµäººé–“æ¥µå“	comebuy/é‡‘è±æ‹¿éµ.png	TRUE	TRUE		CM	C
+C20	è§€éŸ³æ‹¿éµ	è§€éŸ³æ‹¿éµå¥½å–æŽ¨æŽ¨	comebuy/è§€éŸ³æ‹¿éµ.png	TRUE	TRUE		CM	C
+C21	æ‹›ç‰Œå¥¶èŒ¶	æ‹›ç‰Œå¥¶èŒ¶äººé–“æ¥µå“	comebuy/æ‹›ç‰Œå¥¶èŒ¶.png	TRUE	TRUE		CM	C
+C22	é»ƒé‡‘å¥¶èŒ¶	é»ƒé‡‘å¥¶èŒ¶å¥½å–æŽ¨æŽ¨	comebuy/é»ƒé‡‘å¥¶èŒ¶.png	TRUE	TRUE		CM	C
+C23	çç å¥¶èŒ¶	çç å¥¶èŒ¶äººé–“æ¥µå“	comebuy/çç å¥¶èŒ¶.png	TRUE	TRUE		CM	C
+C24	æµ·ç¥žå¥¶èŒ¶	æµ·ç¥žå¥¶èŒ¶å¥½å–æŽ¨æŽ¨	comebuy/æµ·ç¥žå¥¶èŒ¶.png	TRUE	TRUE		CM	C
+C25	çµ•ä»£é›™Qå¥¶èŒ¶	çµ•ä»£é›™Qå¥¶èŒ¶äººé–“æ¥µå“	comebuy/çµ•ä»£é›™Qå¥¶èŒ¶.png	TRUE	TRUE		CM	C
+C26	ä»™è‰å‡å¥¶èŒ¶	ä»™è‰å‡å¥¶èŒ¶å¥½å–æŽ¨æŽ¨	comebuy/ä»™è‰å‡å¥¶èŒ¶.png	TRUE	TRUE		CM	C
+C27	æ¸¯å¼åŽšå¥¶	æ¸¯å¼åŽšå¥¶äººé–“æ¥µå“	comebuy/æ¸¯å¼åŽšå¥¶.png	TRUE	TRUE		CM	C
+C28	ç¶“å…¸å¯å¯	ç¶“å…¸å¯å¯å¥½å–æŽ¨æŽ¨	comebuy/ç¶“å…¸å¯å¯.png	TRUE	TRUE		CX	C
+C29	æ¡‚åœ“ç´…æ£—	æ¡‚åœ“ç´…æ£—äººé–“æ¥µå“	comebuy/æ¡‚åœ“ç´…æ£—.png	FALSE	TRUE		CX	C
+C30	æš–è–‘èŒ¶	æš–è–‘èŒ¶å¥½å–æŽ¨æŽ¨	comebuy/æš–è–‘èŒ¶.png	FALSE	TRUE		CX	C
+C31	æš–è–‘å¥¶èŒ¶	æš–è–‘å¥¶èŒ¶äººé–“æ¥µå“	comebuy/æš–è–‘å¥¶èŒ¶.png	FALSE	TRUE		CM	C
+C32	ç†±æª¸èŒ¶	ç†±æª¸èŒ¶å¥½å–æŽ¨æŽ¨	comebuy/ç†±æª¸èŒ¶.png	TRUE	TRUE		CX	C
+C33	ç†±æ¡”èŒ¶	ç†±æ¡”èŒ¶äººé–“æ¥µå“	comebuy/ç†±æ¡”èŒ¶.png	TRUE	TRUE		CX	C
+C34	é»‘ç³–è–‘æ±å¯å¯	é»‘ç³–è–‘æ±å¯å¯å¥½å–æŽ¨æŽ¨	comebuy/é»‘ç³–è–‘æ±å¯å¯.png	FALSE	TRUE		CX	C
+C35	ç´«ç±³å¯å¯	ç´«ç±³å¯å¯äººé–“æ¥µå“	comebuy/ç´«ç±³å¯å¯.png	TRUE	TRUE		CX	C
+C36	ç´«ç±³å¥¶èŒ¶	ç´«ç±³å¥¶èŒ¶å¥½å–æŽ¨æŽ¨	comebuy/ç´«ç±³å¥¶èŒ¶.png	TRUE	TRUE		CM	C
+C37	å®‡æ²»æŠ¹èŒ¶	å®‡æ²»æŠ¹èŒ¶äººé–“æ¥µå“	comebuy/å®‡æ²»æŠ¹èŒ¶.png	TRUE	TRUE		CG	C
+C38	æŠ¹èŒ¶æ‹¿éµ	æŠ¹èŒ¶æ‹¿éµå¥½å–æŽ¨æŽ¨	comebuy/æŠ¹èŒ¶æ‹¿éµ.png	TRUE	TRUE		CM	C
+C39	ç‰¹èª¿å’–å•¡	ç‰¹èª¿å’–å•¡äººé–“æ¥µå“	comebuy/ç‰¹èª¿å’–å•¡.png	TRUE	TRUE		CX	C
+C40	éŒ«è˜­ç´…èŒ¶	éŒ«è˜­ç´…èŒ¶å¥½å–æŽ¨æŽ¨	comebuy/éŒ«è˜­ç´…èŒ¶.png	TRUE	TRUE		CB	C
+C41	èŒ‰èŽ‰ç¶ èŒ¶	èŒ‰èŽ‰ç¶ èŒ¶äººé–“æ¥µå“	comebuy/èŒ‰èŽ‰ç¶ èŒ¶.png	TRUE	TRUE		CG	C
+C42	èœ‚èœœç´…/ç¶ èŒ¶	èœ‚èœœç´…/ç¶ èŒ¶å¥½å–æŽ¨æŽ¨	comebuy/èœ‚èœœç´…/ç¶ èŒ¶.png	TRUE	FALSE		CG	C
+C43	çŽ‰è·å†°ç¶ 	çŽ‰è·å†°ç¶ äººé–“æ¥µå“	comebuy/çŽ‰è·å†°ç¶ .png	TRUE	FALSE		CG	C
+C44	æª¸æª¬å†°èŒ¶	æª¸æª¬å†°èŒ¶å¥½å–æŽ¨æŽ¨	comebuy/æª¸æª¬å†°èŒ¶.png	TRUE	TRUE		CF	C
+C45	æ¢…æžœèŒ¶	æ¢…æžœèŒ¶äººé–“æ¥µå“	comebuy/æ¢…æžœèŒ¶.png	TRUE	TRUE		CF	C
+C46	é¤Šæ¨‚å¤šç¶ èŒ¶	é¤Šæ¨‚å¤šç¶ èŒ¶å¥½å–æŽ¨æŽ¨	comebuy/é¤Šæ¨‚å¤šç¶ èŒ¶.png	TRUE	FALSE		CG	C
+C47	ç™¾é¦™ç‘¤æžœæ¨‚	ç™¾é¦™ç‘¤æžœæ¨‚äººé–“æ¥µå“	comebuy/ç™¾é¦™ç‘¤æžœæ¨‚.png	TRUE	FALSE		CF	C
+C48	è˜‹æžœå†°èŒ¶	è˜‹æžœå†°èŒ¶å¥½å–æŽ¨æŽ¨	comebuy/è˜‹æžœå†°èŒ¶.png	TRUE	FALSE		CF	C
+C49	è‘¡è„æŸšç¶ èŒ¶	è‘¡è„æŸšç¶ èŒ¶äººé–“æ¥µå“	comebuy/è‘¡è„æŸšç¶ èŒ¶.png	TRUE	FALSE		CG	C
+C50	é³³æ¢¨å†°èŒ¶	é³³æ¢¨å†°èŒ¶å¥½å–æŽ¨æŽ¨	comebuy/é³³æ¢¨å†°èŒ¶.png	TRUE	FALSE		CF	C
+C51	èŠ­Cæª¸æª¬ç¶ 	èŠ­Cæª¸æª¬ç¶ äººé–“æ¥µå“	comebuy/èŠ­Cæª¸æª¬ç¶ .png	TRUE	FALSE		CG	C
+C52	è¶…æ¡”éœ¸æ°£é£²	è¶…æ¡”éœ¸æ°£é£²å¥½å–æŽ¨æŽ¨	comebuy/è¶…æ¡”éœ¸æ°£é£².png	TRUE	TRUE		CF	C
+C53	èœ‚èœœè˜†è–ˆ	èœ‚èœœè˜†è–ˆäººé–“æ¥µå“	comebuy/èœ‚èœœè˜†è–ˆ.png	TRUE	FALSE		CX	C
+C54	é‡‘æ¡”æª¸æª¬	é‡‘æ¡”æª¸æª¬å¥½å–æŽ¨æŽ¨	comebuy/é‡‘æ¡”æª¸æª¬.png	TRUE	TRUE		CF	C
+C55	è”æžçŽ‰éœ²	è”æžçŽ‰éœ²äººé–“æ¥µå“	comebuy/è”æžçŽ‰éœ².png	TRUE	FALSE		CX	C
+C56	çº–ç¾Žå°ç´«è˜‡	çº–ç¾Žå°ç´«è˜‡å¥½å–æŽ¨æŽ¨	comebuy/çº–ç¾Žå°ç´«è˜‡.png	TRUE	FALSE		CX	C
+C57	èŠ­Cæª¸æª¬å¤šå¤š	èŠ­Cæª¸æª¬å¤šå¤šäººé–“æ¥µå“	comebuy/èŠ­Cæª¸æª¬å¤šå¤š.png	TRUE	FALSE		CF	C
+C58	æª¸æª¬æ„›çŽ‰	æª¸æª¬æ„›çŽ‰å¥½å–æŽ¨æŽ¨	comebuy/æª¸æª¬æ„›çŽ‰.png	TRUE	FALSE		CF	C
+C59	ç™¾é¦™æžœå†°æ²™	ç™¾é¦™æžœå†°æ²™äººé–“æ¥µå“	comebuy/ç™¾é¦™æžœå†°æ²™.png	TRUE	FALSE		CF	C
+C60	ä¸ƒå·§æ­è•¾	ä¸ƒå·§æ­è•¾å¥½å–æŽ¨æŽ¨	comebuy/ä¸ƒå·§æ­è•¾.png	TRUE	FALSE		CX	C
+C61	é‡‘èŠ’æžœå„ªé…ª	é‡‘èŠ’æžœå„ªé…ªäººé–“æ¥µå“	comebuy/é‡‘èŠ’æžœå„ªé…ª.png	TRUE	FALSE		CF	C
+C62	é’æª¸é¦™æŸšQQ	é’æª¸é¦™æŸšQQå¥½å–æŽ¨æŽ¨	comebuy/é’æª¸é¦™æŸšQQ.png	TRUE	FALSE		CF	C
+D01	ä¼¯çˆµç´…èŒ¶æ‹¿éµ	ä¼¯çˆµç´…èŒ¶æ‹¿éµäººé–“æ¥µå“	è¿·å®¢å¤/ä¼¯çˆµç´…èŒ¶æ‹¿éµ.png	TRUE	TRUE		CM	D
+D02	çç ç´…èŒ¶æ‹¿éµ	çç ç´…èŒ¶æ‹¿éµå¥½å–æŽ¨æŽ¨	è¿·å®¢å¤/çç ç´…èŒ¶æ‹¿éµ.png	TRUE	TRUE		CM	D
+D03	å¸ƒä¸ç´…èŒ¶æ‹¿éµ	å¸ƒä¸ç´…èŒ¶æ‹¿éµäººé–“æ¥µå“	è¿·å®¢å¤/å¸ƒä¸ç´…èŒ¶æ‹¿éµ.png	TRUE	TRUE		CM	D
+D04	ä»™è‰å‡ç´…èŒ¶æ‹¿éµ	ä»™è‰å‡ç´…èŒ¶æ‹¿éµå¥½å–æŽ¨æŽ¨	è¿·å®¢å¤/ä»™è‰å‡ç´…èŒ¶æ‹¿éµ.png	TRUE	TRUE		CM	D
+D05	ç´…è±†ç´…èŒ¶æ‹¿éµ	ç´…è±†ç´…èŒ¶æ‹¿éµäººé–“æ¥µå“	è¿·å®¢å¤/ç´…è±†ç´…èŒ¶æ‹¿éµ.png	TRUE	TRUE		CM	D
+D06	èŒ‰é¦™ç¶ èŒ¶	èŒ‰é¦™ç¶ èŒ¶å¥½å–æŽ¨æŽ¨	è¿·å®¢å¤/èŒ‰é¦™ç¶ èŒ¶.png	TRUE	TRUE		CG	D
+D07	å¤§æ­£ç´…èŒ¶	å¤§æ­£ç´…èŒ¶äººé–“æ¥µå“	è¿·å®¢å¤/å¤§æ­£ç´…èŒ¶.png	TRUE	TRUE		CB	D
+D08	è‹±å€«ä¼¯çˆµç´…èŒ¶	è‹±å€«ä¼¯çˆµç´…èŒ¶å¥½å–æŽ¨æŽ¨	è¿·å®¢å¤/è‹±å€«ä¼¯çˆµç´…èŒ¶.png	TRUE	TRUE		CB	D
+D09	åˆéœ²é’èŒ¶	åˆéœ²é’èŒ¶äººé–“æ¥µå“	è¿·å®¢å¤/åˆéœ²é’èŒ¶.png	TRUE	TRUE		CR	D
+D10	é«˜å³°çƒé¾ç¶ 	é«˜å³°çƒé¾ç¶ å¥½å–æŽ¨æŽ¨	è¿·å®¢å¤/é«˜å³°çƒé¾ç¶ .png	TRUE	TRUE		CG	D
+D11	æ±ºæ˜Žå¤§éº¥	æ±ºæ˜Žå¤§éº¥äººé–“æ¥µå“	è¿·å®¢å¤/æ±ºæ˜Žå¤§éº¥.png	TRUE	TRUE		CX	D
+D12	é’æŽ¡ç¿ çŽ‰	é’æŽ¡ç¿ çŽ‰å¥½å–æŽ¨æŽ¨	è¿·å®¢å¤/é’æŽ¡ç¿ çŽ‰.png	TRUE	FALSE		CG	D
+D13	é¹¿è°·é»ƒé‡‘çƒé¾	é¹¿è°·é»ƒé‡‘çƒé¾äººé–“æ¥µå“	è¿·å®¢å¤/é¹¿è°·é»ƒé‡‘çƒé¾.png	TRUE	FALSE		CO	D
+D14	å°å±±è¿Žéœ²	å°å±±è¿Žéœ²å¥½å–æŽ¨æŽ¨	è¿·å®¢å¤/å°å±±è¿Žéœ².png	TRUE	FALSE		CX	D
+D15	çç é®®å¥¶	çç é®®å¥¶äººé–“æ¥µå“	è¿·å®¢å¤/çç é®®å¥¶.png	TRUE	TRUE		CM	D
+D16	æ‰‹æŠ„é»‘ç³–é®®å¥¶	æ‰‹æŠ„é»‘ç³–é®®å¥¶å¥½å–æŽ¨æŽ¨	è¿·å®¢å¤/æ‰‹æŠ„é»‘ç³–é®®å¥¶.png	TRUE	TRUE		CM	D
+D17	å¤§ç”²èŠ‹é ­é®®å¥¶	å¤§ç”²èŠ‹é ­é®®å¥¶äººé–“æ¥µå“	è¿·å®¢å¤/å¤§ç”²èŠ‹é ­é®®å¥¶.png	TRUE	TRUE		CM	D
+D18	è‰èŽ“é®®å¥¶	è‰èŽ“é®®å¥¶å¥½å–æŽ¨æŽ¨	è¿·å®¢å¤/è‰èŽ“é®®å¥¶.png	TRUE	FALSE		CM	D
+D19	æ³•èŠ™å¨œç´”å¯å¯é®®å¥¶	æ³•èŠ™å¨œç´”å¯å¯é®®å¥¶äººé–“æ¥µå“	è¿·å®¢å¤/æ³•èŠ™å¨œç´”å¯å¯é®®å¥¶.png	TRUE	TRUE		CM	D
+D20	å†¬ç“œé®®å¥¶	å†¬ç“œé®®å¥¶å¥½å–æŽ¨æŽ¨	è¿·å®¢å¤/å†¬ç“œé®®å¥¶.png	TRUE	TRUE		CM	D
+D21	å‡ºé›²æŠ¹èŒ¶é®®å¥¶	å‡ºé›²æŠ¹èŒ¶é®®å¥¶äººé–“æ¥µå“	è¿·å®¢å¤/å‡ºé›²æŠ¹èŒ¶é®®å¥¶.png	TRUE	TRUE		CM	D
+D22	å¸ƒä¸é®®å¥¶	å¸ƒä¸é®®å¥¶å¥½å–æŽ¨æŽ¨	è¿·å®¢å¤/å¸ƒä¸é®®å¥¶.png	TRUE	TRUE		CM	D
+D23	ä»™è‰å‡é®®å¥¶	ä»™è‰å‡é®®å¥¶äººé–“æ¥µå“	è¿·å®¢å¤/ä»™è‰å‡é®®å¥¶.png	TRUE	TRUE		CM	D
+D24	ç´…è±†é®®å¥¶	ç´…è±†é®®å¥¶å¥½å–æŽ¨æŽ¨	è¿·å®¢å¤/ç´…è±†é®®å¥¶.png	TRUE	TRUE		CM	D
+D25	èŠéº»é®®å¥¶	èŠéº»é®®å¥¶äººé–“æ¥µå“	è¿·å®¢å¤/èŠéº»é®®å¥¶.png	TRUE	TRUE		CM	D
+D26	ç´…è±†èŠéº»é®®å¥¶	ç´…è±†èŠéº»é®®å¥¶å¥½å–æŽ¨æŽ¨	è¿·å®¢å¤/ç´…è±†èŠéº»é®®å¥¶.png	TRUE	TRUE		CM	D
+D27	æ¡‚åœ“é®®å¥¶	æ¡‚åœ“é®®å¥¶äººé–“æ¥µå“	è¿·å®¢å¤/æ¡‚åœ“é®®å¥¶.png	TRUE	TRUE		CM	D
+D28	ä¼¯çˆµç´…èŒ¶é®®è±†å¥¶ï¼ˆç¶ /çƒ/é’/éº¥/å¤§æ­£ï¼‰	ä¼¯çˆµç´…èŒ¶é®®è±†å¥¶ï¼ˆç¶ /çƒ/é’/éº¥/å¤§æ­£ï¼‰å¥½å–æŽ¨æŽ¨	è¿·å®¢å¤/ä¼¯çˆµç´…èŒ¶é®®è±†å¥¶ï¼ˆç¶ /çƒ/é’/éº¥/å¤§æ­£ï¼‰.png	TRUE	TRUE		CB	D
+D29	çç å¥¶èŒ¶é®®è±†å¥¶ï¼ˆå¸ƒä¸/ä»™è‰å‡/ç´…è±†ï¼‰	çç å¥¶èŒ¶é®®è±†å¥¶ï¼ˆå¸ƒä¸/ä»™è‰å‡/ç´…è±†ï¼‰äººé–“æ¥µå“	è¿·å®¢å¤/çç å¥¶èŒ¶é®®è±†å¥¶ï¼ˆå¸ƒä¸/ä»™è‰å‡/ç´…è±†ï¼‰.png	TRUE	TRUE		CM	D
+D30	å‡ºé›²æŠ¹èŒ¶é®®è±†å¥¶	å‡ºé›²æŠ¹èŒ¶é®®è±†å¥¶å¥½å–æŽ¨æŽ¨	è¿·å®¢å¤/å‡ºé›²æŠ¹èŒ¶é®®è±†å¥¶.png	TRUE	TRUE		CM	D
+D31	å†¬ç“œé®®è±†å¥¶	å†¬ç“œé®®è±†å¥¶äººé–“æ¥µå“	è¿·å®¢å¤/å†¬ç“œé®®è±†å¥¶.png	TRUE	TRUE		CM	D
+D32	å¸ƒä¸é®®è±†å¥¶	å¸ƒä¸é®®è±†å¥¶å¥½å–æŽ¨æŽ¨	è¿·å®¢å¤/å¸ƒä¸é®®è±†å¥¶.png	TRUE	TRUE		CM	D
+D33	åŽŸé„‰å†¬ç“œèŒ¶	åŽŸé„‰å†¬ç“œèŒ¶äººé–“æ¥µå“	è¿·å®¢å¤/åŽŸé„‰å†¬ç“œèŒ¶.png	TRUE	TRUE		CE	D
+D34	å†¬ç“œé’èŒ¶	å†¬ç“œé’èŒ¶å¥½å–æŽ¨æŽ¨	è¿·å®¢å¤/å†¬ç“œé’èŒ¶.png	TRUE	TRUE		CE	D
+D35	èœ‚è¾²èŠ±èœœèŒ¶	èœ‚è¾²èŠ±èœœèŒ¶äººé–“æ¥µå“	è¿·å®¢å¤/èœ‚è¾²èŠ±èœœèŒ¶.png	TRUE	TRUE		CX	D
+D36	å†°ç³–æ´›ç¥žæ¢…	å†°ç³–æ´›ç¥žæ¢…å¥½å–æŽ¨æŽ¨	è¿·å®¢å¤/å†°ç³–æ´›ç¥žæ¢….png	TRUE	TRUE		CX	D
+D37	é¤Šæ¨‚å¤šç¶ 	é¤Šæ¨‚å¤šç¶ äººé–“æ¥µå“	è¿·å®¢å¤/é¤Šæ¨‚å¤šç¶ .png	TRUE	FALSE		CG	D
+D38	ç”˜è”—é’èŒ¶	ç”˜è”—é’èŒ¶å¥½å–æŽ¨æŽ¨	è¿·å®¢å¤/ç”˜è”—é’èŒ¶.png	TRUE	TRUE		CX	D
+D39	é¦™æŸšç¶ èŒ¶	é¦™æŸšç¶ èŒ¶äººé–“æ¥µå“	è¿·å®¢å¤/é¦™æŸšç¶ èŒ¶.png	TRUE	FALSE		CG	D
+D40	é’æª¸é¦™èŒ¶	é’æª¸é¦™èŒ¶å¥½å–æŽ¨æŽ¨	è¿·å®¢å¤/é’æª¸é¦™èŒ¶.png	TRUE	FALSE		CX	D
+D41	å†¬ç“œæª¸æª¬	å†¬ç“œæª¸æª¬äººé–“æ¥µå“	è¿·å®¢å¤/å†¬ç“œæª¸æª¬.png	TRUE	TRUE		CE	D
+D42	é‡‘æ¡”æª¸æª¬	é‡‘æ¡”æª¸æª¬å¥½å–æŽ¨æŽ¨	è¿·å®¢å¤/é‡‘æ¡”æª¸æª¬.png	TRUE	TRUE		CF	D
+D43	å†°èƒæª¸æª¬	å†°èƒæª¸æª¬äººé–“æ¥µå“	è¿·å®¢å¤/å†°èƒæª¸æª¬.png	TRUE	FALSE		CF	D
+D44	å†°èƒæŸ³ä¸	å†°èƒæŸ³ä¸å¥½å–æŽ¨æŽ¨	è¿·å®¢å¤/å†°èƒæŸ³ä¸.png	TRUE	FALSE		CF	D
+D45	æŸ³ä¸ç¶ èŒ¶ï¼ˆé’ï¼‰	æŸ³ä¸ç¶ èŒ¶ï¼ˆé’ï¼‰äººé–“æ¥µå“	è¿·å®¢å¤/æŸ³ä¸ç¶ èŒ¶ï¼ˆé’ï¼‰.png	TRUE	FALSE		CG	D
+D46	æ¡‚åœ“ç´…æ£—èŒ¶	æ¡‚åœ“ç´…æ£—èŒ¶å¥½å–æŽ¨æŽ¨	è¿·å®¢å¤/æ¡‚åœ“ç´…æ£—èŒ¶.png	TRUE	TRUE		CX	D
+D47	é˜¿æ–‡é®®æ¢…ç¶ 	é˜¿æ–‡é®®æ¢…ç¶ äººé–“æ¥µå“	è¿·å®¢å¤/é˜¿æ–‡é®®æ¢…ç¶ .png	TRUE	TRUE		CG	D
+E01	è§€éŸ³æ‹¿éµ	è§€éŸ³æ‹¿éµå¥½å–æŽ¨æŽ¨	èŒ¶æ¹¯æœƒ/è§€éŸ³æ‹¿éµ.png	TRUE	FALSE		CM	E
+E02	çç ç´…è±†æ‹¿éµ	çç ç´…è±†æ‹¿éµäººé–“æ¥µå“	èŒ¶æ¹¯æœƒ/çç ç´…è±†æ‹¿éµ.png	TRUE	FALSE		CM	E
+E03	ç¿¡ç¿ æª¸æª¬	ç¿¡ç¿ æª¸æª¬å¥½å–æŽ¨æŽ¨	èŒ¶æ¹¯æœƒ/ç¿¡ç¿ æª¸æª¬.png	TRUE	FALSE		CF	E
+E04	çç å¥¶èŒ¶	çç å¥¶èŒ¶äººé–“æ¥µå“	èŒ¶æ¹¯æœƒ/çç å¥¶èŒ¶.png	TRUE	FALSE		CM	E
+E05	æ–°é®®æ°´æžœèŒ¶	æ–°é®®æ°´æžœèŒ¶å¥½å–æŽ¨æŽ¨	èŒ¶æ¹¯æœƒ/æ–°é®®æ°´æžœèŒ¶.png	TRUE	FALSE		CF	E
+E06	èŠ‹é¦™ç¿¡ç¿ æ‹¿éµ	èŠ‹é¦™ç¿¡ç¿ æ‹¿éµäººé–“æ¥µå“	èŒ¶æ¹¯æœƒ/èŠ‹é¦™ç¿¡ç¿ æ‹¿éµ.png	TRUE	FALSE		CM	E
+E07	è”—é¦™ç´…èŒ¶	è”—é¦™ç´…èŒ¶å¥½å–æŽ¨æŽ¨	èŒ¶æ¹¯æœƒ/è”—é¦™ç´…èŒ¶.png	TRUE	FALSE		CB	E
+E08	èŒ‰é¦™ç¶ èŒ¶	èŒ‰é¦™ç¶ èŒ¶äººé–“æ¥µå“	èŒ¶æ¹¯æœƒ/èŒ‰é¦™ç¶ èŒ¶.png	TRUE	FALSE		CG	E
+E09	ç‰¹ç´šç¿¡ç¿ ç¶ 	ç‰¹ç´šç¿¡ç¿ ç¶ å¥½å–æŽ¨æŽ¨	èŒ¶æ¹¯æœƒ/ç‰¹ç´šç¿¡ç¿ ç¶ .png	TRUE	FALSE		CG	E
+E10	ç‚­ç‡’éµè§€éŸ³	ç‚­ç‡’éµè§€éŸ³äººé–“æ¥µå“	èŒ¶æ¹¯æœƒ/ç‚­ç‡’éµè§€éŸ³.png	TRUE	FALSE		CX	E
+E11	çç ç´…èŒ¶	çç ç´…èŒ¶å¥½å–æŽ¨æŽ¨	èŒ¶æ¹¯æœƒ/çç ç´…èŒ¶.png	TRUE	FALSE		CB	E
+E12	åŒ…ç¨®æ¸…èŒ¶	åŒ…ç¨®æ¸…èŒ¶äººé–“æ¥µå“	èŒ¶æ¹¯æœƒ/åŒ…ç¨®æ¸…èŒ¶.png	TRUE	FALSE		CR	E
+E13	çç ç¶ èŒ¶	çç ç¶ èŒ¶å¥½å–æŽ¨æŽ¨	èŒ¶æ¹¯æœƒ/çç ç¶ èŒ¶.png	TRUE	FALSE		CG	E
+E14	è±†æ¼¿ç´…èŒ¶	è±†æ¼¿ç´…èŒ¶äººé–“æ¥µå“	èŒ¶æ¹¯æœƒ/è±†æ¼¿ç´…èŒ¶.png	TRUE	FALSE		CB	E
+E15	é’æ¢…å‡é£²	é’æ¢…å‡é£²å¥½å–æŽ¨æŽ¨	èŒ¶æ¹¯æœƒ/é’æ¢…å‡é£².png	TRUE	FALSE		CX	E
+E16	å†¬ç“œéµè§€éŸ³	å†¬ç“œéµè§€éŸ³äººé–“æ¥µå“	èŒ¶æ¹¯æœƒ/å†¬ç“œéµè§€éŸ³.png	TRUE	FALSE		CE	E
+E17	èœœé¦™æ¸…èŒ¶	èœœé¦™æ¸…èŒ¶å¥½å–æŽ¨æŽ¨	èŒ¶æ¹¯æœƒ/èœœé¦™æ¸…èŒ¶.png	TRUE	FALSE		CR	E
+E18	çç å†¬ç“œè§€éŸ³	çç å†¬ç“œè§€éŸ³äººé–“æ¥µå“	èŒ¶æ¹¯æœƒ/çç å†¬ç“œè§€éŸ³.png	TRUE	FALSE		CE	E
+E19	èœ‚èœœç¶ èŒ¶	èœ‚èœœç¶ èŒ¶å¥½å–æŽ¨æŽ¨	èŒ¶æ¹¯æœƒ/èœ‚èœœç¶ èŒ¶.png	TRUE	FALSE		CG	E
+E20	ç™¾é¦™ç¶ èŒ¶	ç™¾é¦™ç¶ èŒ¶äººé–“æ¥µå“	èŒ¶æ¹¯æœƒ/ç™¾é¦™ç¶ èŒ¶.png	TRUE	FALSE		CG	E
+E21	è±†æ¼¿å¥¶èŒ¶	è±†æ¼¿å¥¶èŒ¶å¥½å–æŽ¨æŽ¨	èŒ¶æ¹¯æœƒ/è±†æ¼¿å¥¶èŒ¶.png	TRUE	FALSE		CM	E
+E22	è”—é¦™å¥¶èŒ¶	è”—é¦™å¥¶èŒ¶äººé–“æ¥µå“	èŒ¶æ¹¯æœƒ/è”—é¦™å¥¶èŒ¶.png	TRUE	FALSE		CM	E
+E23	èŒ‰é¦™å¥¶èŒ¶	èŒ‰é¦™å¥¶èŒ¶å¥½å–æŽ¨æŽ¨	èŒ¶æ¹¯æœƒ/èŒ‰é¦™å¥¶èŒ¶.png	TRUE	FALSE		CM	E
+E24	éµè§€éŸ³å¥¶èŒ¶	éµè§€éŸ³å¥¶èŒ¶äººé–“æ¥µå“	èŒ¶æ¹¯æœƒ/éµè§€éŸ³å¥¶èŒ¶.png	TRUE	FALSE		CM	E
+E25	çç å¥¶ç¶ 	çç å¥¶ç¶ å¥½å–æŽ¨æŽ¨	èŒ¶æ¹¯æœƒ/çç å¥¶ç¶ .png	TRUE	FALSE		CG	E
+E26	æ³¢éœ¸å¥¶èŒ¶	æ³¢éœ¸å¥¶èŒ¶äººé–“æ¥µå“	èŒ¶æ¹¯æœƒ/æ³¢éœ¸å¥¶èŒ¶.png	TRUE	FALSE		CM	E
+E27	è§€éŸ³æ³¢éœ¸å¥¶èŒ¶	è§€éŸ³æ³¢éœ¸å¥¶èŒ¶å¥½å–æŽ¨æŽ¨	èŒ¶æ¹¯æœƒ/è§€éŸ³æ³¢éœ¸å¥¶èŒ¶.png	TRUE	FALSE		CM	E
+E28	è±†æ¼¿æ³¢éœ¸å¥¶èŒ¶	è±†æ¼¿æ³¢éœ¸å¥¶èŒ¶äººé–“æ¥µå“	èŒ¶æ¹¯æœƒ/è±†æ¼¿æ³¢éœ¸å¥¶èŒ¶.png	TRUE	FALSE		CM	E
+E29	å …æžœæ³¢éœ¸å¥¶èŒ¶	å …æžœæ³¢éœ¸å¥¶èŒ¶å¥½å–æŽ¨æŽ¨	èŒ¶æ¹¯æœƒ/å …æžœæ³¢éœ¸å¥¶èŒ¶.png	FALSE	TRUE		CM	E
+E30	æª¸æª¬ç´…èŒ¶	æª¸æª¬ç´…èŒ¶äººé–“æ¥µå“	èŒ¶æ¹¯æœƒ/æª¸æª¬ç´…èŒ¶.png	TRUE	FALSE		CB	E
+E31	å†¬ç“œæª¸æª¬	å†¬ç“œæª¸æª¬å¥½å–æŽ¨æŽ¨	èŒ¶æ¹¯æœƒ/å†¬ç“œæª¸æª¬.png	TRUE	FALSE		CE	E
+E32	æª¸æª¬èœœèŒ¶	æª¸æª¬èœœèŒ¶äººé–“æ¥µå“	èŒ¶æ¹¯æœƒ/æª¸æª¬èœœèŒ¶.png	TRUE	FALSE		CF	E
+E33	é®®æ¡”æª¸æª¬	é®®æ¡”æª¸æª¬å¥½å–æŽ¨æŽ¨	èŒ¶æ¹¯æœƒ/é®®æ¡”æª¸æª¬.png	TRUE	FALSE		CF	E
+E34	å†¬ç“œæ‹¿éµ	å†¬ç“œæ‹¿éµäººé–“æ¥µå“	èŒ¶æ¹¯æœƒ/å†¬ç“œæ‹¿éµ.png	TRUE	FALSE		CM	E
+E35	æŠ¹èŒ¶æ‹¿éµ	æŠ¹èŒ¶æ‹¿éµå¥½å–æŽ¨æŽ¨	èŒ¶æ¹¯æœƒ/æŠ¹èŒ¶æ‹¿éµ.png	TRUE	FALSE		CM	E
+E36	æŠ¹èŒ¶ç´…è±†æ‹¿éµ	æŠ¹èŒ¶ç´…è±†æ‹¿éµäººé–“æ¥µå“	èŒ¶æ¹¯æœƒ/æŠ¹èŒ¶ç´…è±†æ‹¿éµ.png	TRUE	FALSE		CM	E
+E37	ç´…èŒ¶æ‹¿éµ	ç´…èŒ¶æ‹¿éµå¥½å–æŽ¨æŽ¨	èŒ¶æ¹¯æœƒ/ç´…èŒ¶æ‹¿éµ.png	TRUE	FALSE		CM	E
+E38	ç¿¡ç¿ æ‹¿éµ	ç¿¡ç¿ æ‹¿éµäººé–“æ¥µå“	èŒ¶æ¹¯æœƒ/ç¿¡ç¿ æ‹¿éµ.png	TRUE	FALSE		CM	E
+E39	ç´…è±†æ‹¿éµ	ç´…è±†æ‹¿éµå¥½å–æŽ¨æŽ¨	èŒ¶æ¹¯æœƒ/ç´…è±†æ‹¿éµ.png	TRUE	FALSE		CM	E
+E40	èŠ‹é¦™ç´…èŒ¶æ‹¿éµ	èŠ‹é¦™ç´…èŒ¶æ‹¿éµäººé–“æ¥µå“	èŒ¶æ¹¯æœƒ/èŠ‹é¦™ç´…èŒ¶æ‹¿éµ.png	TRUE	FALSE		CM	E
+E41	ç´…è±†çç æ‹¿éµ	ç´…è±†çç æ‹¿éµå¥½å–æŽ¨æŽ¨	èŒ¶æ¹¯æœƒ/ç´…è±†çç æ‹¿éµ.png	TRUE	FALSE		CM	E
+E42	ç¿¡ç¿ çç æ‹¿éµ	ç¿¡ç¿ çç æ‹¿éµäººé–“æ¥µå“	èŒ¶æ¹¯æœƒ/ç¿¡ç¿ çç æ‹¿éµ.png	TRUE	FALSE		CM	E
+E43	è§€éŸ³çç æ‹¿éµ	è§€éŸ³çç æ‹¿éµå¥½å–æŽ¨æŽ¨	èŒ¶æ¹¯æœƒ/è§€éŸ³çç æ‹¿éµ.png	TRUE	FALSE		CM	E
+E44	æ„›æ–‡èŠ’æžœç¶ 	æ„›æ–‡èŠ’æžœç¶ äººé–“æ¥µå“	èŒ¶æ¹¯æœƒ/æ„›æ–‡èŠ’æžœç¶ .png	TRUE	FALSE		CG	E
+E45	æ¡‘è‘šå‡é£²èŒ¶	æ¡‘è‘šå‡é£²èŒ¶å¥½å–æŽ¨æŽ¨	èŒ¶æ¹¯æœƒ/æ¡‘è‘šå‡é£²èŒ¶.png	TRUE	FALSE		CX	E
+E46	æ„›æ–‡èŠ’æžœå†°é‘½	æ„›æ–‡èŠ’æžœå†°é‘½äººé–“æ¥µå“	èŒ¶æ¹¯æœƒ/æ„›æ–‡èŠ’æžœå†°é‘½.png	TRUE	FALSE		CF	E
+E47	æ„›æ–‡èŠ’æžœæ‹¿éµ	æ„›æ–‡èŠ’æžœæ‹¿éµå¥½å–æŽ¨æŽ¨	èŒ¶æ¹¯æœƒ/æ„›æ–‡èŠ’æžœæ‹¿éµ.png	TRUE	FALSE		CM	E
+E48	åŽŸå‘³è–‘èŒ¶	åŽŸå‘³è–‘èŒ¶äººé–“æ¥µå“	èŒ¶æ¹¯æœƒ/åŽŸå‘³è–‘èŒ¶.png	FALSE	TRUE		CX	E
+E49	è–‘æ±å¥¶èŒ¶	è–‘æ±å¥¶èŒ¶å¥½å–æŽ¨æŽ¨	èŒ¶æ¹¯æœƒ/è–‘æ±å¥¶èŒ¶.png	FALSE	TRUE		CM	E
+E50	å …æžœå¥¶èŒ¶	å …æžœå¥¶èŒ¶äººé–“æ¥µå“	èŒ¶æ¹¯æœƒ/å …æžœå¥¶èŒ¶.png	FALSE	TRUE		CM	E
+E51	è–‘æ±æ¡‚åœ“	è–‘æ±æ¡‚åœ“å¥½å–æŽ¨æŽ¨	èŒ¶æ¹¯æœƒ/è–‘æ±æ¡‚åœ“.png	FALSE	TRUE		CX	E
+E52	æ¡‚åœ“ç´…æ£—èŒ¶	æ¡‚åœ“ç´…æ£—èŒ¶äººé–“æ¥µå“	èŒ¶æ¹¯æœƒ/æ¡‚åœ“ç´…æ£—èŒ¶.png	FALSE	TRUE		CX	E
+E53	å …æžœæ‹¿éµ	å …æžœæ‹¿éµå¥½å–æŽ¨æŽ¨	èŒ¶æ¹¯æœƒ/å …æžœæ‹¿éµ.png	FALSE	TRUE		CM	E
+E54	æ³¢éœ¸å …æžœæ‹¿éµ	æ³¢éœ¸å …æžœæ‹¿éµäººé–“æ¥µå“	èŒ¶æ¹¯æœƒ/æ³¢éœ¸å …æžœæ‹¿éµ.png	FALSE	TRUE		CM	E
+E55	ç´«ç±³ç´…è±†æ‹¿éµ	ç´«ç±³ç´…è±†æ‹¿éµå¥½å–æŽ¨æŽ¨	èŒ¶æ¹¯æœƒ/ç´«ç±³ç´…è±†æ‹¿éµ.png	FALSE	TRUE		CM	E
+F01	æ‹›ç‰Œé«˜å±±é’	æ‹›ç‰Œé«˜å±±é’äººé–“æ¥µå“	TeaTop/æ‹›ç‰Œé«˜å±±é’.png	TRUE	TRUE		CR	F
+F02	æœˆäº®ç†¬å¥¶ï¼ˆé»‘ç³–é®®å¥¶çç ï¼‰	æœˆäº®ç†¬å¥¶ï¼ˆé»‘ç³–é®®å¥¶çç ï¼‰å¥½å–æŽ¨æŽ¨	TeaTop/æœˆäº®ç†¬å¥¶ï¼ˆé»‘ç³–é®®å¥¶çç ï¼‰.png	TRUE	TRUE		CM	F
+F03	ç”˜è”—é’äº†	ç”˜è”—é’äº†äººé–“æ¥µå“	TeaTop/ç”˜è”—é’äº†.png	TRUE	TRUE		CR	F
+F04	ç•¶ä»£é›™Q	ç•¶ä»£é›™Qå¥½å–æŽ¨æŽ¨	TeaTop/ç•¶ä»£é›™Q.png	TRUE	TRUE		CX	F
+F05	å†·æ³¡ç¶ èŒ¶	å†·æ³¡ç¶ èŒ¶äººé–“æ¥µå“	TeaTop/å†·æ³¡ç¶ èŒ¶.png	TRUE	FALSE		CG	F
+F06	ç´«èŠ‹è¥¿ç±³éœ²	ç´«èŠ‹è¥¿ç±³éœ²å¥½å–æŽ¨æŽ¨	TeaTop/ç´«èŠ‹è¥¿ç±³éœ².png	TRUE	TRUE		CX	F
+F07	ç‚­ç„™éµè§€éŸ³	ç‚­ç„™éµè§€éŸ³äººé–“æ¥µå“	TeaTop/ç‚­ç„™éµè§€éŸ³.png	TRUE	TRUE		CX	F
+F08	æ—¥æœˆæ½­ç´…èŒ¶	æ—¥æœˆæ½­ç´…èŒ¶å¥½å–æŽ¨æŽ¨	TeaTop/æ—¥æœˆæ½­ç´…èŒ¶.png	TRUE	TRUE		CB	F
+F09	èŒ‰é¦™ç¶ èŒ¶	èŒ‰é¦™ç¶ èŒ¶äººé–“æ¥µå“	TeaTop/èŒ‰é¦™ç¶ èŒ¶.png	TRUE	TRUE		CG	F
+F10	å¤§å‰å¶ºç´…èŒ¶	å¤§å‰å¶ºç´…èŒ¶å¥½å–æŽ¨æŽ¨	TeaTop/å¤§å‰å¶ºç´…èŒ¶.png	TRUE	TRUE		CB	F
+F11	é‡‘è±èŒ¶	é‡‘è±èŒ¶äººé–“æ¥µå“	TeaTop/é‡‘è±èŒ¶.png	TRUE	TRUE		CX	F
+F12	å¤æ—©å‘³å†¬ç“œèŒ¶	å¤æ—©å‘³å†¬ç“œèŒ¶å¥½å–æŽ¨æŽ¨	TeaTop/å¤æ—©å‘³å†¬ç“œèŒ¶.png	TRUE	FALSE		CE	F
+F13	èœœèŒ¶	èœœèŒ¶äººé–“æ¥µå“	TeaTop/èœœèŒ¶.png	TRUE	FALSE		CX	F
+F14	å†¬ç“œé’èŒ¶	å†¬ç“œé’èŒ¶å¥½å–æŽ¨æŽ¨	TeaTop/å†¬ç“œé’èŒ¶.png	TRUE	FALSE		CE	F
+F15	èœ‚èœœç¶ èŒ¶	èœ‚èœœç¶ èŒ¶äººé–“æ¥µå“	TeaTop/èœ‚èœœç¶ èŒ¶.png	TRUE	FALSE		CG	F
+F16	ç™¾é¦™ç¶ èŒ¶	ç™¾é¦™ç¶ èŒ¶å¥½å–æŽ¨æŽ¨	TeaTop/ç™¾é¦™ç¶ èŒ¶.png	TRUE	FALSE		CG	F
+F17	æ¢…æžœç¶ èŒ¶	æ¢…æžœç¶ èŒ¶äººé–“æ¥µå“	TeaTop/æ¢…æžœç¶ èŒ¶.png	TRUE	FALSE		CG	F
+F18	é¤Šæ¨‚å¤šç¶ èŒ¶	é¤Šæ¨‚å¤šç¶ èŒ¶å¥½å–æŽ¨æŽ¨	TeaTop/é¤Šæ¨‚å¤šç¶ èŒ¶.png	TRUE	FALSE		CG	F
+F19	è„†æ¢…8å†°ç¶ 	è„†æ¢…8å†°ç¶ äººé–“æ¥µå“	TeaTop/è„†æ¢…8å†°ç¶ .png	TRUE	FALSE		CG	F
+F20	çç ç´…èŒ¶	çç ç´…èŒ¶å¥½å–æŽ¨æŽ¨	TeaTop/çç ç´…èŒ¶.png	TRUE	TRUE		CB	F
+F21	çç ç¶ èŒ¶	çç ç¶ èŒ¶äººé–“æ¥µå“	TeaTop/çç ç¶ èŒ¶.png	TRUE	TRUE		CG	F
+F22	çç å¥¶èŒ¶	çç å¥¶èŒ¶å¥½å–æŽ¨æŽ¨	TeaTop/çç å¥¶èŒ¶.png	TRUE	TRUE		CM	F
+F23	çç éšèŒ¶	çç éšèŒ¶äººé–“æ¥µå“	TeaTop/çç éšèŒ¶.png	TRUE	TRUE		CX	F
+F24	é‡‘è±QQ	é‡‘è±QQå¥½å–æŽ¨æŽ¨	TeaTop/é‡‘è±QQ.png	TRUE	TRUE		CX	F
+F25	å†¬ç“œä»™è‰	å†¬ç“œä»™è‰äººé–“æ¥µå“	TeaTop/å†¬ç“œä»™è‰.png	TRUE	FALSE		CE	F
+F26	éšå¥¶å‡	éšå¥¶å‡å¥½å–æŽ¨æŽ¨	TeaTop/éšå¥¶å‡.png	TRUE	TRUE		CM	F
+F27	å¸ƒä¸å¥¶èŒ¶	å¸ƒä¸å¥¶èŒ¶äººé–“æ¥µå“	TeaTop/å¸ƒä¸å¥¶èŒ¶.png	TRUE	TRUE		CM	F
+F28	æ—¥å¼ç›¸æ€Qå¥¶	æ—¥å¼ç›¸æ€Qå¥¶å¥½å–æŽ¨æŽ¨	TeaTop/æ—¥å¼ç›¸æ€Qå¥¶.png	TRUE	TRUE		CM	F
+F29	ä»™è‰å¥¶å‡	ä»™è‰å¥¶å‡äººé–“æ¥µå“	TeaTop/ä»™è‰å¥¶å‡.png	TRUE	TRUE		CM	F
+F30	ç´…èŒ¶æ‹¿éµ	ç´…èŒ¶æ‹¿éµå¥½å–æŽ¨æŽ¨	TeaTop/ç´…èŒ¶æ‹¿éµ.png	TRUE	TRUE		CM	F
+F31	çç æ‹¿éµ	çç æ‹¿éµäººé–“æ¥µå“	TeaTop/çç æ‹¿éµ.png	TRUE	TRUE		CM	F
+F32	é»‘ç³–æ‹¿éµ	é»‘ç³–æ‹¿éµå¥½å–æŽ¨æŽ¨	TeaTop/é»‘ç³–æ‹¿éµ.png	TRUE	TRUE		CM	F
+F33	å¥¶è“‹éµè§€éŸ³	å¥¶è“‹éµè§€éŸ³äººé–“æ¥µå“	TeaTop/å¥¶è“‹éµè§€éŸ³.png	TRUE	TRUE		CM	F
+F34	å¥¶è“‹é’èŒ¶	å¥¶è“‹é’èŒ¶å¥½å–æŽ¨æŽ¨	TeaTop/å¥¶è“‹é’èŒ¶.png	TRUE	TRUE		CM	F
+F35	æŠ¹èŒ¶æ‹¿éµ	æŠ¹èŒ¶æ‹¿éµäººé–“æ¥µå“	TeaTop/æŠ¹èŒ¶æ‹¿éµ.png	TRUE	TRUE		CM	F
+F36	çç æŠ¹èŒ¶æ‹¿éµ	çç æŠ¹èŒ¶æ‹¿éµå¥½å–æŽ¨æŽ¨	TeaTop/çç æŠ¹èŒ¶æ‹¿éµ.png	TRUE	TRUE		CM	F
+F37	ç´…è±†æŠ¹èŒ¶æ‹¿éµ	ç´…è±†æŠ¹èŒ¶æ‹¿éµäººé–“æ¥µå“	TeaTop/ç´…è±†æŠ¹èŒ¶æ‹¿éµ.png	TRUE	TRUE		CM	F
+F38	èŠ‹é ­é®®å¥¶	èŠ‹é ­é®®å¥¶å¥½å–æŽ¨æŽ¨	TeaTop/èŠ‹é ­é®®å¥¶.png	TRUE	TRUE		CM	F
+F39	ç´…è±†é®®å¥¶	ç´…è±†é®®å¥¶äººé–“æ¥µå“	TeaTop/ç´…è±†é®®å¥¶.png	TRUE	TRUE		CM	F
+F40	å¯å¯äºžé®®å¥¶	å¯å¯äºžé®®å¥¶å¥½å–æŽ¨æŽ¨	TeaTop/å¯å¯äºžé®®å¥¶.png	TRUE	TRUE		CM	F
+F41	éšå¥¶èŒ¶	éšå¥¶èŒ¶äººé–“æ¥µå“	TeaTop/éšå¥¶èŒ¶.png	TRUE	TRUE		CM	F
+F42	å¤§å‰å¶ºå¥¶èŒ¶	å¤§å‰å¶ºå¥¶èŒ¶å¥½å–æŽ¨æŽ¨	TeaTop/å¤§å‰å¶ºå¥¶èŒ¶.png	TRUE	TRUE		CM	F
+F43	éµè§€éŸ³å¥¶èŒ¶	éµè§€éŸ³å¥¶èŒ¶äººé–“æ¥µå“	TeaTop/éµè§€éŸ³å¥¶èŒ¶.png	TRUE	TRUE		CM	F
+F44	æŠ¹èŒ¶å¥¶ç¶ 	æŠ¹èŒ¶å¥¶ç¶ å¥½å–æŽ¨æŽ¨	TeaTop/æŠ¹èŒ¶å¥¶ç¶ .png	TRUE	TRUE		CG	F
+F45	ç¶ è±†æ˜Ÿæ²™	ç¶ è±†æ˜Ÿæ²™äººé–“æ¥µå“	TeaTop/ç¶ è±†æ˜Ÿæ²™.png	TRUE	FALSE		CG	F
+F46	ç¶ è±†æ˜Ÿæ²™ç‰›å¥¶	ç¶ è±†æ˜Ÿæ²™ç‰›å¥¶å¥½å–æŽ¨æŽ¨	TeaTop/ç¶ è±†æ˜Ÿæ²™ç‰›å¥¶.png	TRUE	FALSE		CG	F
+F47	æŠ¹èŒ¶å†°æ²™	æŠ¹èŒ¶å†°æ²™äººé–“æ¥µå“	TeaTop/æŠ¹èŒ¶å†°æ²™.png	TRUE	FALSE		CG	F
+F48	é³³æ¢¨å†°æ²™	é³³æ¢¨å†°æ²™å¥½å–æŽ¨æŽ¨	TeaTop/é³³æ¢¨å†°æ²™.png	TRUE	FALSE		CX	F
+F49	ç™¾é¦™å†°æ²™	ç™¾é¦™å†°æ²™äººé–“æ¥µå“	TeaTop/ç™¾é¦™å†°æ²™.png	TRUE	FALSE		CX	F
+F50	å†·æ³¡æ¡‚èŠ±èŒ¶	å†·æ³¡æ¡‚èŠ±èŒ¶å¥½å–æŽ¨æŽ¨	TeaTop/å†·æ³¡æ¡‚èŠ±èŒ¶.png	TRUE	FALSE		CX	F
+F51	å†·æ³¡æ¢¨å±±èŒ¶	å†·æ³¡æ¢¨å±±èŒ¶äººé–“æ¥µå“	TeaTop/å†·æ³¡æ¢¨å±±èŒ¶.png	TRUE	FALSE		CX	F
+F52	é»‘ç³–è–‘èŒ¶	é»‘ç³–è–‘èŒ¶å¥½å–æŽ¨æŽ¨	TeaTop/é»‘ç³–è–‘èŒ¶.png	FALSE	TRUE		CX	F
+F53	é»‘ç³–æ¡‚åœ“è–‘èŒ¶	é»‘ç³–æ¡‚åœ“è–‘èŒ¶äººé–“æ¥µå“	TeaTop/é»‘ç³–æ¡‚åœ“è–‘èŒ¶.png	FALSE	TRUE		CX	F
+F54	æ¡‚åœ“å¥¶èŒ¶	æ¡‚åœ“å¥¶èŒ¶å¥½å–æŽ¨æŽ¨	TeaTop/æ¡‚åœ“å¥¶èŒ¶.png	FALSE	TRUE		CM	F
+F55	è–‘æ±å¥¶èŒ¶	è–‘æ±å¥¶èŒ¶äººé–“æ¥µå“	TeaTop/è–‘æ±å¥¶èŒ¶.png	FALSE	TRUE		CM	F
+F56	æª¸æª¬ç´…èŒ¶	æª¸æª¬ç´…èŒ¶å¥½å–æŽ¨æŽ¨	TeaTop/æª¸æª¬ç´…èŒ¶.png	TRUE	FALSE		CB	F
+F57	é®®æ¦¨æª¸æª¬æ±	é®®æ¦¨æª¸æª¬æ±äººé–“æ¥µå“	TeaTop/é®®æ¦¨æª¸æª¬æ±.png	TRUE	FALSE		CF	F
+F58	å†¬ç“œæª¸æª¬	å†¬ç“œæª¸æª¬å¥½å–æŽ¨æŽ¨	TeaTop/å†¬ç“œæª¸æª¬.png	TRUE	FALSE		CE	F
+F59	ç™¾é¦™é›™Q	ç™¾é¦™é›™Qäººé–“æ¥µå“	TeaTop/ç™¾é¦™é›™Q.png	TRUE	FALSE		CF	F
+F60	é‡‘æ¡”æª¸æª¬	é‡‘æ¡”æª¸æª¬å¥½å–æŽ¨æŽ¨	TeaTop/é‡‘æ¡”æª¸æª¬.png	TRUE	FALSE		CF	F
+F61	è˜‹æžœå†°é†‹	è˜‹æžœå†°é†‹äººé–“æ¥µå“	TeaTop/è˜‹æžœå†°é†‹.png	TRUE	FALSE		CF	F
+F62	å¯’å¤©è˜‹æžœé†‹	å¯’å¤©è˜‹æžœé†‹å¥½å–æŽ¨æŽ¨	TeaTop/å¯’å¤©è˜‹æžœé†‹.png	TRUE	FALSE		CF	F
+F63	ç¿¡ç¿ æª¸æª¬	ç¿¡ç¿ æª¸æª¬äººé–“æ¥µå“	TeaTop/ç¿¡ç¿ æª¸æª¬.png	TRUE	FALSE		CF	F
+F64	é¦™å‰å£«ç¶ èŒ¶	é¦™å‰å£«ç¶ èŒ¶å¥½å–æŽ¨æŽ¨	TeaTop/é¦™å‰å£«ç¶ èŒ¶.png	TRUE	FALSE		CG	F
+F65	ä»™æŸšç¶ 	ä»™æŸšç¶ äººé–“æ¥µå“	TeaTop/ä»™æŸšç¶ .png	TRUE	FALSE		CG	F
+F66	è•ƒèŒ„èœœ	è•ƒèŒ„èœœå¥½å–æŽ¨æŽ¨	TeaTop/è•ƒèŒ„èœœ.png	TRUE	FALSE		CX	F
+F67	æ–°é®®æ°´æžœèŒ¶	æ–°é®®æ°´æžœèŒ¶äººé–“æ¥µå“	TeaTop/æ–°é®®æ°´æžœèŒ¶.png	TRUE	TRUE		CF	F
+F68	é³³æ¢¨ç¶ èŒ¶	é³³æ¢¨ç¶ èŒ¶å¥½å–æŽ¨æŽ¨	TeaTop/é³³æ¢¨ç¶ èŒ¶.png	TRUE	FALSE		CG	F
+F69	é³³æ¢¨é‡‘è±	é³³æ¢¨é‡‘è±äººé–“æ¥µå“	TeaTop/é³³æ¢¨é‡‘è±.png	TRUE	FALSE		CF	F
+F70	æ¡”é¦™å°ç´«è˜‡	æ¡”é¦™å°ç´«è˜‡å¥½å–æŽ¨æŽ¨	TeaTop/æ¡”é¦™å°ç´«è˜‡.png	TRUE	FALSE		CX	F
+F71	èŠ­æ¨‚é¦™å‰å£«	èŠ­æ¨‚é¦™å‰å£«äººé–“æ¥µå“	TeaTop/èŠ­æ¨‚é¦™å‰å£«.png	TRUE	FALSE		CF	F
+F72	èŠ­æ¨‚ç™¾é¦™æžœ	èŠ­æ¨‚ç™¾é¦™æžœå¥½å–æŽ¨æŽ¨	TeaTop/èŠ­æ¨‚ç™¾é¦™æžœ.png	TRUE	FALSE		CF	F
+F73	èŠ­æ¨‚ç«é¾è£¸	èŠ­æ¨‚ç«é¾è£¸äººé–“æ¥µå“	TeaTop/èŠ­æ¨‚ç«é¾è£¸.png	TRUE	FALSE		CF	F
+F74	ç†Ÿæˆç´…èŒ¶	ç†Ÿæˆç´…èŒ¶å¥½å–æŽ¨æŽ¨	TeaTop/ç†Ÿæˆç´…èŒ¶.png	TRUE	FALSE		CB	F
+F75	ç†Ÿæˆæžœé¦™ç´…èŒ¶	ç†Ÿæˆæžœé¦™ç´…èŒ¶äººé–“æ¥µå“	TeaTop/ç†Ÿæˆæžœé¦™ç´…èŒ¶.png	TRUE	FALSE		CB	F
+F76	ç†Ÿæˆé®®å¥¶èŒ¶	ç†Ÿæˆé®®å¥¶èŒ¶å¥½å–æŽ¨æŽ¨	TeaTop/ç†Ÿæˆé®®å¥¶èŒ¶.png	TRUE	TRUE		CM	F
+F77	æ³°æ³°é®®å¥¶èŒ¶	æ³°æ³°é®®å¥¶èŒ¶äººé–“æ¥µå“	TeaTop/æ³°æ³°é®®å¥¶èŒ¶.png	TRUE	TRUE		CM	F
+F78	çç æ³°æ³°é®®å¥¶èŒ¶	çç æ³°æ³°é®®å¥¶èŒ¶å¥½å–æŽ¨æŽ¨	TeaTop/çç æ³°æ³°é®®å¥¶èŒ¶.png	TRUE	TRUE		CM	F
+F79	è¥¿ç±³éœ²æ³°æ³°é®®å¥¶èŒ¶	è¥¿ç±³éœ²æ³°æ³°é®®å¥¶èŒ¶äººé–“æ¥µå“	TeaTop/è¥¿ç±³éœ²æ³°æ³°é®®å¥¶èŒ¶.png	TRUE	TRUE		CM	F
+F80	ä»™è‰æ³°æ³°é®®å¥¶èŒ¶	ä»™è‰æ³°æ³°é®®å¥¶èŒ¶å¥½å–æŽ¨æŽ¨	TeaTop/ä»™è‰æ³°æ³°é®®å¥¶èŒ¶.png	TRUE	TRUE		CM	F
+G01	æ—¥æœˆæ½­ç´…èŒ¶	æ—¥æœˆæ½­ç´…èŒ¶äººé–“æ¥µå“	ä¸€èŠ³/æ—¥æœˆæ½­ç´…èŒ¶.png	TRUE	TRUE		CB	G
+G02	åŒ…ç¨®ç¶ èŒ¶	åŒ…ç¨®ç¶ èŒ¶å¥½å–æŽ¨æŽ¨	ä¸€èŠ³/åŒ…ç¨®ç¶ èŒ¶.png	TRUE	TRUE		CG	G
+G03	æ¾æŸå¶ºé’èŒ¶	æ¾æŸå¶ºé’èŒ¶äººé–“æ¥µå“	ä¸€èŠ³/æ¾æŸå¶ºé’èŒ¶.png	TRUE	TRUE		CR	G
+G04	é¹¿è°·çƒé¾	é¹¿è°·çƒé¾å¥½å–æŽ¨æŽ¨	ä¸€èŠ³/é¹¿è°·çƒé¾.png	TRUE	TRUE		CO	G
+G05	ä¸€èŠ³æ°´æžœèŒ¶	ä¸€èŠ³æ°´æžœèŒ¶äººé–“æ¥µå“	ä¸€èŠ³/ä¸€èŠ³æ°´æžœèŒ¶.png	TRUE	TRUE		CF	G
+G06	åŸ”é‡Œç™¾é¦™ç¶ 	åŸ”é‡Œç™¾é¦™ç¶ å¥½å–æŽ¨æŽ¨	ä¸€èŠ³/åŸ”é‡Œç™¾é¦™ç¶ .png	TRUE	FALSE		CG	G
+G07	é‡‘é‘½é³³æ¢¨ç¶ 	é‡‘é‘½é³³æ¢¨ç¶ äººé–“æ¥µå“	ä¸€èŠ³/é‡‘é‘½é³³æ¢¨ç¶ .png	TRUE	TRUE		CG	G
+G08	å†¬ç“œæª¸æª¬éœ²	å†¬ç“œæª¸æª¬éœ²å¥½å–æŽ¨æŽ¨	ä¸€èŠ³/å†¬ç“œæª¸æª¬éœ².png	TRUE	TRUE		CE	G
+G09	ä¹å¦‚æª¸æª¬ç¶ 	ä¹å¦‚æª¸æª¬ç¶ äººé–“æ¥µå“	ä¸€èŠ³/ä¹å¦‚æª¸æª¬ç¶ .png	TRUE	TRUE		CG	G
+G10	ä¹å¦‚æª¸æª¬é’	ä¹å¦‚æª¸æª¬é’å¥½å–æŽ¨æŽ¨	ä¸€èŠ³/ä¹å¦‚æª¸æª¬é’.png	TRUE	TRUE		CR	G
+G11	å®œè˜­é‡‘æ¡”ç¶ 	å®œè˜­é‡‘æ¡”ç¶ äººé–“æ¥µå“	ä¸€èŠ³/å®œè˜­é‡‘æ¡”ç¶ .png	TRUE	TRUE		CG	G
+G12	ä¸­è¯æ„›çŽ‰æª¸æª¬	ä¸­è¯æ„›çŽ‰æª¸æª¬å¥½å–æŽ¨æŽ¨	ä¸€èŠ³/ä¸­è¯æ„›çŽ‰æª¸æª¬.png	TRUE	FALSE		CG	G
+G13	ä¿¡ç¾©è„†æ¢…ç¶ 	ä¿¡ç¾©è„†æ¢…ç¶ äººé–“æ¥µå“	ä¸€èŠ³/ä¿¡ç¾©è„†æ¢…ç¶ .png	TRUE	TRUE		CG	G
+G14	ç´”é‡€æ¥Šæ¡ƒæ±	ç´”é‡€æ¥Šæ¡ƒæ±å¥½å–æŽ¨æŽ¨	ä¸€èŠ³/ç´”é‡€æ¥Šæ¡ƒæ±.png	TRUE	TRUE		CF	G
+G15	é‡‘å³°æ´›ç¥žæª¸æª¬	é‡‘å³°æ´›ç¥žæª¸æª¬äººé–“æ¥µå“	ä¸€èŠ³/é‡‘å³°æ´›ç¥žæª¸æª¬.png	TRUE	TRUE		CX	G
+G16	é¤Šæ¨‚å¤šå†°èŒ¶	é¤Šæ¨‚å¤šå†°èŒ¶å¥½å–æŽ¨æŽ¨	ä¸€èŠ³/é¤Šæ¨‚å¤šå†°èŒ¶.png	TRUE	FALSE		CR	G
+G17	é¤Šæ¨‚å¤šç™¾é¦™	é¤Šæ¨‚å¤šç™¾é¦™äººé–“æ¥µå“	ä¸€èŠ³/é¤Šæ¨‚å¤šç™¾é¦™.png	TRUE	FALSE		CF	G
+G18	é¤Šæ¨‚å¤šé³³æ¢¨	é¤Šæ¨‚å¤šé³³æ¢¨å¥½å–æŽ¨æŽ¨	ä¸€èŠ³/é¤Šæ¨‚å¤šé³³æ¢¨.png	TRUE	FALSE		CF	G
+G19	ç²‰åœ“ç´…èŒ¶	ç²‰åœ“ç´…èŒ¶äººé–“æ¥µå“	ä¸€èŠ³/ç²‰åœ“ç´…èŒ¶.png	TRUE	TRUE		CB	G
+G20	ç²‰åœ“ç¶ èŒ¶	ç²‰åœ“ç¶ èŒ¶å¥½å–æŽ¨æŽ¨	ä¸€èŠ³/ç²‰åœ“ç¶ èŒ¶.png	TRUE	TRUE		CG	G
+G21	ç´…èŒ¶é®®å¥¶	ç´…èŒ¶é®®å¥¶äººé–“æ¥µå“	ä¸€èŠ³/ç´…èŒ¶é®®å¥¶.png	TRUE	TRUE		CB	G
+G22	ç¿¡ç¿ é®®å¥¶	ç¿¡ç¿ é®®å¥¶å¥½å–æŽ¨æŽ¨	ä¸€èŠ³/ç¿¡ç¿ é®®å¥¶.png	TRUE	TRUE		CM	G
+G23	çƒé¾é®®å¥¶	çƒé¾é®®å¥¶äººé–“æ¥µå“	ä¸€èŠ³/çƒé¾é®®å¥¶.png	TRUE	TRUE		CO	G
+G24	ç²‰åœ“é®®å¥¶èŒ¶	ç²‰åœ“é®®å¥¶èŒ¶å¥½å–æŽ¨æŽ¨	ä¸€èŠ³/ç²‰åœ“é®®å¥¶èŒ¶.png	TRUE	TRUE		CM	G
+G25	é»‘ç³–ç²‰åœ“é®®å¥¶	é»‘ç³–ç²‰åœ“é®®å¥¶äººé–“æ¥µå“	ä¸€èŠ³/é»‘ç³–ç²‰åœ“é®®å¥¶.png	TRUE	TRUE	å›ºå®šç”œåº¦	CM	G
+G26	é»‘ç³–ç²‰åœ“é®®å¥¶èŒ¶	é»‘ç³–ç²‰åœ“é®®å¥¶èŒ¶å¥½å–æŽ¨æŽ¨	ä¸€èŠ³/é»‘ç³–ç²‰åœ“é®®å¥¶èŒ¶.png	TRUE	TRUE	å›ºå®šç”œåº¦	CM	G
+G27	å¤ç…žä»™è‰èŒ¶	å¤ç…žä»™è‰èŒ¶äººé–“æ¥µå“	ä¸€èŠ³/å¤ç…žä»™è‰èŒ¶.png	TRUE	TRUE		CX	G
+G28	å¤é‡€å†¬ç“œèŒ¶	å¤é‡€å†¬ç“œèŒ¶å¥½å–æŽ¨æŽ¨	ä¸€èŠ³/å¤é‡€å†¬ç“œèŒ¶.png	TRUE	TRUE		CE	G
+G29	é¹¿æ¸¯éºµèŒ¶	é¹¿æ¸¯éºµèŒ¶äººé–“æ¥µå“	ä¸€èŠ³/é¹¿æ¸¯éºµèŒ¶.png	TRUE	TRUE		CX	G
+G30	é¹¿é‡Žè–‘èŒ¶	é¹¿é‡Žè–‘èŒ¶å¥½å–æŽ¨æŽ¨	ä¸€èŠ³/é¹¿é‡Žè–‘èŒ¶.png	TRUE	TRUE		CX	G
+G31	è–‘æ±æª¸æª¬	è–‘æ±æª¸æª¬äººé–“æ¥µå“	ä¸€èŠ³/è–‘æ±æª¸æª¬.png	TRUE	TRUE		CX	G
+G32	è–‘æ±æ¡‚åœ“	è–‘æ±æ¡‚åœ“å¥½å–æŽ¨æŽ¨	ä¸€èŠ³/è–‘æ±æ¡‚åœ“.png	TRUE	TRUE		CX	G
+G33	æ¡‚åœ“ç´…æ£—èŒ¶	æ¡‚åœ“ç´…æ£—èŒ¶äººé–“æ¥µå“	ä¸€èŠ³/æ¡‚åœ“ç´…æ£—èŒ¶.png	TRUE	TRUE		CX	G
+G34	å¤§ç”²èŠ‹é ­é®®å¥¶	å¤§ç”²èŠ‹é ­é®®å¥¶å¥½å–æŽ¨æŽ¨	ä¸€èŠ³/å¤§ç”²èŠ‹é ­é®®å¥¶.png	TRUE	TRUE		CM	G
+G35	å¤§ç”²èŠ‹é ­é®®å¥¶ç¶ 	å¤§ç”²èŠ‹é ­é®®å¥¶ç¶ äººé–“æ¥µå“	ä¸€èŠ³/å¤§ç”²èŠ‹é ­é®®å¥¶ç¶ .png	TRUE	TRUE		CG	G
+G36	å°ç£ç”˜è”—ç‰›å¥¶	å°ç£ç”˜è”—ç‰›å¥¶å¥½å–æŽ¨æŽ¨	ä¸€èŠ³/å°ç£ç”˜è”—ç‰›å¥¶.png	TRUE	TRUE		CM	G
+G37	å°ç£ç”˜è”—é’èŒ¶	å°ç£ç”˜è”—é’èŒ¶äººé–“æ¥µå“	ä¸€èŠ³/å°ç£ç”˜è”—é’èŒ¶.png	TRUE	TRUE		CR	G
+H01	åŽŸé„‰å››å­£	åŽŸé„‰å››å­£å¥½å–æŽ¨æŽ¨	æ¸…å¿ƒç¦å…¨/åŽŸé„‰å››å­£.png	TRUE	TRUE		CX	H
+H02	ç‰¹ç´šç¶ èŒ¶	ç‰¹ç´šç¶ èŒ¶äººé–“æ¥µå“	æ¸…å¿ƒç¦å…¨/ç‰¹ç´šç¶ èŒ¶.png	TRUE	TRUE		CG	H
+H03	çƒé¾ç¶ èŒ¶	çƒé¾ç¶ èŒ¶å¥½å–æŽ¨æŽ¨	æ¸…å¿ƒç¦å…¨/çƒé¾ç¶ èŒ¶.png	TRUE	TRUE		CG	H
+H04	ç¿¡ç¿ çƒé¾	ç¿¡ç¿ çƒé¾äººé–“æ¥µå“	æ¸…å¿ƒç¦å…¨/ç¿¡ç¿ çƒé¾.png	TRUE	TRUE		CO	H
+H05	æ¥µå“æ¸…èŒ¶	æ¥µå“æ¸…èŒ¶å¥½å–æŽ¨æŽ¨	æ¸…å¿ƒç¦å…¨/æ¥µå“æ¸…èŒ¶.png	TRUE	TRUE		CR	H
+H06	éŒ«è˜­ç´…èŒ¶	éŒ«è˜­ç´…èŒ¶äººé–“æ¥µå“	æ¸…å¿ƒç¦å…¨/éŒ«è˜­ç´…èŒ¶.png	TRUE	TRUE		CB	H
+H07	åš´é¸é«˜å±±èŒ¶	åš´é¸é«˜å±±èŒ¶å¥½å–æŽ¨æŽ¨	æ¸…å¿ƒç¦å…¨/åš´é¸é«˜å±±èŒ¶.png	TRUE	TRUE		CX	H
+H08	ç‰¹é¸æ™®æ´±	ç‰¹é¸æ™®æ´±äººé–“æ¥µå“	æ¸…å¿ƒç¦å…¨/ç‰¹é¸æ™®æ´±.png	TRUE	TRUE		CX	H
+H09	å„ªå¤šç¶ èŒ¶	å„ªå¤šç¶ èŒ¶å¥½å–æŽ¨æŽ¨	æ¸…å¿ƒç¦å…¨/å„ªå¤šç¶ èŒ¶.png	TRUE	TRUE		CG	H
+H10	å„ªå¤šæª¸æª¬	å„ªå¤šæª¸æª¬äººé–“æ¥µå“	æ¸…å¿ƒç¦å…¨/å„ªå¤šæª¸æª¬.png	TRUE	TRUE		CF	H
+H11	å„ªå¤šè‘¡è„æŸš	å„ªå¤šè‘¡è„æŸšå¥½å–æŽ¨æŽ¨	æ¸…å¿ƒç¦å…¨/å„ªå¤šè‘¡è„æŸš.png	TRUE	TRUE		CF	H
+H12	éŒ«è˜­å¥¶ç´…	éŒ«è˜­å¥¶ç´…äººé–“æ¥µå“	æ¸…å¿ƒç¦å…¨/éŒ«è˜­å¥¶ç´….png	TRUE	TRUE		CM	H
+H13	ç‰¹ç´šå¥¶ç¶ 	ç‰¹ç´šå¥¶ç¶ å¥½å–æŽ¨æŽ¨	æ¸…å¿ƒç¦å…¨/ç‰¹ç´šå¥¶ç¶ .png	TRUE	TRUE		CG	H
+H14	çƒé¾å¥¶èŒ¶	çƒé¾å¥¶èŒ¶äººé–“æ¥µå“	æ¸…å¿ƒç¦å…¨/çƒé¾å¥¶èŒ¶.png	TRUE	TRUE		CM	H
+H15	çç å¥¶èŒ¶	çç å¥¶èŒ¶å¥½å–æŽ¨æŽ¨	æ¸…å¿ƒç¦å…¨/çç å¥¶èŒ¶.png	TRUE	TRUE		CM	H
+H16	ç²‰åœ“å¥¶èŒ¶	ç²‰åœ“å¥¶èŒ¶äººé–“æ¥µå“	æ¸…å¿ƒç¦å…¨/ç²‰åœ“å¥¶èŒ¶.png	TRUE	TRUE		CM	H
+H17	ä»™è‰å‡å¥¶èŒ¶	ä»™è‰å‡å¥¶èŒ¶å¥½å–æŽ¨æŽ¨	æ¸…å¿ƒç¦å…¨/ä»™è‰å‡å¥¶èŒ¶.png	TRUE	TRUE		CM	H
+H18	å¸ƒä¸å¥¶èŒ¶	å¸ƒä¸å¥¶èŒ¶äººé–“æ¥µå“	æ¸…å¿ƒç¦å…¨/å¸ƒä¸å¥¶èŒ¶.png	TRUE	TRUE		CM	H
+H19	æ¤°æžœå¥¶èŒ¶	æ¤°æžœå¥¶èŒ¶å¥½å–æŽ¨æŽ¨	æ¸…å¿ƒç¦å…¨/æ¤°æžœå¥¶èŒ¶.png	TRUE	TRUE		CM	H
+H20	èœ‚èœœå¥¶èŒ¶	èœ‚èœœå¥¶èŒ¶äººé–“æ¥µå“	æ¸…å¿ƒç¦å…¨/èœ‚èœœå¥¶èŒ¶.png	TRUE	TRUE		CM	H
+H21	å†¬ç“œèŒ¶	å†¬ç“œèŒ¶å¥½å–æŽ¨æŽ¨	æ¸…å¿ƒç¦å…¨/å†¬ç“œèŒ¶.png	TRUE	TRUE		CE	H
+H22	å†¬ç“œé’èŒ¶	å†¬ç“œé’èŒ¶äººé–“æ¥µå“	æ¸…å¿ƒç¦å…¨/å†¬ç“œé’èŒ¶.png	TRUE	TRUE		CE	H
+H23	å†¬ç“œæª¸æª¬	å†¬ç“œæª¸æª¬å¥½å–æŽ¨æŽ¨	æ¸…å¿ƒç¦å…¨/å†¬ç“œæª¸æª¬.png	TRUE	TRUE		CE	H
+H24	æ¢…å­ç¶ èŒ¶	æ¢…å­ç¶ èŒ¶äººé–“æ¥µå“	æ¸…å¿ƒç¦å…¨/æ¢…å­ç¶ èŒ¶.png	TRUE	TRUE		CG	H
+H25	ç´…èŒ¶è±†æ¼¿	ç´…èŒ¶è±†æ¼¿å¥½å–æŽ¨æŽ¨	æ¸…å¿ƒç¦å…¨/ç´…èŒ¶è±†æ¼¿.png	TRUE	TRUE		CB	H
+H26	æƒ…äººèŒ¶	æƒ…äººèŒ¶äººé–“æ¥µå“	æ¸…å¿ƒç¦å…¨/æƒ…äººèŒ¶.png	TRUE	TRUE		CX	H
+H27	èœœèŒ¶	èœœèŒ¶å¥½å–æŽ¨æŽ¨	æ¸…å¿ƒç¦å…¨/èœœèŒ¶.png	TRUE	TRUE		CX	H
+H28	èœ‚èœœçƒé¾/ç¶ èŒ¶	èœ‚èœœçƒé¾/ç¶ èŒ¶äººé–“æ¥µå“	æ¸…å¿ƒç¦å…¨/èœ‚èœœçƒé¾/ç¶ èŒ¶.png	TRUE	TRUE		CG	H
+H29	æ¸…å¿ƒå·§å…‹åŠ›	æ¸…å¿ƒå·§å…‹åŠ›å¥½å–æŽ¨æŽ¨	æ¸…å¿ƒç¦å…¨/æ¸…å¿ƒå·§å…‹åŠ›.png	TRUE	TRUE		CX	H
+H30	æ¿ƒæƒ…å·§å…‹åŠ›	æ¿ƒæƒ…å·§å…‹åŠ›äººé–“æ¥µå“	æ¸…å¿ƒç¦å…¨/æ¿ƒæƒ…å·§å…‹åŠ›.png	TRUE	TRUE		CX	H
+H31	å’–å•¡å¥¶èŒ¶	å’–å•¡å¥¶èŒ¶å¥½å–æŽ¨æŽ¨	æ¸…å¿ƒç¦å…¨/å’–å•¡å¥¶èŒ¶.png	TRUE	TRUE		CM	H
+H32	ç¶ è±†æ²™å¥¶èŒ¶	ç¶ è±†æ²™å¥¶èŒ¶äººé–“æ¥µå“	æ¸…å¿ƒç¦å…¨/ç¶ è±†æ²™å¥¶èŒ¶.png	TRUE	TRUE		CM	H
+H33	èŠ‹é¦™å¥¶èŒ¶	èŠ‹é¦™å¥¶èŒ¶å¥½å–æŽ¨æŽ¨	æ¸…å¿ƒç¦å…¨/èŠ‹é¦™å¥¶èŒ¶.png	TRUE	TRUE		CM	H
+H34	æª¸æª¬æ±	æª¸æª¬æ±äººé–“æ¥µå“	æ¸…å¿ƒç¦å…¨/æª¸æª¬æ±.png	TRUE	TRUE		CF	H
+H35	è¼•æª¸å››å­£	è¼•æª¸å››å­£å¥½å–æŽ¨æŽ¨	æ¸…å¿ƒç¦å…¨/è¼•æª¸å››å­£.png	TRUE	TRUE		CX	H
+H36	æª¸æª¬ç¶ èŒ¶/ç´…èŒ¶	æª¸æª¬ç¶ èŒ¶/ç´…èŒ¶äººé–“æ¥µå“	æ¸…å¿ƒç¦å…¨/æª¸æª¬ç¶ èŒ¶/ç´…èŒ¶.png	TRUE	TRUE		CB	H
+H37	èœ‚èœœæª¸æª¬	èœ‚èœœæª¸æª¬å¥½å–æŽ¨æŽ¨	æ¸…å¿ƒç¦å…¨/èœ‚èœœæª¸æª¬.png	TRUE	TRUE		CF	H
+H38	é‡‘æ¡”æª¸æª¬	é‡‘æ¡”æª¸æª¬äººé–“æ¥µå“	æ¸…å¿ƒç¦å…¨/é‡‘æ¡”æª¸æª¬.png	TRUE	TRUE		CF	H
+H39	æ¡”èŒ¶	æ¡”èŒ¶å¥½å–æŽ¨æŽ¨	æ¸…å¿ƒç¦å…¨/æ¡”èŒ¶.png	TRUE	TRUE		CX	H
+H40	è‘¡è„æŸšæ±	è‘¡è„æŸšæ±äººé–“æ¥µå“	æ¸…å¿ƒç¦å…¨/è‘¡è„æŸšæ±.png	TRUE	TRUE		CF	H
+H41	è‘¡è„æŸšç¶ èŒ¶	è‘¡è„æŸšç¶ èŒ¶å¥½å–æŽ¨æŽ¨	æ¸…å¿ƒç¦å…¨/è‘¡è„æŸšç¶ èŒ¶.png	TRUE	TRUE		CG	H
+H42	å’Œé¢¨æŠ¹èŒ¶	å’Œé¢¨æŠ¹èŒ¶äººé–“æ¥µå“	æ¸…å¿ƒç¦å…¨/å’Œé¢¨æŠ¹èŒ¶.png	TRUE	TRUE		CG	H
+H43	ç¿¡ç¿ æŠ¹èŒ¶	ç¿¡ç¿ æŠ¹èŒ¶å¥½å–æŽ¨æŽ¨	æ¸…å¿ƒç¦å…¨/ç¿¡ç¿ æŠ¹èŒ¶.png	TRUE	TRUE		CG	H
+H44	æŠ¹èŒ¶æ‹¿éµ	æŠ¹èŒ¶æ‹¿éµäººé–“æ¥µå“	æ¸…å¿ƒç¦å…¨/æŠ¹èŒ¶æ‹¿éµ.png	TRUE	TRUE		CM	H
+H45	é®®å¥¶èŒ¶	é®®å¥¶èŒ¶å¥½å–æŽ¨æŽ¨	æ¸…å¿ƒç¦å…¨/é®®å¥¶èŒ¶.png	TRUE	TRUE		CM	H
+H46	é®®å¥¶å†¬ç“œ	é®®å¥¶å†¬ç“œäººé–“æ¥µå“	æ¸…å¿ƒç¦å…¨/é®®å¥¶å†¬ç“œ.png	TRUE	TRUE		CM	H
+H47	é®®å¥¶è±†æ¼¿	é®®å¥¶è±†æ¼¿å¥½å–æŽ¨æŽ¨	æ¸…å¿ƒç¦å…¨/é®®å¥¶è±†æ¼¿.png	TRUE	TRUE		CM	H
+H48	å’–å•¡æ‹¿éµ	å’–å•¡æ‹¿éµäººé–“æ¥µå“	æ¸…å¿ƒç¦å…¨/å’–å•¡æ‹¿éµ.png	TRUE	TRUE		CM	H
+H49	æ¸…å¿ƒå·§å…‹åŠ›æ‹¿éµ	æ¸…å¿ƒå·§å…‹åŠ›æ‹¿éµå¥½å–æŽ¨æŽ¨	æ¸…å¿ƒç¦å…¨/æ¸…å¿ƒå·§å…‹åŠ›æ‹¿éµ.png	TRUE	TRUE		CM	H
+H50	æ¿ƒæƒ…å·§å…‹åŠ›æ‹¿éµ	æ¿ƒæƒ…å·§å…‹åŠ›æ‹¿éµäººé–“æ¥µå“	æ¸…å¿ƒç¦å…¨/æ¿ƒæƒ…å·§å…‹åŠ›æ‹¿éµ.png	TRUE	TRUE		CM	H
+H51	å†°æ·‡æ·‹ç´…èŒ¶	å†°æ·‡æ·‹ç´…èŒ¶å¥½å–æŽ¨æŽ¨	æ¸…å¿ƒç¦å…¨/å†°æ·‡æ·‹ç´…èŒ¶.png	TRUE	TRUE		CB	H
+H52	å†°æ·‡æ·‹æŠ¹èŒ¶	å†°æ·‡æ·‹æŠ¹èŒ¶äººé–“æ¥µå“	æ¸…å¿ƒç¦å…¨/å†°æ·‡æ·‹æŠ¹èŒ¶.png	TRUE	TRUE		CG	H
+H53	å†°æ·‡æ·‹å¥¶èŒ¶	å†°æ·‡æ·‹å¥¶èŒ¶å¥½å–æŽ¨æŽ¨	æ¸…å¿ƒç¦å…¨/å†°æ·‡æ·‹å¥¶èŒ¶.png	TRUE	TRUE		CM	H
+H54	æ¡‚åœ“èŒ¶	æ¡‚åœ“èŒ¶äººé–“æ¥µå“	æ¸…å¿ƒç¦å…¨/æ¡‚åœ“èŒ¶.png	FALSE	TRUE		CX	H
+H55	æ¡‚åœ“å¥¶èŒ¶	æ¡‚åœ“å¥¶èŒ¶å¥½å–æŽ¨æŽ¨	æ¸…å¿ƒç¦å…¨/æ¡‚åœ“å¥¶èŒ¶.png	FALSE	TRUE		CM	H
+H56	è–‘æ¯èŒ¶	è–‘æ¯èŒ¶äººé–“æ¥µå“	æ¸…å¿ƒç¦å…¨/è–‘æ¯èŒ¶.png	FALSE	TRUE		CX	H
+H57	è–‘æ¯å¥¶èŒ¶	è–‘æ¯å¥¶èŒ¶å¥½å–æŽ¨æŽ¨	æ¸…å¿ƒç¦å…¨/è–‘æ¯å¥¶èŒ¶.png	FALSE	TRUE		CM	H
+I01	æ„›æ–‡èŠ’æžœå†°æ²™	æ„›æ–‡èŠ’æžœå†°æ²™äººé–“æ¥µå“	å¤§è‹‘å­/æ„›æ–‡èŠ’æžœå†°æ²™.png	TRUE	TRUE		CF	I
+I02	é»ƒé‡‘èœœæŸšèŒ¶	é»ƒé‡‘èœœæŸšèŒ¶å¥½å–æŽ¨æŽ¨	å¤§è‹‘å­/é»ƒé‡‘èœœæŸšèŒ¶.png	TRUE	TRUE		CF	I
+I03	æ„›æ–‡ç¿¡ç¿ 	æ„›æ–‡ç¿¡ç¿ äººé–“æ¥µå“	å¤§è‹‘å­/æ„›æ–‡ç¿¡ç¿ .png	TRUE	TRUE		CG	I
+I04	èŠ­æ¨‚æª¸æª¬	èŠ­æ¨‚æª¸æª¬å¥½å–æŽ¨æŽ¨	å¤§è‹‘å­/èŠ­æ¨‚æª¸æª¬.png	TRUE	TRUE		CF	I
+I05	èŠ­æ¨‚æ¢…	èŠ­æ¨‚æ¢…äººé–“æ¥µå“	å¤§è‹‘å­/èŠ­æ¨‚æ¢….png	TRUE	TRUE		CF	I
+I06	ç•ªèŒ„æ¢…	ç•ªèŒ„æ¢…å¥½å–æŽ¨æŽ¨	å¤§è‹‘å­/ç•ªèŒ„æ¢….png	TRUE	TRUE		CF	I
+I07	èœ‚èœœæª¸æª¬	èœ‚èœœæª¸æª¬äººé–“æ¥µå“	å¤§è‹‘å­/èœ‚èœœæª¸æª¬.png	FALSE	FALSE		CF	I
+I08	æ–°é®®æ°´æžœèŒ¶	æ–°é®®æ°´æžœèŒ¶å¥½å–æŽ¨æŽ¨	å¤§è‹‘å­/æ–°é®®æ°´æžœèŒ¶.png	FALSE	FALSE		CF	I
+I09	è˜‹æžœé†‹å†°èŒ¶	è˜‹æžœé†‹å†°èŒ¶äººé–“æ¥µå“	å¤§è‹‘å­/è˜‹æžœé†‹å†°èŒ¶.png	FALSE	FALSE		CF	I
+I10	æˆ€æˆ€æª¸æª¬	æˆ€æˆ€æª¸æª¬å¥½å–æŽ¨æŽ¨	å¤§è‹‘å­/æˆ€æˆ€æª¸æª¬.png	FALSE	FALSE		CF	I
+I11	æŸšç¾Žç²’	æŸšç¾Žç²’äººé–“æ¥µå“	å¤§è‹‘å­/æŸšç¾Žç²’.png	FALSE	FALSE		CF	I
+I12	é‡‘æ¡”ç²’è„†çº–æžœ	é‡‘æ¡”ç²’è„†çº–æžœå¥½å–æŽ¨æŽ¨	å¤§è‹‘å­/é‡‘æ¡”ç²’è„†çº–æžœ.png	FALSE	FALSE		CF	I
+I13	è˜‹æžœå¤šè¼•é£²	è˜‹æžœå¤šè¼•é£²äººé–“æ¥µå“	å¤§è‹‘å­/è˜‹æžœå¤šè¼•é£².png	FALSE	FALSE		CF	I
+I14	ç™¾é¦™å¤šè¼•é£²	ç™¾é¦™å¤šè¼•é£²å¥½å–æŽ¨æŽ¨	å¤§è‹‘å­/ç™¾é¦™å¤šè¼•é£².png	FALSE	FALSE		CF	I
+I15	æª¸æª¬å¤šè¼•é£²	æª¸æª¬å¤šè¼•é£²äººé–“æ¥µå“	å¤§è‹‘å­/æª¸æª¬å¤šè¼•é£².png	FALSE	FALSE		CF	I
+I16	æŸšé¦™å¤šè¼•é£²	æŸšé¦™å¤šè¼•é£²å¥½å–æŽ¨æŽ¨	å¤§è‹‘å­/æŸšé¦™å¤šè¼•é£².png	FALSE	FALSE		CF	I
+I17	ç™¾é¦™è¼•æžœé£²	ç™¾é¦™è¼•æžœé£²äººé–“æ¥µå“	å¤§è‹‘å­/ç™¾é¦™è¼•æžœé£².png	FALSE	FALSE		CF	I
+I18	è‘¡è„æŸšè¼•æžœé£²	è‘¡è„æŸšè¼•æžœé£²å¥½å–æŽ¨æŽ¨	å¤§è‹‘å­/è‘¡è„æŸšè¼•æžœé£².png	FALSE	FALSE		CF	I
+I19	ç™¾é¦™ç¶ æ²›	ç™¾é¦™ç¶ æ²›äººé–“æ¥µå“	å¤§è‹‘å­/ç™¾é¦™ç¶ æ²›.png	FALSE	FALSE		CG	I
+I20	æª¸æª¬ç¶ æ²›	æª¸æª¬ç¶ æ²›å¥½å–æŽ¨æŽ¨	å¤§è‹‘å­/æª¸æª¬ç¶ æ²›.png	FALSE	FALSE		CG	I
+I21	è”“è¶ŠèŽ“ç¶ æ²›	è”“è¶ŠèŽ“ç¶ æ²›äººé–“æ¥µå“	å¤§è‹‘å­/è”“è¶ŠèŽ“ç¶ æ²›.png	FALSE	FALSE		CG	I
+I22	ç¹½ç´›æ°´æžœèŒ¶	ç¹½ç´›æ°´æžœèŒ¶å¥½å–æŽ¨æŽ¨	å¤§è‹‘å­/ç¹½ç´›æ°´æžœèŒ¶.png	FALSE	FALSE		CF	I
+I23	ç¿¡ç¿ æª¸æª¬	ç¿¡ç¿ æª¸æª¬äººé–“æ¥µå“	å¤§è‹‘å­/ç¿¡ç¿ æª¸æª¬.png	FALSE	FALSE		CG	I
+I24	é®®æ¡”æ¢…éº—	é®®æ¡”æ¢…éº—å¥½å–æŽ¨æŽ¨	å¤§è‹‘å­/é®®æ¡”æ¢…éº—.png	FALSE	FALSE		CF	I
+I25	é®®ç™¾é¦™æžœç¶ 	é®®ç™¾é¦™æžœç¶ äººé–“æ¥µå“	å¤§è‹‘å­/é®®ç™¾é¦™æžœç¶ .png	FALSE	FALSE		CF	I
+I26	é®®æ¦¨æª¸æª¬é’	é®®æ¦¨æª¸æª¬é’å¥½å–æŽ¨æŽ¨	å¤§è‹‘å­/é®®æ¦¨æª¸æª¬é’.png	FALSE	FALSE		CF	I
+I27	é‡‘æ¡”æª¸æª¬	é‡‘æ¡”æª¸æª¬äººé–“æ¥µå“	å¤§è‹‘å­/é‡‘æ¡”æª¸æª¬.png	FALSE	FALSE		CF	I
+I28	é®®æ¦¨è‘¡è„æŸšç¶ 	é®®æ¦¨è‘¡è„æŸšç¶ å¥½å–æŽ¨æŽ¨	å¤§è‹‘å­/é®®æ¦¨è‘¡è„æŸšç¶ .png	FALSE	FALSE		CF	I
+I29	ç™¾é¦™æ„›çŽ‰	ç™¾é¦™æ„›çŽ‰äººé–“æ¥µå“	å¤§è‹‘å­/ç™¾é¦™æ„›çŽ‰.png	FALSE	FALSE		CF	I
+I30	æª¸æª¬æ„›çŽ‰	æª¸æª¬æ„›çŽ‰å¥½å–æŽ¨æŽ¨	å¤§è‹‘å­/æª¸æª¬æ„›çŽ‰.png	FALSE	FALSE		CF	I
+I31	é’æ˜¥æ¢…éº—	é’æ˜¥æ¢…éº—äººé–“æ¥µå“	å¤§è‹‘å­/é’æ˜¥æ¢…éº—.png	FALSE	FALSE		CF	I
+I32	è”“ç¾Žç²’	è”“ç¾Žç²’å¥½å–æŽ¨æŽ¨	å¤§è‹‘å­/è”“ç¾Žç²’.png	FALSE	FALSE		CF	I
+I33	èœœä»™è‰	èœœä»™è‰äººé–“æ¥µå“	å¤§è‹‘å­/èœœä»™è‰.png	FALSE	FALSE		CF	I
+I34	ç”œæª¸è„†çº–æžœ	ç”œæª¸è„†çº–æžœå¥½å–æŽ¨æŽ¨	å¤§è‹‘å­/ç”œæª¸è„†çº–æžœ.png	FALSE	FALSE		CF	I
+I35	å†¬ç“œè§€éŸ³	å†¬ç“œè§€éŸ³äººé–“æ¥µå“	å¤§è‹‘å­/å†¬ç“œè§€éŸ³.png	FALSE	FALSE		CE	I
+I36	å¤šç“œæª¸æª¬	å¤šç“œæª¸æª¬å¥½å–æŽ¨æŽ¨	å¤§è‹‘å­/å¤šç“œæª¸æª¬.png	FALSE	FALSE		CE	I
+I37	å¤æ—©å‘³å†¬ç“œèŒ¶	å¤æ—©å‘³å†¬ç“œèŒ¶äººé–“æ¥µå“	å¤§è‹‘å­/å¤æ—©å‘³å†¬ç“œèŒ¶.png	FALSE	FALSE		CE	I
+I38	é¤Šæ¨‚å¤šç¶ èŒ¶	é¤Šæ¨‚å¤šç¶ èŒ¶å¥½å–æŽ¨æŽ¨	å¤§è‹‘å­/é¤Šæ¨‚å¤šç¶ èŒ¶.png	FALSE	FALSE		CG	I
+I39	ä»™è‰å¹²èŒ¶	ä»™è‰å¹²èŒ¶äººé–“æ¥µå“	å¤§è‹‘å­/ä»™è‰å¹²èŒ¶.png	FALSE	FALSE		CX	I
+I40	è”“è¶ŠèŽ“å†°é†‹	è”“è¶ŠèŽ“å†°é†‹å¥½å–æŽ¨æŽ¨	å¤§è‹‘å­/è”“è¶ŠèŽ“å†°é†‹.png	FALSE	FALSE		CF	I
+I41	è§€éŸ³æ‹¿éµ	è§€éŸ³æ‹¿éµäººé–“æ¥µå“	å¤§è‹‘å­/è§€éŸ³æ‹¿éµ.png	FALSE	FALSE		CM	I
+I42	é®®å¥¶èŒ¶	é®®å¥¶èŒ¶å¥½å–æŽ¨æŽ¨	å¤§è‹‘å­/é®®å¥¶èŒ¶.png	FALSE	FALSE		CM	I
+I43	é®®å¥¶ç¶ 	é®®å¥¶ç¶ äººé–“æ¥µå“	å¤§è‹‘å­/é®®å¥¶ç¶ .png	FALSE	FALSE		CM	I
+I44	é®®å¥¶å¤šç“œ	é®®å¥¶å¤šç“œå¥½å–æŽ¨æŽ¨	å¤§è‹‘å­/é®®å¥¶å¤šç“œ.png	FALSE	FALSE		CE	I
+I45	å¥¶èŒ¶	å¥¶èŒ¶äººé–“æ¥µå“	å¤§è‹‘å­/å¥¶èŒ¶.png	FALSE	FALSE		CM	I
+I46	çº–æ´»å¥¶ç¶ 	çº–æ´»å¥¶ç¶ å¥½å–æŽ¨æŽ¨	å¤§è‹‘å­/çº–æ´»å¥¶ç¶ .png	FALSE	FALSE		CM	I
+I47	çç å¥¶èŒ¶	çç å¥¶èŒ¶äººé–“æ¥µå“	å¤§è‹‘å­/çç å¥¶èŒ¶.png	FALSE	FALSE		CM	I
+I48	ä»™è‰å‡å¥¶èŒ¶	ä»™è‰å‡å¥¶èŒ¶å¥½å–æŽ¨æŽ¨	å¤§è‹‘å­/ä»™è‰å‡å¥¶èŒ¶.png	FALSE	FALSE		CM	I
+I49	å¤åŸŽéŒ«è˜­ç´…èŒ¶	å¤åŸŽéŒ«è˜­ç´…èŒ¶äººé–“æ¥µå“	å¤§è‹‘å­/å¤åŸŽéŒ«è˜­ç´…èŒ¶.png	FALSE	FALSE		CB	I
+I50	æ–‡å±±é’èŒ¶	æ–‡å±±é’èŒ¶å¥½å–æŽ¨æŽ¨	å¤§è‹‘å­/æ–‡å±±é’èŒ¶.png	FALSE	FALSE		CR	I
+I51	çº–æ´»ç¶ èŒ¶	çº–æ´»ç¶ èŒ¶äººé–“æ¥µå“	å¤§è‹‘å­/çº–æ´»ç¶ èŒ¶.png	FALSE	FALSE		CG	I
