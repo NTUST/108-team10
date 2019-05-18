@@ -27,7 +27,7 @@ SECRET_KEY = 'bk(p5zw)ch-q4*z^(nw=p!028-s6a1j77=@@(-osp!(12)+0g4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1','ntust-website-charbee-project.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
 
 # Application definition
@@ -82,16 +82,7 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-'''DATABASES = {
-    'default': {
-        'ENGINE':'django.db.backends.postgresql',
-        'NAME':'d6nsu88n1cnpo8',
-        'USER':'ymtncpkhzplako',
-        'PASSWORD':'f71e2af72105e4a7cb555b95c1be72b54aad7dd4153c434b694622a10122106a',
-        'HOST':'ec2-54-221-198-156.compute-1.amazonaws.com',#localhost
-        'PORT':'5432'
-    }
-}'''
+
 
 
 # Password validation
