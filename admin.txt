@@ -1,2 +1,0 @@
-Account: charbee
-Password: a123456b
