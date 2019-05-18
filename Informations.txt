@@ -1,21 +1,18 @@
 已經把資料庫建好了，有需要測試可以直接用
 
-sqlite3的資料庫本身無法上傳到github上面，所以我把它包成壓縮檔丟上去
-載下來之後要再解壓縮，記得拉到有manage.py的這層資料夾裡
 如果要看資料庫裡面的內容，可以下載一個程式：SQLiteStudio
 載好之後從右上角的Database > Add a database載入資料庫檔案就可以看了
 
-資料庫壓縮檔：db.zip
+後臺管理系統帳密(http://127.0.0.1:8000/admin/)
+帳號: charbee
+密碼: a123456b
 
-資料庫變動：
+備註：
+資料庫變動
 Beverage資料表
 50嵐、COMEBUY、Tea Top、一芳、大苑子、迷客夏的飲料圖片路徑附檔名全部改為.jpg
 有些例外(.png)需要手動去改static裡面的圖片副檔名
 其餘店家的圖片副檔名多為.png，之後再把那些.jpg的圖片手動改成.png
-
-後臺管理系統帳密(http://127.0.0.1:8000/admin/login/?next=/admin/)
-帳號: charbee
-密碼: a123456b
 
 
 
