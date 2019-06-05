@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form action="/test/about" method="POST">
+            {% csrf_token %}
+            Id: <input type="text" name = "_id"><br>
+            name: <input type="text" name = "name"><br>
+            category: <input type="text" name = "category"><br>
+            shop: <input type="text" name = "shop"><br>
+            <input type="submit" value="查詢">
+        </form>
+
+        <div>
+        {% if Data|length  == 0%}
+        <div>no data</div>
+        {% else %}
+        <div>共{{Data|length}}筆資料</div>
+        {% for d in Data%}
+                <div>
+                    {{d.BeverageId}} // {{d.name}}
+                </div>
+            {% endfor %}
+        {% endif %}
+            
+        </div>
+    </body>
+</html>

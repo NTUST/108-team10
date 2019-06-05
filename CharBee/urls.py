@@ -15,9 +15,22 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf.urls import url
 from django.conf import settings
 from django.conf.urls.static import static
+
+from version1_0.views import *
+
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+
+admin.autodiscover()
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('',include('version1_0.urls')),
-]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    path('BackEnd/', include('Admin.urls')),
+    path('', include('version1_0.urls')),
+] + staticfiles_urlpatterns('static/')
+
+'''if nt settings.DEBUG:
+    urlpatterns += url('',
+                            (r'^static/(?P<path>.*)$', 'django.views.static.serve',
+                             {'document_root': settings.STATIC_ROOT}),
+                            )'''

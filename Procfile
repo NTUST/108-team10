@@ -1,1 +1,1 @@
-web: gunicorn CharBee.wsgi --log-file -
+web: gunicorn CharBee.wsgi --log-file - 

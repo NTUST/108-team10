@@ -1,0 +1,43 @@
+
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 1; 
+  cursor: pointer; 
+  border-radius: 20px;
+}
+
+.column img:hover {
+  opacity: 0.8;
+}
+
+.emptyspace{
+	padding: 28px;
+	
+}
+
+.emptyspace_drink{
+	padding: 50px;
+
+}
+
+.emptyspace_drinkmenu{
+	padding: 20px;
+}
+
+@media (min-width: 992px)
+.col-md-3 {
+    width: 25%;
+
+
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.ourinfo-heading{
+  background-color: black;
+}

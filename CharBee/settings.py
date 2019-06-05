@@ -14,8 +14,11 @@ import os
 import django_heroku
 import psycopg2
 
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+dirname = os.path.dirname
+abspath = os.path.abspath
+BASE_DIR = dirname(dirname(abspath(__file__)))
 
 
 # Quick-start development settings - unsuitable for production
@@ -27,9 +30,11 @@ SECRET_KEY = 'bk(p5zw)ch-q4*z^(nw=p!028-s6a1j77=@@(-osp!(12)+0g4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
-
-
+ALLOWED_HOSTS = ['localhost', '127.0.0.1',
+                 'ec2-54-221-198-156.compute-1.amazonaws.com',
+                 'ntust-website-charbee-project.herokuapp.com',
+                 'ntust-charbee.herokuapp.com']
+APPEND_SLASH = True
 # Application definition
 
 INSTALLED_APPS = [
@@ -39,7 +44,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'version1_0'
+    'version1_0',
+    'version1_0.templatetags.cus_filter',
+    'Admin'
 ]
 
 MIDDLEWARE = [
@@ -50,6 +57,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'CharBee.urls'
@@ -57,7 +65,7 @@ ROOT_URLCONF = 'CharBee.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -76,13 +84,24 @@ WSGI_APPLICATION = 'CharBee.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
-DATABASES = {
+'''DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'BeverageDB.db'),
     }
-}
+}'''
+# The DataBase must support DISTINCT function
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd6nsu88n1cnpo8',
+        'USER': 'ymtncpkhzplako',
+        'PASSWORD': 'f71e2af72105e4a7cb555b95c1be72b54aad7dd4153c434b694622a10122106a',
+        'HOST': 'ec2-54-221-198-156.compute-1.amazonaws.com',
+        'PORT': '5432'
+    },
 
+}
 
 
 # Password validation
@@ -121,9 +140,30 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+print(STATIC_ROOT)
+# directed to C:\Users\admin\Desktop\GitHub\test\static
+# when we run a command: Python manage.py colletstatic,
+# manage.py will collect all static files from each installed app's static folder into this folder
+# like the storeage to store all app's static files at address: C:\Users\admin\Desktop\GitHub\test\static
+# these may has the static files collect from django.admin, the app we builded, and the other.. etc.
+
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR,'static')
+# directs to the URL that mapping to the address on our computer(same as a server),
+# so when we need to load static files in HTML file,
+# we need to set 'herf' attribute equal to real file path in our computer(server),
+# For example: if we have a graphy file named 'FUCK.png',
+# store at C:\Users\admin\Desktop\GitHub\test\static\image\FUCK.png,
+# and we want to input it into our HTML tag <img src="">
+# then we need to setting the src attribute like '/User/admin/Desktop/GitHub/test{% static 'image/FUCK.png' %}'
+# and it will run.
+#
+# django_heroku.settings(locals())
+
 STATIC_FILES = [
-    os.path.join(BASE_DIR,'static')
+    os.path.join(BASE_DIR, 'version1_0', 'static'),
 ]
-#django_heroku.settings(locals())
+
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+# django_heroku.settings(locals())

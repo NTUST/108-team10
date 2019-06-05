@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+
+<head>
+    <title>CharBee測試首頁</title>
+    <link rel="shortcut icon" href="{% static 'image/' %}favicon.ico">
+</head>
+<style>
+    body {
+        user-select: none;
+        text-align: center;
+        font-family: '微軟正黑體';
+        background:url('/static/image/logo_small.png');
+        background-color:#333;
+        background-position:center center;
+        overflow: hidden;
+    }
+    #cover{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1200px;
+        z-index: -1;
+    }
+
+    h1 {
+        font-weight: bold;
+    }
+
+    #box {
+        position: relative;
+        background: linear-gradient(to right, 
+            #4d0719 20%,
+            #7a1433 20%,
+            #7a1433 40%,
+            #c91e1e 40%,
+            #c91e1e 60%,
+            #ff5411 60%,
+            #ff5411 80%,
+            #ffd000 80%,
+            #ffd000);
+            width: 500px;
+            height:500px;
+            line-height: 450px;
+            font-size: 350px;
+            text-shadow: 5px 10px 10px  rgba(0,0,0,.6);
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #fff;
+            display: inline-block;
+    }
+    button{
+        position: absolute;
+        top: 400px;
+        left: 190px;
+        font-weight: bold;
+        border: none;
+        height: 50px;
+        width: 120px;
+        background-color: rgba(255,255,255,.5);
+        transition: all .25s;
+    }
+    button:hover{
+        background-color: #fff;
+    }
+    a{
+        color: #000;
+        text-decoration: none;
+        display: block;
+        height: 50px;
+        line-height: 50px;
+        font-size: 20px;
+    }
+    .info{
+        font-size: 20px;
+        font-weight: bolder;
+        color:linear-gradient(to left,#000000,#ffffff);
+    }
+    #container{
+        width:50%;
+        margin:auto;
+        padding:10px 0;
+        background-color:#fff;
+        display:block;
+        border-radius:20px;
+    }
+   
+</style>
+
+<body style="">
+    <div id="cover"></div>
+    <div id="container">
+        <h1>CharBee 後臺管理首頁</h1>
+        <div id="box">
+            <span>C</span>
+            <button><a href='/BackEnd/login'>Admin</a></button>
+        </div>
+        <div class="info">Visite at {{VisteTime}}</div>
+        <div class="info">Hello, {{HostName}}</div>
+        <div class="info">Web-Address: {{IPv4}}</div>
+    </div>
+</body>
+
+</html>

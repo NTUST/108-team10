@@ -1,86 +1,109 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Charbee - 茶比</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="all,follow">
-    <!-- Bootstrap CSS-->
-    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-    <!-- Font Awesome CSS-->
-    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
-    <!-- Custom icon font-->
-    <link rel="stylesheet" href="css/fontastic.css">
-    <!-- Google fonts - Open Sans-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
-    <!-- Fancybox-->
-    <link rel="stylesheet" href="vendor/@fancyapps/fancybox/jquery.fancybox.min.css">
-    <!-- theme stylesheet-->
-    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
-    <!-- Custom stylesheet - for your changes-->
-    <link rel="stylesheet" href="css/custom.css">
-    <!-- 我自己新開的CSS-->
-    <link rel="stylesheet" href = "css/myownstyle.css">
-    <!-- Favicon-->
-    <link rel="shortcut icon" href="favicon.png">
-    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-  </head>
-  <body>
-    <header class="header">
-      <!-- Main Navbar-->
 
-      <nav class="navbar navbar-expand-lg">
-        <div class="search-area">
-          <div class="search-area-inner d-flex align-items-center justify-content-center">
-            <div class="close-btn"><i class="icon-close"></i></div>
-            <div class="row d-flex justify-content-center">
-              <div class="col-md-8">
-                <form action="#">
-                  <div class="form-group">
-                    <input type="search" name="search" id="search" placeholder="What are you looking for?">
-                    <button type="submit" class="submit"><i class="icon-search-1"></i></button>
-                  </div>
-                </form>
-              </div>
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="{% static 'image' %}/logo_small.png">
+  <title>Charbee - 茶比</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <!-- Bootstrap CSS-->
+
+  <link rel="stylesheet" href="{% static 'vendor/' %}bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome CSS-->
+  <link rel="stylesheet" href="{% static 'vendor/' %}font-awesome/css/font-awesome.min.css">
+  <!-- Custom icon font-->
+  <link rel="stylesheet" href="{% static 'css/' %}fontastic.css">
+  <!-- Google fonts - Open Sans-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+  <!-- Fancybox-->
+  <link rel="stylesheet" href="{% static 'vendor/' %}@fancyapps/fancybox/jquery.fancybox.min.css">
+  <!-- theme stylesheet-->
+  <link rel="stylesheet" href="{% static 'css/' %}style.default.css" id="theme-stylesheet">
+  <!-- Custom stylesheet - for your changes-->
+  <link rel="stylesheet" href="{% static 'css/' %}custom.css">
+  <!-- 我自己新開的CSS-->
+  <link rel="stylesheet" href="{% static 'css/' %}myownstyle.css">
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="{% static 'image/' %}favicon.ico">
+  <!-- Tweaks for older IEs-->
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+
+<body>
+  <header class="header">
+    <!-- Main Navbar-->
+    {{staticfiles}}
+    {{static}}
+    <nav class="navbar navbar-expand-lg">
+      <div class="search-area">
+        <div class="search-area-inner d-flex align-items-center justify-content-center">
+          <div class="close-btn"><i class="icon-close"></i></div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-8">
+
+              <form action="/Result#AnchorPoint" method='POST'>
+                {% csrf_token %}
+                <div class="form-group">
+                  <input type="search" name="name" id="search" placeholder="What are you looking for?">
+                  <button type="submit" class="submit"><i class="icon-search-1"></i></button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
-        <div class="container">
+      </div>
+      <div class="container">
+        <!-- Navbar Brand -->
+        <div class="navbar-header d-flex align-items-center justify-content-between">
           <!-- Navbar Brand -->
-          <div class="navbar-header d-flex align-items-center justify-content-between">
-            <!-- Navbar Brand -->
-            <a href="index.html" class="navbar-brand">Charbee</a>
+          <a href="/Index"><img src="{% static 'image/Charbee.png' %}" alt="..." width="30%" length="30%"></a>
 
 
-            <!-- Toggle Button-->
-            <button type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarcollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span></span><span></span><span></span></button>
-          </div>
-          <!-- Navbar Menu -->
-          <div id="navbarcollapse" class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a href="index.html" class="nav-link active ">首頁</a>
-              </li>
-              <li class="nav-item"><a href="blog.html" class="nav-link ">比較</a>
-              </li>
-              <li class="nav-item"><a href="post.html" class="nav-link ">篩選</a>
-              </li>
-              <li class="nav-item"><a href="OurInfo.html" class="nav-link ">關於我們</a>
-              </li>
-            </ul>
-            <div class="navbar-text"><a href="#" class="search-btn"><i class="icon-search-1"></i></a></div>
-          </div>
+          <!-- Toggle Button-->
+          <button type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarcollapse"
+            aria-expanded="false" aria-label="Toggle navigation"
+            class="navbar-toggler"><span></span><span></span><span></span></button>
         </div>
-      </nav>
-    </header>
+        <!-- Navbar Menu -->
+        <div id="navbarcollapse" class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="/Index" class="nav-link active ">首頁</a>
+            </li>
+            <li class="nav-item"><a href="/Compare" class="nav-link ">比較</a>
+            </li>
+            <li class="nav-item"><a href="/Result" class="nav-link ">篩選</a>
+            </li>
+            <li class="nav-item"><a href="/AboutUs" class="nav-link ">關於我們</a>
+            </li>
+          </ul>
+          <div class="navbar-text"><a href="#" class="search-btn"><i class="icon-search-1"></i></a></div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- 這是一個空格-->
+  <section class="emptyspace">
 
-   
+  </section>
 
-    <!-- Hero Section-->
-    <section style="background: url(img/tea4.jpg); background-size: cover; background-position: center center" class="hero">
+
+  <!-- Hero Section-->
+  <!-- new -->
+  <div id='av_section_1'
+    class='avia-section alternate_color avia-section-huge avia-no-border-styling avia-full-stretch av-section-color-overlay-active avia-bg-style-fixed  avia-builder-el-0  el_before_av_layout_row  avia-builder-el-first    container_wrap fullcapacity'
+    style='background-repeat: no-repeat; background-image: url({% static 'image' %}/tea9.jpg);
+background-attachment: fixed; background-position: center center; 
+background-capacity: cover;' data-section-bg-repeat='stretch'>
+    <!-- new finish -->
+
+    <section style="background-capacity: cover; background-position: center center" class="hero">
       <div class="container">
         <div class="row">
           <div class="col-lg-7">
@@ -88,217 +111,87 @@
             <h1>茶比 - 尋找你杯茶</h1>
             <a href="#" class="hero-link">Discover More</a>
           </div>
-        </div><a href=".intro" class="continue link-scroll"><i class="fa fa-long-arrow-down"></i> Scroll Down</a>
+        </div>
       </div>
-    </section>    
+    </section>
+
 
     <!-- Divider Section-->
-    <section style="background:black; background-size: cover; background-position: center bottom" class="divider">
+    <section style="background:#ff4d4d; background-capacity: cover; background-position: center bottom" class="divider">
       <div class="container">
         <div class="row">
-          <div class="col-md-7" >            
-            <p class="text-big" style="color:white">我們的目標： 讓民眾比較各間手搖杯飲料店的網站。~ 2019年初</p>            
+          <div class="col-md-7">
+            <p class="text-big" style="color:white;">我們的目標： 讓民眾比較各間手搖杯飲料店的網站。~ 2019年初</p>
             <!--<a href="#" class="hero-link">View More</a>-->
           </div>
         </div>
       </div>
     </section>
-    
+
+    <!-- 這是一個空格-->
+    <section class="emptyspace" style="background-color: white;"></section>
 
     <!-- Latest Posts -->
-    <section class="latest-posts"> 
+    <section class="latest-posts" style="background-color: white;">
       <div class="container">
-        <header> 
+        <header>
           <h2>我們目前有的店家</h2>
           <p class="text-big">台灣 - 公館地區 - 連鎖飲料店</p>
         </header>
 
         <div class="row">
-         
-          <div class="post col-md-4">            
-            <div class="post-thumbnail">              
-              <a href="post.html">
-                 <div class = "column">
-              <img src="img/qingxin.jpg" alt="..." class="img-fluid">
-               </div>
+
+
+          {% for shop in Shops %}
+
+          <div class="post col-md-4">
+            <a href="ShopMenu/{{shop.name}}">
+              <div class="post-thumbnail">
+                <div class="column">
+                  <img src="{% static 'image' %}/{{shop.logoPath}}" alt="..." class="img-fluid">
+                </div>
+              </div>
+
+              <div class="post-details">
+                <div class="post-meta d-flex justify-content-between">
+                  <div class="date">20 May | 2016</div>
+                  <div class="category">Business</div>
+                </div>
+                <h3 class="h4">{{shop.name}}</h3>
+
+                <p class="text-muted">{{shop.info}}</p>
+              </div>
             </a>
-         
-          </div>            
-            <div class="post-details">
-              <div class="post-meta d-flex justify-content-between">
-                <div class="date">20 May | 2016</div>
-                <div class="category"><a href="#">Business</a></div>
-              </div><a href="post.html">
-                <h3 class="h4">清心福全</h3></a>
-              <p class="text-muted">清心福全企業集團秉持「誠信」、「用心」、「創新」、「惜福」之精神，力求務實經營、嚴謹管理、穩健成長、永續發展，不斷精進創發，歷久彌新，深耕台灣，弘揚台灣茶飲文化。</p>
-            </div>
           </div>
-          <div class="post col-md-4">
-            <div class="post-thumbnail"><a href="post.html">
-              <div class = "column">
-              <img src="img/coco.jpg" alt="..." class="img-fluid">
-            </div>
-            </a></div>
-            <div class="post-details">
-              <div class="post-meta d-flex justify-content-between">
-                <div class="date">20 May | 2016</div>
-                <div class="category"><a href="#">Technology</a></div>
-              </div><a href="post.html">
-                <h3 class="h4">CoCo 都可</h3></a>
-              <p class="text-muted">1997年的淡水小鎮，是CoCo都可最初的開端。在這塊人文與茶香兼具的土地上，CoCo都可一步一腳印、堅守品質與服務，啟動了夢想的實業。一直秉承著[嚴選優質茶葉]、 [全球採購當令鮮果] 、 [創新研發 嚴格食安控管] 三大堅持。</p>
-            </div>
-          </div>
-          <div class="post col-md-4">
-            <div class="post-thumbnail"><a href="post.html">
-              <div class = "column">
-              <img src="img/comebuy.png" alt="..." class="img-fluid">
-            </div>
-            </a></div>
-            <div class="post-details">
-              <div class="post-meta d-flex justify-content-between">
-                <div class="date">20 May | 2016</div>
-                <div class="category"><a href="#">Financial</a></div>
-              </div><a href="post.html">
-                <h3 class="h4">COMEBUY</h3></a>
-              <p class="text-muted">Comebuy 的核心價值有三個，[願景】成為茶飲創新歡樂體貼顧客的首選品牌、[人的文化]謙信感恩，傳達善意，熱情專精，創新學習、 [使命】用一杯創意好茶帶給人類歡樂安心</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="post col-md-4">
-            <div class="post-thumbnail"><a href="post.html">
-              <div class = "column">
-              <img src="img/tptea.jpg" alt="..." class="img-fluid">
-            </div>
-            </a></div>
-            <div class="post-details">
-              <div class="post-meta d-flex justify-content-between">
-                <div class="date">20 May | 2016</div>
-                <div class="category"><a href="#">Business</a></div>
-              </div><a href="post.html">
-                <h3 class="h4">茶湯會</h3></a>
-              <p class="text-muted">三十年茶湯硬底子，品選茶葉真功夫。
-              堅持以茶會友的初衷，為您真心做到最好。
-              提供最用心的幸福好茶，感受每一杯的人情滋味。</p>
-            </div>
-          </div>
-          <div class="post col-md-4">
-            <div class="post-thumbnail"><a href="post.html">
-              <div class = "column">
-              <img src="img/50lan.jpg" alt="..." class="img-fluid">
-            </div>
-            </a></div>
-            <div class="post-details">
-              <div class="post-meta d-flex justify-content-between">
-                <div class="date">20 May | 2016</div>
-                <div class="category"><a href="#">Technology</a></div>
-              </div><a href="post.html">
-                <h3 class="h4">50嵐</h3></a>
-              <p class="text-muted">自1994年始於台南德興路路邊的一個小攤子。這些年來我們只致力在台灣耕耘，並堅持只賣茶飲，用精選茶葉，搭配好的原料，新鮮現調每一杯茶飲。感謝每一位支持5o嵐的客人一直以來對我們的愛護，我們將更努力，希望能提供更好的商品與服務給每一位客人。</p>
-            </div>
-          </div>
-          <div class="post col-md-4">
-            <div class="post-thumbnail"><a href="post.html">
-              <div class = "column">
-              <img src="img/milkshop.jpeg" alt="..." class="img-fluid">
-            </div>
-            </a></div>
-            <div class="post-details">
-              <div class="post-meta d-flex justify-content-between">
-                <div class="date">20 May | 2016</div>
-                <div class="category"><a href="#">Financial</a></div>
-              </div><a href="post.html">
-                <h3 class="h4">迷客夏 Milkshop</h3></a>
-              <p class="text-muted">迷客夏國際有限公司成立於2007年，是一間以 ｢天然｣ 、 ｢手作｣ 與 ｢獨特｣ 為發展使命的手搖飲料業。從2013年開始，為了能讓更多的消費者都能飲用到天然健康的飲品，迷客夏開啟了連鎖加盟成長的路線。</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="post col-md-4">
-            <div class="post-thumbnail"><a href="post.html">
-              <div class = "column">
-              <img src="img/yifang.png" alt="..." class="img-fluid">
-            </div>
-            </a></div>
-            <div class="post-details">
-              <div class="post-meta d-flex justify-content-between">
-                <div class="date">20 May | 2016</div>
-                <div class="category"><a href="#">Business</a></div>
-              </div><a href="post.html">
-                <h3 class="h4">一芳 ~ 台灣水果茶</h3></a>
-              <p class="text-muted">一芳永續經營的品牌價值 ~支持在地MIT精神，堅持安心透明，結合果農契作，鮮乳禾香牧場直送，古早味經典重現，絕不添加任何化學濃縮汁，著重顧客體驗，激發顧客情感共鳴</p>
-            </div>
-          </div>
-          <div class="post col-md-4">
-            <div class="post-thumbnail"><a href="post.html">
-              <div class = "column">
-              <img src="img/dayung.jpg" alt="..." class="img-fluid">
-            </div>
-            </a></div>
-            <div class="post-details">
-              <div class="post-meta d-flex justify-content-between">
-                <div class="date">20 May | 2016</div>
-                <div class="category"><a href="#">Technology</a></div>
-              </div><a href="post.html">
-                <h3 class="h4">大苑子</h3></a>
-              <p class="text-muted">2001年於彰化縣員林鎮發跡，每一杯飲料都堅持給客人最好的，[品質、新鮮、親切、專業]是大苑子一貫的形象，更是大苑子不變的堅持。挑選品質優等的新鮮水果，細心洗滌，現切鮮榨。展現出 [家] 的感覺。</p>
-            </div>
-          </div>
-          <div class="post col-md-4">
-            <div class="post-thumbnail"><a href="post.html">
-              <div class = "column">
-              <img src="img/teatop.png" alt="..." class="img-fluid">
-            </div>
-            </a></div>
-            <div class="post-details">
-              <div class="post-meta d-flex justify-content-between">
-                <div class="date">20 May | 2016</div>
-                <div class="category"><a href="#">Financial</a></div>
-              </div><a href="post.html">
-                <h3 class="h4">TEA TOP</h3></a>
-              <p class="text-muted">“TEA TOP台灣第一味”，源自長順茶業，長順名茶是國內壺泡茶的頂尖企業，當年為了顛覆傳統茶飲予人使用「劣等下腳茶」印象，董事長楊國珍毅然投入冷飲茶市場，不吝惜把一斤動輒近千元的「高山青茶」分享給客人，開創台灣冷飲茶界使用極品好茶沖泡的經營新觀念。</p>
-            </div>
-          </div>
+
+          {% endfor %}
+
+
+
+
+
+
+
+
+
+
+
         </div>
       </div>
     </section>
-    
-   
-    
-    <!-- Gallery Section-->
-    <section class="gallery no-padding">    
-      <div class="row">
-        <div class="mix col-lg-3 col-md-3 col-sm-6">
-          <div class="item"><a href="img/gallery-1.jpg" data-fancybox="gallery" class="image"><img src="img/gallery-1.jpg" alt="..." class="img-fluid">
-              <div class="overlay d-flex align-items-center justify-content-center"><i class="icon-search"></i></div></a></div>
-        </div>
-        <div class="mix col-lg-3 col-md-3 col-sm-6">
-          <div class="item"><a href="img/gallery-2.jpg" data-fancybox="gallery" class="image"><img src="img/gallery-2.jpg" alt="..." class="img-fluid">
-              <div class="overlay d-flex align-items-center justify-content-center"><i class="icon-search"></i></div></a></div>
-        </div>
-        <div class="mix col-lg-3 col-md-3 col-sm-6">
-          <div class="item"><a href="img/gallery-3.jpg" data-fancybox="gallery" class="image"><img src="img/gallery-3.jpg" alt="..." class="img-fluid">
-              <div class="overlay d-flex align-items-center justify-content-center"><i class="icon-search"></i></div></a></div>
-        </div>
-        <div class="mix col-lg-3 col-md-3 col-sm-6">
-          <div class="item"><a href="img/gallery-4.jpg" data-fancybox="gallery" class="image"><img src="img/gallery-4.jpg" alt="..." class="img-fluid">
-              <div class="overlay d-flex align-items-center justify-content-center"><i class="icon-search"></i></div></a></div>
-        </div>
-      </div>
-    </section>
+
+    <!-- 這是一個空格-->
+    <section class="emptyspace" style="background-color: white;"></section>
+
+
     <!-- Page Footer-->
     <footer class="main-footer">
       <div class="container">
-       
-              <h6 class="text-white">Charbee - Student Project</h6>
-            </div>
-
-            <div class="contact-details">
-            
-              <p>　　　　　National Taiwan University and Science and Technology | Phone: (02) 2733 3141 | No.43, Keelung Rd., Sec.4, Taipei 10607, Taiwan</p>
-             
-            </div>
-          
+        <h6 class="text-white">Charbee - Student Project</h6>
+        <div class="contact-details">
+          <p>National Taiwan University and Science and Technology | Phone: (02) 2733 3141 | No.43, Keelung Rd., Sec.4,
+            Taipei 10607, Taiwan</p>
+        </div>
       </div>
       <div class="copyrights">
         <div class="container">
@@ -307,7 +200,8 @@
               <p>&copy; 2019. All rights reserved. Your great site.</p>
             </div>
             <div class="col-md-6 text-right">
-              <p>Template By <a href="https://bootstrapious.com/p/bootstrap-carousel" class="text-white">Bootstrapious</a>
+              <p>Template By <a href="https://bootstrapious.com/p/bootstrap-carousel"
+                  class="text-white">Bootstrapious</a>
                 <!-- Please do not remove the backlink to Bootstrap Temple unless you purchase an attribution-free license @ Bootstrap Temple or support us at http://bootstrapious.com/donate. It is part of the license conditions. Thanks for understanding :)                         -->
               </p>
             </div>
@@ -316,11 +210,12 @@
       </div>
     </footer>
     <!-- JavaScript files-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper.js/umd/popper.min.js"> </script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
-    <script src="vendor/@fancyapps/fancybox/jquery.fancybox.min.js"></script>
-    <script src="js/front.js"></script>
-  </body>
+    <script src="{% static 'vendor/jquery/jquery.min.js'%}"></script>
+    <script src="{% static 'vendor/' %}popper.js/umd/popper.min.js"> </script>
+    <script src="{% static 'vendor/' %}bootstrap/js/bootstrap.min.js"></script>
+    <script src="{% static 'vendor/' %}jquery.cookie/jquery.cookie.js"> </script>
+    <script src="{% static 'vendor/' %}@fancyapps/fancybox/jquery.fancybox.min.js"></script>
+    <script src="{% static 'js' %}/front.js"></script>
+</body>
+
 </html>
