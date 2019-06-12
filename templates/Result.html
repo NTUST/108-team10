@@ -35,7 +35,7 @@
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 </head>
 
-<body>
+<body class="bg">
   <header class="header">
     <!-- Main Navbar-->
 
@@ -77,7 +77,7 @@
             </li>
             <li class="nav-item"><a href="/Compare" class="nav-link ">比較</a>
             </li>
-            <li class="nav-item"><a href="/Result" class="nav-link active  ">篩選</a>
+            <li class="nav-item"><a href="/Result/default" class="nav-link active  ">篩選</a>
             </li>
             <li class="nav-item"><a href="/AboutUs" class="nav-link ">關於我們</a>
             </li>
@@ -87,6 +87,8 @@
       </div>
     </nav>
   </header>
+  <div id="backgroundImage"></div>
+
   <!-- 這是一個空格-->
   <section class="emptyspace_drink">
 
@@ -235,10 +237,9 @@
               <div class="post col-md-4 mx-auto">
                 <div class="post-thumbnail">
                   <a href="/BeverageInfo/{{Beverage.BeverageId}}">
-                    <div class="column">
+                    <div class="column beverageImg">
                       <img src="{% static 'image/Beverage/' %}{{Beverage.imagePath}}" width="60%" alt="..."
-                        class="img-fluid" style="display:block; margin:auto;">
-
+                        class="img-fluid" style="display:block; margin:auto;" onerror="this.src = '/static/image/beverageError.png'">
                     </div>
                   </a>
                 </div>
@@ -246,10 +247,10 @@
                   <h3 class="h4">{{Beverage.name}}</h3>
                   {% for Capacity in Beverage.capacitys %}
                   <center>
-                    <span>{{Beverage.shop}}</span><span>｜</span>
-                    <span>{{Beverage.category}}</span><span>｜</span>
-                    <span>${{Capacity.price}}</span><span>｜</span>
-                    <span>{{Capacity.capacity}}</span><span>｜</span>
+                    <span>{{Beverage.shop}}</span>｜
+                    <span>{{Beverage.category}}</span>｜
+                    <span>${{Capacity.price}}</span>｜
+                    <span>{{Capacity.capacity}}</span>
                     {% if Beverage.HasCold %}
                     <span>
                     Cold

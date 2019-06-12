@@ -1,11 +1,210 @@
 
 
 /* Style the images inside the grid */
+
+
+
+.container {
+  transition: 0.5s all !important;
+}
+
+#tem {
+  justify-content: center;
+  display: flex;
+}
+
+.post{
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+.post span{
+  width: 50px;
+}
+
+.taste {
+  width: 75px;
+  height: 30px;
+  display: inline-block;
+  position: relative;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+}
+#cold {
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  background: #33ccff;
+}
+#hot {
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  background: #ff8888;
+}
+.colhot span {
+  width: 50px;
+  height: 30px;
+  font-size: 16px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.ex5-box {
+  width: 150px;
+  height: 150px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col-form-label {
+  font-weight: bold;
+}
+
+.form-row {
+  margin-top: 0.5rem;
+  border-top: 1px solid #eee;
+}
+
+.form-box {
+  width: 30%;
+  margin: 0.75rem 0.25rem;
+}
+.form-box,
+.form-box > select {
+  cursor: pointer;
+}
+
+.form-control,
+.style-green,
+.style-green > i {
+  color: #28a745;
+  background: #fff;
+  border: 1px #efefef solid;
+  font-weight: bold;
+  transition: all 0.25s;
+}
+.style-green > i {
+  background: transparent !important;
+  border: none;
+}
+.form-control:focus,
+option:hover,
+.style-green:hover,
+.style-green:hover > i {
+  color: #fff;
+  background-color: #28a745;
+  border: #fff 1px solid;
+  outline: 0;
+  box-shadow: none;
+}
+.style-green:hover > i {
+  border: none;
+}
+option {
+  background-color: #fff;
+  color: #28a745;
+}
+
+.form-control-w50-inline {
+  width: 48%;
+  display: inline-block;
+  margin: 0 0.25rem;
+}
+
+
+#message {
+  position: absolute;
+  width: 25%;
+  height: 10rem;
+  background-color: #fff;
+  border: solid 1px #cdd6cf;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px 3px rgba(91, 91, 91, 0.7);
+  left: calc(37.5% - 1px);
+  top: -3rem;
+  z-index: 9999;
+  font-family: "微軟正黑體", sans-serif !important;
+  user-select: none;
+  transition: all 0.25s;
+  transform: scale(1);
+  animation: alter 0.5s cubic-bezier(0.3, 2, 0.5, 2);
+}
+#onload {
+  position: fixed;
+  display: none;
+  width: 75px;
+  height: 75px;
+  border: solid 5px transparent;
+  border-top-color: #e83e8c;
+  border-radius: 50%;
+  left: calc((100% - 75px) / 2);
+  top: 300px;
+  animation: loadRotate 1s cubic-bezier(0.5, 1, 1, 1) infinite;
+  z-index: 9999;
+}
+.active:focus {
+  box-shadow: none;
+}
+#pageMap{
+  width: 100%;
+  margin: 20px;
+}
+
+#pageMap .active {
+  border: #ff8364 2px solid !important;
+  color: #ff8364 !important;
+  background-color: #fff !important;
+  line-height: 22px;
+  font-weight: bold;
+}
+#pageMap .active:hover {
+  color: #fff !important;
+  background-color: #ff8364 !important;
+}
+@keyframes alter {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes loadRotate {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+
+.beverageImg{
+  height: 350px;
+  text-align: center;
+}
+
 .column img {
   opacity: 1; 
   cursor: pointer; 
   border-radius: 20px;
+  width: 100%;
+  height: auto;
+  transition: all .25s;
 }
+.beverageImg img{
+  width: 75%;
+}
+
 
 .column img:hover {
   opacity: 0.8;
@@ -13,12 +212,10 @@
 
 .emptyspace{
 	padding: 28px;
-	
 }
 
 .emptyspace_drink{
 	padding: 50px;
-
 }
 
 .emptyspace_drinkmenu{
@@ -41,3 +238,4 @@
 .ourinfo-heading{
   background-color: black;
 }
+

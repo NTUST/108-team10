@@ -28,9 +28,16 @@ urlpatterns = [
 
     path(r'Result', URLRegister.ResultHandle),
     path(r'Result/', URLRegister.ResultHandle),
+    path(r'Result/default', URLRegister.ResultReset),
     path(r'Result/<sing:focusPage>', URLRegister.ResultHandle),
     path(r'Result/<sing:focusPage>/', URLRegister.ResultHandle),
 
-    path(r'Compare', URLRegister.IndexHandle),
-    path(r'Compare/', URLRegister.IndexHandle),
+    path(r'Compare', URLRegister.CompareHandle2),
+    path(r'Compare/', URLRegister.CompareHandle2),
+    path(r'Compare/<str:_id>', URLRegister.CompareHandle),
+    path(r'Compare/<str:_id>/', URLRegister.CompareHandle),
+    path(r'Compare/<str:_id>/<str:capacity>',
+         URLRegister.CompareHandle),
+    path(r'Compare/<str:_id>/<str:capacity>/',
+         URLRegister.CompareHandle)
 ] + static('/static/')

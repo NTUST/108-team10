@@ -1,9 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.template import loader
 from django.http import *
 from .queryMethod import *
-from CharBee.settings import *
-from django.db import connection
 import logging
 
 import datetime as d
@@ -12,14 +10,14 @@ import json
 
 class CharBeeURLRegister():
 
-    isFlag = bool(True)
+    isInitFlag = bool(True)
     QueryModel = CharBeeQueryModel()
     @staticmethod
     def init():
-        if CharBeeURLRegister.isFlag is True:
+        if CharBeeURLRegister.isInitFlag is True:
             return
         CharBeeURLRegister.QueryModel = CharBeeQueryModel()
-        CharBeeURLRegister.isFlag = True
+        CharBeeURLRegister.isInitFlag = True
 
     @staticmethod
     def GetParameterFromPOST(userRequest, key):
@@ -27,9 +25,9 @@ class CharBeeURLRegister():
         return None if value == '' else value
 
     @staticmethod
-    def GetPAarameterFromCookies(userRequest, key):
+    def GetParameterFromCookies(userRequest, key):
         value = CharBeeURLRegister.Cookies_get(userRequest, key)
-        return None if value == '' else value
+        return None if value == None else value
 
     @staticmethod
     def Cookies_set(serverResponse, key, value):
@@ -45,9 +43,9 @@ class CharBeeURLRegister():
         return value
 
     @staticmethod
-    def GetQueryParameter(userRequest, serverResponse, focusPage):
+    def GetQueryParameter(userRequest, serverResponse):
         # userRequest is a Django..HttpRequest, serverResponse is a Django..HttpResponse
-        # _id, name, shop, category, capacity, price, t, hasCold, hasHot
+
         try:
             keysNames = ['_id', 'name', 'shop',
                          'category', 'capacity', 'price',
@@ -56,7 +54,6 @@ class CharBeeURLRegister():
 
             if CharBeeURLRegister.Cookies_get(userRequest, 'init') != True:
                 CharBeeURLRegister.Cookies_set(serverResponse, 'init', True)
-                CharBeeURLRegister.Cookies_set(serverResponse, 'focusPage', 1)
                 for key in keysNames:
                     CharBeeURLRegister.Cookies_set(serverResponse, key, None)
 
@@ -64,7 +61,7 @@ class CharBeeURLRegister():
             if userRequest.method == 'POST':
                 ParameterGetter = CharBeeURLRegister.GetParameterFromPOST
             else:
-                ParameterGetter = CharBeeURLRegister.GetPAarameterFromCookies
+                ParameterGetter = CharBeeURLRegister.GetParameterFromCookies
 
             for key in keysNames:
                 parameterValue = ParameterGetter(userRequest, key)
@@ -73,16 +70,8 @@ class CharBeeURLRegister():
                 CharBeeURLRegister.Cookies_set(
                     serverResponse, key, parameterValue)
             # -------------------------------------------------SetPageValue
-            if focusPage is None:
-                focusPage = CharBeeURLRegister.Cookies_get(
-                    userRequest, 'focusPage')
-            else:
-                CharBeeURLRegister.Cookies_set(
-                    serverResponse, 'focusPage', focusPage)
-            # ---------------------------------------------------
                 # unpacked value of dict[taste] and pack it into dict
             parametersDict['hasCold'], parametersDict['hasHot'] = parametersDict['taste']
-            parametersDict['focusPage'] = focusPage
             # throw taste, we don't need it.
             parametersDict.pop('taste')
             # parametersDict will like
@@ -138,6 +127,25 @@ class CharBeeURLRegister():
         return render(userRequest, 'index.html', {'Shops': ShopInfos})
 
     @staticmethod
+    def ResultReset(userRequest):
+        keysNames = ['_id', 'name', 'shop',
+                     'category', 'capacity', 'price',
+                     'orderby', 'orderd', 'taste', 'focusPage']
+        serverResponse = HttpResponseRedirect('/Result/1')
+
+        for key in keysNames:
+            CharBeeURLRegister.Cookies_set(serverResponse, key, None)
+
+        return serverResponse
+
+    def GetFocusPage(userRequest, focusPage):
+        if focusPage is None:
+            v = CharBeeURLRegister.Cookies_get(userRequest, 'focusPage')
+            return 1 if v is None else v
+        else:
+            return focusPage
+
+    @staticmethod
     def ResultHandle(userRequest, focusPage=None):  # 查詢結果處理函式
         CharBeeURLRegister.init()
         try:
@@ -145,18 +153,13 @@ class CharBeeURLRegister():
             #b = DATABASES['default']
             serverResponse = render(userRequest, 'Result.html')
             queryParameterDict = CharBeeURLRegister.GetQueryParameter(userRequest,
-                                                                      serverResponse,
-                                                                      focusPage)  # Get a Dict
+                                                                      serverResponse)  # Get a Dict
 
-            _id, name, shop, category, capacity, price, orderby, orderd, hasCold, hasHot, focusPage = \
+            _id, name, shop, category, capacity, price, orderby, orderd, hasCold, hasHot = \
                 (queryParameterDict[key] for key in queryParameterDict)
-
-            if focusPage is None:
-                v = CharBeeURLRegister.Cookies_get(userRequest, 'focusPage')
-                focusPage = 1 if v is None else v
-            else:
-                CharBeeURLRegister.Cookies_set(
-                    serverResponse, 'focusPage', focusPage)
+            focusPage = CharBeeURLRegister.GetFocusPage(userRequest, focusPage)
+            CharBeeURLRegister.Cookies_set(
+                serverResponse, 'focusPage', focusPage)
             startIndex = (focusPage-1)*12
             # print('%d %d' % (startIndex, endIndex))
 
@@ -206,16 +209,13 @@ class CharBeeURLRegister():
             return h
 
     @staticmethod
-    def ShopMenuHandle(request, shop='50嵐', focusPage=None):  # 店家菜單顯示函式
+    def ShopMenuHandle(userRequest, shop='50嵐', focusPage=None):  # 店家菜單顯示函式
         CharBeeURLRegister.init()
         serverResponse = HttpResponse()
 
-        if focusPage is None:
-            v = CharBeeURLRegister.Cookies_get(request, 'focusPage')
-            focusPage = 1 if v is None else v
-        else:
-            CharBeeURLRegister.Cookies_set(
-                serverResponse, 'focusPage', focusPage)
+        focusPage = CharBeeURLRegister.GetFocusPage(userRequest, focusPage)
+        CharBeeURLRegister.Cookies_set(
+            serverResponse, 'focusPage', focusPage)
         startIndex = (focusPage-1) * 16
 
         BeverageInfos = CharBeeURLRegister.QueryModel.BeverageQuery(
@@ -239,7 +239,7 @@ class CharBeeURLRegister():
                       'PageMap': pageMap,
                       'FocusPage': focusPage}
         ResponseContent = loader.render_to_string(
-            'ShopMenu.html', ReturnData, request)
+            'ShopMenu.html', ReturnData, userRequest)
         serverResponse.content = ResponseContent
         # return HttpResponse(ReturnData)
         # print('-------------------------------------------------------------------------------')
@@ -247,15 +247,15 @@ class CharBeeURLRegister():
         return serverResponse
 
     @staticmethod
-    def AboutUsHandle(request):  # 關於我們處理函式
+    def AboutUsHandle(userRequest):  # 關於我們處理函式
         CharBeeURLRegister.init()
         TMInfos = CharBeeURLRegister.QueryModel.TeamMemberQuery()
         # print('-------------------------------------------------------------------------------')
         # print('Return AboutUs')
-        return render(request, 'AboutUs.html', {'TeamMembers': TMInfos})
+        return render(userRequest, 'AboutUs.html', {'TeamMembers': TMInfos})
 
     @staticmethod
-    def BeverageInfoHandle(request, _id, capacity=None):  # 飲料詳細資訊處理涵式
+    def BeverageInfoHandle(userRequest, _id, capacity=None):  # 飲料詳細資訊處理涵式
         # beverageInfo is a version1_0.cus_models.BeverageInfo
         CharBeeURLRegister.init()
         beverageInfo = CharBeeURLRegister.QueryModel.BeverageQuery(
@@ -289,4 +289,66 @@ class CharBeeURLRegister():
         # print('-------------------------------------------------------------------------------')
         # print('Return BeverageInfo')
         print(beverage.calories)
-        return render(request, 'BeverageInfo.html', ReturnData)
+        return render(userRequest, 'BeverageInfo.html', ReturnData)
+
+    @staticmethod
+    def CompareHandle2(request):
+        CharBeeURLRegister.init()
+        return redirect('Compare/A01')
+
+    @staticmethod
+    def CompareHandle(request, _id='A01', capacity=None):
+        CharBeeURLRegister.init()
+        beverageInfo = CharBeeURLRegister.QueryModel.BeverageQuery(
+            _id=_id, capacity=capacity, getDetail=True)
+        beverage = None \
+            if len(beverageInfo) == 0 \
+            else beverageInfo[0]
+        if beverage is not None:
+            capacity = beverage.capacitys[0].capacity \
+                if capacity is None else capacity
+            for c in beverage.capacitys:
+                if c.capacity == capacity:
+                    beverage.price = c.price
+                    beverage.calories = c.calories
+            print(beverage.capacitys[0].capacity)
+            beverage.capacity = beverage.capacitys[0].capacity if capacity is None \
+                else capacity
+        message = 'No Matched Beverage!' \
+            if beverage is None \
+            else 'Success! Amount of Matched Beverage is % d' % len(beverageInfo)
+        beverageId = 'A01' \
+            if beverage is None \
+            else beverage.BeverageId
+
+        ReturnData = {'message': message,
+                      'Beverage': beverage,
+                      'Capacity': capacity,
+                      'BeverageId': beverageId}
+
+        # ----------------------------------------------------------------------------------------
+
+        beveragePre = CharBeeURLRegister.QueryModel.BeverageQuery(
+            _id='H01', capacity=capacity, getDetail=True)
+        beverage_pre = None \
+            if len(beveragePre) == 0 \
+            else beveragePre[0]
+        if beverage_pre is not None:
+            capacity = beverage_pre.capacitys[0].capacity \
+                if capacity is None else capacity
+            for c in beverage_pre.capacitys:
+                if c.capacity == capacity:
+                    beverage_pre.price = c.price
+                    beverage_pre.calories = c.calories
+            print(beverage_pre.capacitys[0].capacity)
+
+        ReturnPre = {'message': message,
+                     'Beverage': beverage,
+                     'Beverage_pre': beverage_pre,
+                     'Capacity': capacity,
+                     'BeverageId': beverageId}
+        # return HttpResponse(BeverageInfo)
+        # print('-------------------------------------------------------------------------------')
+        #print('Return BeverageInfo')
+        print(beverage.calories)
+        return render(request, 'Compare.html', ReturnPre)

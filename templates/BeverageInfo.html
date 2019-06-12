@@ -48,6 +48,9 @@
   border: solid 1px #28a745 !important;
   color: #fff !important;
 }
+button a{
+  color:#fff!important;
+}
 </style>
 <body>
   <header class="header">
@@ -89,9 +92,9 @@
           <ul class="navbar-nav ml-auto">
             <li class="nav-item"><a href="/Index" class="nav-link ">首頁</a>
             </li>
-            <li class="nav-item"><a href="/Compare" class="nav-link ">比較</a>
+            <li class="nav-item"><a href="/Compare/{{BeverageId}}/{{Capacity}}" class="nav-link">比較</a>
             </li>
-            <li class="nav-item"><a href="/Result" class="nav-link ">篩選</a>
+            <li class="nav-item"><a href="/Result/default" class="nav-link ">篩選</a>
             </li>
             <li class="nav-item"><a href="/AboutUs" class="nav-link ">關於我們</a>
             </li>
@@ -116,7 +119,7 @@
             <!-- post -->
             <div class="post col-xl-6">
               <div class="post-thumbnail"><img src="{% static 'image/Beverage/' %}{{Beverage.imagePath}}" alt="..." class="img-fluid"
-                  style="margin:auto; display: block;">
+                  style="margin:auto; display: block;" onerror="this.src = '/static/image/beverageError.png'">
               </div>
             </div>
             <!-- Pagination -->
@@ -158,12 +161,12 @@
             <tr>
               <td id="tem">
                 {% if Beverage.hasCold %}
-                <div class="colhot">
+                <div class="taste">
                   <div id="cold"></div><span>冷飲</span>
                 </div>
                 {% endif %}
                 {% if Beverage.hasHot %}
-                <div class="colhot">
+                <div class="taste">
                   <div id="hot"></div><span>熱飲</span>
                 </div>
                 {% endif %}
@@ -194,14 +197,14 @@
                 </td>
               </tr>
             </table>
-            <button type="submit" class="btn btn-secondary">比較</button>
+            <button type="text" class="btn btn-secondary"><a href="/Compare/{{Beverage.BeverageId}}">比較</a></button>
         </div>
       </aside>
     </div>
     <!-- 回前頁按鈕-->
     <div class="pagination pagination-template d-flex justify-content-center">
       <p>
-      <button type="submit" class="btn btn-secondary" onclick="pre()">回前頁</button>
+      <a href="/Result"><button type="submit" class="btn btn-secondary">回搜尋頁面</button></a>
       </p>
       <!-- 網上找的寫法,可是要搭配javascript -->
       <!--<input type ="button" onclick="history.back()" value="回到上一頁"></input>-->

@@ -24,7 +24,7 @@ class CharBeeQueryModel():
         return super().__init__(*args, **kwargs)
 
     def TeamMemberQuery(self, _id=None, name=None):
-        QueryResult = self.TeamMemberTable
+        QueryResult = TeamMember.objects.all()
         if _id is not None:
             QueryResult = QueryResult.filter(StudentId__in=_id)
         if name is not None:
@@ -33,7 +33,7 @@ class CharBeeQueryModel():
         return QueryResult
 
     def ShopQuery(self, name=None):
-        QueryResult = self.ShopTable
+        QueryResult = Shop.objects.all()
         if name is not None:
             QueryResult = QueryResult.filter(name__contains=name)
         return QueryResult
@@ -42,9 +42,9 @@ class CharBeeQueryModel():
         return self.amountOfBeverageDetailLastQuery if \
             detail is True else self.amountOfBeverageLastQuery
 
-    def BeverageQuery(self, startIndex=0, amount=1, **queryParameter):
+    def BeverageQuery(self, startIndex=0, amount=None, **queryParameter):
         # Return type: List<BeverageInfo>
-        # queryParameter have: _id, name, shop, cateogry, price,
+        # queryParameter have: _id, name, shop, category, price,
         # capacity, hasCold(provid Cold-Taste), hasHot(provid Hot-Taste) and getDetail
         # If All QueryParameters are none, this function will return all Beverage Information.
         # If All QueryParameters are none, BUT getDetail is True, this function will return all Beverage Information inculde Capacity Information.
@@ -52,7 +52,7 @@ class CharBeeQueryModel():
         # amount is the variable that controls the amount of BeverageInfo must seleted start at strarIndex.
 
         QueryResult = []
-        QuerySetOfBeverage = self.BeverageTable
+        QuerySetOfBeverage = Beverage.objects.all()
         # Block: Query by BeverageId
         # find the Beverage that id is equal to the id user keyin.
         if queryParameter.get('_id', None) is not None:
@@ -114,7 +114,7 @@ class CharBeeQueryModel():
         if getDetail is True or \
            queryParameter.get('price', None) is not None or \
            queryParameter.get('capacity', None) is not None:
-
+            getDetail = True
             if queryParameter.get('price', None) is not None:
                 price = queryParameter['price']
                 QueryResult = QueryResult.filter(capacitys__price__range=price)
@@ -129,10 +129,13 @@ class CharBeeQueryModel():
         self.amountOfBeverageDetailLastQuery = amountOfResult
         # print('\n----------------------------------------------------------')
 
-        QueryResult = QueryResult.distinct('BeverageId')
+        if getDetail is False:
+            QueryResult = QueryResult.distinct('BeverageId')
         self.amountOfBeverageLastQuery = len(QueryResult)
         startIndex = 0 if startIndex < 0 or startIndex >= self.amountOfBeverageLastQuery \
             else startIndex
+        if amount is None or amount < 1:
+            amount = self.amountOfBeverageLastQuery
         QueryResult = QueryResult[startIndex: startIndex + amount]
         #print('-----------After Query-----------')
         # print(QueryResult)

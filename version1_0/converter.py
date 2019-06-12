@@ -1,5 +1,5 @@
 class signedInteger():
-    regex = '-*\d'
+    regex = '-*\d+'
 
     def to_python(self, value):
         return int(value)

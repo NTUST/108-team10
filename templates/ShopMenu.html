@@ -69,7 +69,7 @@
               </li>
               <li class="nav-item"><a href="/Compare" class="nav-link ">比較</a>
               </li>
-              <li class="nav-item"><a href="/Result" class="nav-link ">篩選</a>
+              <li class="nav-item"><a href="/Result/default" class="nav-link ">篩選</a>
               </li>
               <li class="nav-item"><a href="/AboutUs" class="nav-link ">關於我們</a>
               </li>
@@ -107,8 +107,9 @@
             <div class="post col-md-3">            
             <div class="post-thumbnail">              
               <a href="/BeverageInfo/{{b.BeverageId}}">
-                 <div class = "column">
-              <img src="{% static 'image/Beverage/' %}{{b.imagePath}}" alt="..." class="img-fluid">
+                 <div class = "column beverageImg">
+              <img src="{% static 'image/Beverage/' %}{{b.imagePath}}" alt="..." 
+              class="img-fluid" onerror="this.src = '/static/image/beverageError.png'">
                </div>
             </a>         
           </div>            
