@@ -20,6 +20,8 @@ Python Libraries
   whitenoise
 Network connected
   
+# Using Framework
+Bootstrap
 
 # Run Project in local
 ```shell
@@ -27,3 +29,5 @@ git clone https://github.com/NTUST/108-team10.git
 cd 108-team10
 python manage.py runserver
 ```
+
+
