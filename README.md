@@ -21,6 +21,7 @@ Python Libraries
 Network connected
   
 # Using Framework
+Django
 Bootstrap
 
 # Run Project in local
